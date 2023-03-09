@@ -72,7 +72,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: smooth;
+    scroll-behavior: none; /*smooth*/
   }
 }
 
@@ -602,6 +602,11 @@ progress {
 
 .img-fluid {
   max-width: 100%;
+  height: auto;
+}
+
+.img-fluid_small {
+  max-width: 40%;
   height: auto;
 }
 
@@ -11333,26 +11338,26 @@ p.lead {
 .publist {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   
 }
 .pubname {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
-  font-size: 2.2rem;
+  font-weight: bold;
+  font-size: 2.0rem;
   text-transform: none;
 }
 .pubjournal {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: none;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .pubyear {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: none;
 }
 #sideNav {
@@ -11390,6 +11395,12 @@ p.lead {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-brand .img-profile_small {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
   }
   #sideNav .navbar-collapse {
     display: flex;
