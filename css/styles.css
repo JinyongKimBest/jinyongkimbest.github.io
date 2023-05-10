@@ -12323,7 +12323,12 @@ fieldset:disabled .btn {
   font-weight: bold;
   color: navy;
 }
-
+.biggest_important_research {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: black;
+}
 .explanation_important_nanumMyungjo {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 1.2rem;
@@ -12388,6 +12393,12 @@ fieldset:disabled .btn {
 .explanation_style {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
+}
+
+
+.explanation_research {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
 }
 
 .img-fluid_small {
