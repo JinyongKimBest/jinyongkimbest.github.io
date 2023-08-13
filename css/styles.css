@@ -8765,6 +8765,13 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-navy-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-custom-blue {
+  --bs-bg-opacity: 1;
+  --custom-blue-color: 56, 162, 255; /* RGB values for #38a2ff */
+  
+  background-color: rgba(var(--custom-blue-color), var(--bs-bg-opacity)) !important;
+}
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
