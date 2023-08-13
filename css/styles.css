@@ -8545,6 +8545,10 @@ fieldset:disabled .btn {
   font-family: var(--bs-font-monospace) !important;
 }
 
+.fs-big {
+  font-size: calc(1.5rem + 1.0vw) !important;
+}
+
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
@@ -12347,6 +12351,11 @@ fieldset:disabled .btn {
   font-size: 1.2rem;
 }
 
+
+.SSerif4 {
+  font-family: 'Source Serif 4', serif;
+}
+
 .bigger_important_nanumMyungjo {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 1.5rem;
@@ -12441,7 +12450,7 @@ fieldset:disabled .btn {
 }
 .img-fluid_footer {
   max-width: 60%;
-  height: auto;
+  /* height: auto; */
 }
 .img-fluid_profile {
   max-width: 30%;
