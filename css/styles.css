@@ -12326,6 +12326,7 @@ fieldset:disabled .btn {
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  overflow-wrap: break-word;
 }
 
 .biggest_important {
@@ -12333,6 +12334,7 @@ fieldset:disabled .btn {
   font-size: 2.0rem;
   font-weight: bold;
   color: navy;
+  overflow-wrap: break-word;
 }
 .biggest_important_black {
   font-family: 'Lato', sans-serif;
@@ -12474,6 +12476,7 @@ fieldset:disabled .btn {
 .explanation_style {
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
+  overflow-wrap: break-word;
 }
 
 
