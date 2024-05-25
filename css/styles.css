@@ -12497,6 +12497,7 @@ fieldset:disabled .btn {
   font-weight: bold;
   color: navy;
 }
+
 .bold {
   font-weight: bold;
 }
@@ -12545,4 +12546,8 @@ fieldset:disabled .btn {
 
 .with-shadow {
   text-shadow: 2px 2px 4px navy; /* Add a text shadow */
+}
+
+.real_blue {
+  color: #0113FF;
 }
