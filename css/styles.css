@@ -12511,7 +12511,7 @@ fieldset:disabled .btn {
   max-width: 40%;
   height: auto;
 }
-.img-fluid_smaller {
+.img_jinyong_profile {
   max-width: 23%;
   height: auto;
 }
@@ -12523,6 +12523,10 @@ fieldset:disabled .btn {
   max-width: 30%;
 }
 
+.img-round_edge {
+  border-radius: 10%; 
+  overflow: hidden;
+}
 
 .img-fluid_gallary {
   max-width: 70%;
