@@ -12511,6 +12511,10 @@ fieldset:disabled .btn {
   max-width: 40%;
   height: auto;
 }
+.img-fluid_smaller {
+  max-width: 23%;
+  height: auto;
+}
 .img-fluid_footer {
   max-width: 60%;
   /* height: auto; */
