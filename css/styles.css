@@ -5488,9 +5488,24 @@ fieldset:disabled .btn {
 }
 
 .pagination {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
+   display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  gap: 10px;
+}
+
+.page-link {
+  padding: 8px 14px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 4px;
+}
+
+.page-link.active {
+  background-color: #333;
+  color: white;
 }
 
 .page-link {
