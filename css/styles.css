@@ -12585,14 +12585,15 @@ html, body {
 .hero-swiper {
   height: 100vh;
   position: relative;
-  z-index: 
+  z-index: 1;
 }
 /*.swiper-slide {
   height: 100vh;
   background-size: cover;
   background-position: center;
 }*/
-swiper-slide .slide-title {
+
+.swiper-slide .slide-title {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -12628,7 +12629,7 @@ swiper-slide .slide-title {
   left: 0;
 }
 .overlay-dark {
-  background-color: rgba(0, 0, 0, 0.4); 어둡게 만드는 부분 
+  background-color: rgba(0, 0, 0, 0.4); 
   top: 0; left: 0;
   width: 100%;
   height: 100%;
