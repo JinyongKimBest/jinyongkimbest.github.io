@@ -12636,11 +12636,15 @@ section {
 }
 
 .scroll-down {
-  margin-top: 20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 1.5rem;
   color: white !important;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   animation: bounce 2s infinite;
+  z-index: 3;
 }
 
 /* 애니메이션 */
