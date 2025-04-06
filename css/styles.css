@@ -12587,9 +12587,9 @@ fieldset:disabled .btn {
 
 .hero-overlay {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -10%);
   text-align: center;
   color: #003366;
   z-index: 10;
