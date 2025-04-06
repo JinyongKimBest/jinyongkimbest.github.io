@@ -12575,18 +12575,18 @@ fieldset:disabled .btn {
   color: #0113FF;
 }
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
+  font-family: 'Pretendard Variable', sans-serif;
 }
 
 .hero-swiper {
   height: 100vh;
-  width: 100%;
   position: relative;
+  z-index: 
 }
-
 .swiper-slide {
   height: 100vh;
   background-size: cover;
@@ -12595,14 +12595,21 @@ html, body {
 
 .hero-overlay {
   position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -5%);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #003366;
-  z-index: 1; /* ✅ 이거 꼭 높게! */
-  padding: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* 어두운 오버레이 */
 }
+
+
 .slide-overlay {
   position: absolute;
   width: 100%;
@@ -12640,7 +12647,10 @@ html, body {
   animation: fadeInDown 1s ease-out;
   color: #003366;
 }
-
+section {
+  position: relative;
+  z-index: 3;
+}
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
