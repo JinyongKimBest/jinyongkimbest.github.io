@@ -12636,7 +12636,7 @@ section {
 .scroll-down {
   margin-top: 20px;
   font-size: 1.5rem;
-  color: #003366;
+  color: white;
   animation: bounce 2s infinite;
 }
 
