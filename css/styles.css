@@ -12576,14 +12576,15 @@ fieldset:disabled .btn {
 }
 html, body {
   height: 100%;
-  overflow: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .hero-swiper {
   height: 100vh;
   width: 100%;
   position: relative;
-  margin-bottom: 0px
 }
 
 .swiper-slide {
@@ -12594,26 +12595,35 @@ html, body {
 
 .hero-overlay {
   position: absolute;
-  top: 5%; /* 더 위로! */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-dark {
+  /* background-color: rgba(0, 0, 0, 0.4); 어둡게 만드는 부분 */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -5%);
   text-align: center;
-  color: #003366;
-  z-index: 10;
-  /* background-color: rgba(255, 255, 255, 0.6); */
+  color: white;
+  z-index: 2;
   padding: 1rem;
-  /* border-radius: 10px;*/
 }
 
-.hero-overlay h1 {
-  font-size: 3rem;
+.overlay-content h1 {
+  font-size: 2.5rem;
   font-weight: bold;
   animation: fadeInDown 1s ease-out;
-}
-
-.hero-overlay p {
-  font-size: 1.5rem;
-  animation: fadeInUp 1.5s ease-out;
 }
 
 @keyframes fadeInDown {
