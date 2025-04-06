@@ -12599,6 +12599,18 @@ html, body {
   height: 100%;
   overflow: auto;
 }
+
+.hero-swiper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  height: 100vh; /* ← 이거 꼭 넣어줘야 함! */
+  background-size: cover;
+  background-position: center;
+}
 .hero-overlay h1 {
   font-size: 3rem;
   font-weight: bold;
