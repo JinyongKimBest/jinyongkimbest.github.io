@@ -12637,7 +12637,7 @@ section {
 
 .scroll-down {
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
