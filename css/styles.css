@@ -12593,7 +12593,9 @@ fieldset:disabled .btn {
   text-align: center;
   color: #003366;
   z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 1rem;
+  border-radius: 10px;
 }
 html, body {
   height: 100%;
