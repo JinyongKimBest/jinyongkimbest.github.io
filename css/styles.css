@@ -80,7 +80,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: "Pretendard", sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -12587,10 +12587,18 @@ html, body {
   position: relative;
   z-index: 
 }
-.swiper-slide {
+/*.swiper-slide {
   height: 100vh;
   background-size: cover;
   background-position: center;
+}*/
+swiper-slide .slide-title {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  z-index: 2;
+  position: relative;
+  color: white;
 }
 
 .hero-overlay {
@@ -12659,4 +12667,13 @@ section {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: white;
+  font-size: 2rem;
 }
