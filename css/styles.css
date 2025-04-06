@@ -12595,14 +12595,18 @@ html, body {
 
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  z-index: 10; /* ✅ 이거 꼭 높게! */
+  padding: 1rem;
 }
 
 .overlay-dark {
   background-color: rgba(0, 0, 0, 0.4); 어둡게 만드는 부분 
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   position: absolute;
