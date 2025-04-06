@@ -12603,7 +12603,14 @@ html, body {
   z-index: 1; /* ✅ 이거 꼭 높게! */
   padding: 1rem;
 }
-
+.slide-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* 어두운 배경 */
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 .overlay-dark {
   background-color: rgba(0, 0, 0, 0.4); 어둡게 만드는 부분 
   top: 0; left: 0;
