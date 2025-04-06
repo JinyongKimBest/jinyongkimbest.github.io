@@ -12599,7 +12599,7 @@ html, body {
   left: 50%;
   transform: translate(-50%, -5%);
   text-align: center;
-  color: white;
+  color: #003366;
   z-index: 1; /* ✅ 이거 꼭 높게! */
   padding: 1rem;
 }
@@ -12638,6 +12638,7 @@ html, body {
   font-weight: 700;
   font-family: 'Pretendard Variable', sans-serif;
   animation: fadeInDown 1s ease-out;
+  color: #003366;
 }
 
 @keyframes fadeInDown {
