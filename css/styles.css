@@ -12632,9 +12632,10 @@ html, body {
   width: 90%;
 }
 
-.overlay-content h1 {
+.hero-overlay h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'Pretendard Variable', sans-serif;
   animation: fadeInDown 1s ease-out;
 }
 
