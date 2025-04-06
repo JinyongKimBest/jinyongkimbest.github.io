@@ -12574,29 +12574,6 @@ fieldset:disabled .btn {
 .real_blue {
   color: #0113FF;
 }
-.hero-swiper {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -5%);
-  text-align: center;
-  color: #003366;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 1rem;
-  border-radius: 10px;
-}
 html, body {
   height: 100%;
   overflow: auto;
@@ -12609,10 +12586,24 @@ html, body {
 }
 
 .swiper-slide {
-  height: 100vh; /* ← 이거 꼭 넣어줘야 함! */
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
+
+.hero-overlay {
+  position: absolute;
+  top: 5%; /* 더 위로! */
+  left: 50%;
+  transform: translate(-50%, -5%);
+  text-align: center;
+  color: #003366;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 .hero-overlay h1 {
   font-size: 3rem;
   font-weight: bold;
