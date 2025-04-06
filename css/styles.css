@@ -12597,10 +12597,10 @@ html, body {
   position: absolute;
   top: 5%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -5%);
   text-align: center;
   color: white;
-  z-index: 10; /* ✅ 이거 꼭 높게! */
+  z-index: 1; /* ✅ 이거 꼭 높게! */
   padding: 1rem;
 }
 
