@@ -12595,7 +12595,10 @@ fieldset:disabled .btn {
   z-index: 10;
   padding: 1rem;
 }
-
+html, body {
+  height: 100%;
+  overflow: auto;
+}
 .hero-overlay h1 {
   font-size: 3rem;
   font-weight: bold;
