@@ -12602,7 +12602,7 @@ html, body {
 }
 
 .overlay-dark {
-  /* background-color: rgba(0, 0, 0, 0.4); 어둡게 만드는 부분 */
+  background-color: rgba(0, 0, 0, 0.4); 어둡게 만드는 부분 
   width: 100%;
   height: 100%;
   position: absolute;
@@ -12618,6 +12618,7 @@ html, body {
   color: white;
   z-index: 2;
   padding: 1rem;
+  width: 90%;
 }
 
 .overlay-content h1 {
