@@ -12628,15 +12628,18 @@ section {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 3rem;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
+  color: white !important;
+  text-shadow:
+    2px 2px 8px rgba(0, 0, 0, 0.6),
+    1px 1px 4px rgba(255, 255, 255, 0.4);
   animation: fadeInDown 1s ease-out;
 }
 
 .scroll-down {
   margin-top: 20px;
   font-size: 1.5rem;
-  color: white;
+  color: white !important;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   animation: bounce 2s infinite;
 }
 
