@@ -12599,9 +12599,9 @@ html, body {
   text-align: center;
   color: #003366;
   z-index: 10;
-  <!--background-color: rgba(255, 255, 255, 0.6); -->
+  /* background-color: rgba(255, 255, 255, 0.6); */
   padding: 1rem;
-  <!--border-radius: 10px;-->
+  /* border-radius: 10px;*/
 }
 
 .hero-overlay h1 {
