@@ -12626,7 +12626,7 @@ html, body {
   left: 50%;
   transform: translate(-50%, -5%);
   text-align: center;
-  color: white;
+  color: #003366;
   z-index: 2;
   padding: 1rem;
   width: 90%;
