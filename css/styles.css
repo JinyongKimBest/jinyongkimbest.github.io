@@ -12718,7 +12718,7 @@ section {
 
 .slider-subtitle .real-bold {
   font-weight: 900;
-  color: #4DA1A9;
+  color: #79D7BE;
   font-size: 5.0rem;/* 강조된 REAL */
 }
 
@@ -12732,12 +12732,13 @@ section {
 .normal {
   font-size: 4.0rem;
   font-weight: 700;
-  color: #F6F4F0;
+  color: #79D7BE;
 }
 .normal_sub {
   font-size: 3.0rem;
   font-weight: 400;
-  color: #79D7BE;
+  
+  color: #F6F4F0;
 }
 .colored {
   
