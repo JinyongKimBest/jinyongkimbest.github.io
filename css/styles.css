@@ -4625,7 +4625,8 @@ fieldset:disabled .btn {
 .navbar-nav {
   display: flex;
   flex-direction: row;
-  padding-left: -40px;
+  padding-left: 0px;
+  margin-left: -80px;
   margin-bottom: 0;
   list-style: none;
   gap: 1rem;
