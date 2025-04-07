@@ -12729,6 +12729,7 @@ section {
 }
 .normal {
   font-weight: 700;
+  color: #0063B2;
 }
 .colored {
   color: #0063B2; /* 원하는 색상 코드로 변경 가능 (예: 밝은 하늘색) */
