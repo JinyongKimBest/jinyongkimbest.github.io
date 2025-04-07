@@ -4625,15 +4625,15 @@ fieldset:disabled .btn {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 80px;
   margin-bottom: 0;
   list-style: none;
   gap: 1rem;
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 800;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
