@@ -4657,8 +4657,10 @@ body, .nav-link {
 }
 .navbar-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  width: 100%;
 }
 
 .navbar-container {
@@ -4674,6 +4676,9 @@ body, .nav-link {
 .navbar-logo {
   position: absolute;
   left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
