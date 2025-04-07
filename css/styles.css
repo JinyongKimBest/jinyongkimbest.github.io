@@ -4632,8 +4632,10 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .navbar-nav .dropdown-menu {
