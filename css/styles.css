@@ -12747,16 +12747,17 @@ section {
   font-weight: 900;
 }
 
+
+/* hover */
 .image-hover-wrapper {
   position: relative;
-  width: 250px;
-  height: auto;
+  width: 100%;
+  max-width: 250px;
   overflow: hidden;
   border-radius: 12px;
-  transition: transform 0.3s ease;
 }
 
-.profile-img {  /* 두가지 사진 겹쳐서 마우스 올리면 부드럽게 전환 */
+.profile-img {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
@@ -12767,11 +12768,17 @@ section {
   border-radius: 12px;
 }
 
+.front-img {
+  z-index: 1;
+  opacity: 1;
+}
+
 .back-img {
+  z-index: 2;
   opacity: 0;
 }
 
-.image-hover-wrapper:hover {
+.image-hover-wrapper:hover .profile-img {
   transform: scale(1.05);
 }
 
