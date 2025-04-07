@@ -12674,7 +12674,7 @@ section {
 
 .scroll-down {
   position: absolute;
-  top: 90%;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
@@ -12734,10 +12734,10 @@ section {
   font-weight: 700;
   color: white;
 }
-.normal_colored {
-  font-size: 4.0rem;
-  font-weight: 700;
-  color: #0063B2;
+.normal_sub {
+  font-size: 3.0rem;
+  font-weight: 400;
+  color: white;
 }
 .colored {
   
