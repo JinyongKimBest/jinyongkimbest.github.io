@@ -12710,14 +12710,15 @@ section {
   transform: translateY(0) scale(1);
 }
 .slider-subtitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
   color: white;
 }
 
 .slider-subtitle .real-bold {
-  font-weight: 900; /* 강조된 REAL */
+  font-weight: 900;
+  font-size: 3.0rem;/* 강조된 REAL */
 }
 
 .slider-subtitle-small {
