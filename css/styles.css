@@ -12746,3 +12746,39 @@ section {
   color: #0063B2; /* 원하는 색상 코드로 변경 가능 (예: 밝은 하늘색) */
   font-weight: 900;
 }
+
+.image-hover-wrapper {
+  position: relative;
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.profile-img {  /* 두가지 사진 겹쳐서 마우스 올리면 부드럽게 전환 */
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.back-img {
+  opacity: 0;
+}
+
+.image-hover-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.image-hover-wrapper:hover .back-img {
+  opacity: 1;
+}
+
+.image-hover-wrapper:hover .front-img {
+  opacity: 0;
+}
