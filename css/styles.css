@@ -4632,7 +4632,7 @@ body, .nav-link {
   display: flex;
   flex-direction: row;
   padding-left: 0px;
-  margin-left: -80px;
+  margin-left: 0px;
   margin-bottom: 0;
   list-style: none;
   gap: 1rem;
