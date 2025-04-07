@@ -12709,3 +12709,21 @@ section {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
+.slider-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.slider-subtitle .real-bold {
+  font-weight: 900; /* 강조된 REAL */
+}
+
+.slider-subtitle-small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin-top: 8px;
+}
