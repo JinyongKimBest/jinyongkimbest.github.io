@@ -223,10 +223,43 @@
         </div>
 
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Swiper 초기화 -->
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        effect: 'fade',
+        speed: 1000,
+      });
+    </script>
+
+    <!-- Fade-in 효과 스크립트 -->
+    <script>
+      const faders = document.querySelectorAll('.fade-up-section');
+    
+      const appearOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -20px 0px"
+      };
+    
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+    
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
 </body>
 
 </html>
