@@ -4631,7 +4631,7 @@ body, .nav-link {
 .navbar-nav {
   display: flex;
   flex-direction: row;
-  padding-left: 110px;
+  padding-left: 125px;
   margin-left: 0px;
   margin-bottom: 0;
   list-style: none;
