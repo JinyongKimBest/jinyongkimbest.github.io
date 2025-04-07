@@ -12284,6 +12284,7 @@ fieldset:disabled .btn {
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+  padding-top: 70px;
 }
 
 .authorlist {
