@@ -12751,20 +12751,21 @@ section {
 /* hover */
 .image-hover-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 250px;
+  width: 250px;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
 .profile-img {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  backface-visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   border-radius: 12px;
 }
 
@@ -12778,14 +12779,15 @@ section {
   opacity: 0;
 }
 
-.image-hover-wrapper:hover .profile-img {
+.image-hover-wrapper:hover {
   transform: scale(1.05);
-}
-
-.image-hover-wrapper:hover .back-img {
-  opacity: 1;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* ✅ 그림자 추가 */
 }
 
 .image-hover-wrapper:hover .front-img {
   opacity: 0;
+}
+
+.image-hover-wrapper:hover .back-img {
+  opacity: 1;
 }
