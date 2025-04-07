@@ -12718,7 +12718,8 @@ section {
 
 .slider-subtitle .real-bold {
   font-weight: 900;
-  font-size: 3.0rem;/* 강조된 REAL */
+  color: #0063B2;
+  font-size: 5.0rem;/* 강조된 REAL */
 }
 
 .slider-subtitle-small {
@@ -12729,10 +12730,12 @@ section {
   margin-top: 8px;
 }
 .normal {
+  font-size: 4.0rem;
   font-weight: 700;
-  color: #0063B2;
+  color: white;
 }
 .colored {
+  
   color: #0063B2; /* 원하는 색상 코드로 변경 가능 (예: 밝은 하늘색) */
   font-weight: 900;
 }
