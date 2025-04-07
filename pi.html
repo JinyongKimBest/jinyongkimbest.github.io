@@ -85,27 +85,33 @@
             </h1>
         </div>
     </header>
+    
     <!-- Content section-->
     <section class="container py-4 fade-up-section">
-            <div class="d-flex align-items-center flex-column flex-md-row mb-1">
-                <!-- d-flex flex-column flex-md-row
-                                justify-content-between mb-4 -->
-                <img class="img_fluid mx-0 py-4 img-round_edge",  style="height:450px; object-fit: cover;", src="assets/img/Jinyong_Profile_Homepage.jpg" >
-                <div class="ms-4 ">
-                    <!-- <img class="img-fluid" style="height: 80px; object-fit: cover;" src="assets/img/Logo2_navy.png" />                    
-                    <br>                                    
-                    <br>                                    
-                    <br>                         -->
-                    <h3 class="biggest_important">Prof. Jinyong Kim</h3>
-                    <div class="bigger_important">Assistant Professor</div>
-                    <div class="explanation_style">Department of Mechanical Engineering</div>   
-                    <div class="explanation_style">Hanyang University ERICA</div>
-                    <div class="explanation_style">Email: jinyongkim@hanyang.ac.kr</div>
+        <div class="d-flex align-items-center flex-column flex-md-row mb-1">
+            <!-- d-flex flex-column flex-md-row
+                            justify-content-between mb-4 -->
+                <div class="profile-image-wrapper">
+                  <img
+                    src="assets/img/Jinyong_Profile_Homepage.jpg"
+                    data-hover="assets/img/Jinyong_Profile_Homepage_hover.jpg"
+                    class="profile-hover-img img-round_edge"
+                    alt="Prof. Jinyong Kim"/>
                 </div>
+            <div class="ms-4 ">
+                <!-- <img class="img-fluid" style="height: 80px; object-fit: cover;" src="assets/img/Logo2_navy.png" />                    
+                <br>                                    
+                <br>                                    
+                <br>                         -->
+                <h3 class="biggest_important">Prof. Jinyong Kim</h3>
+                <div class="bigger_important">Assistant Professor</div>
+                <div class="explanation_style">Department of Mechanical Engineering</div>   
+                <div class="explanation_style">Hanyang University ERICA</div>
+                <div class="explanation_style">Email: jinyongkim@hanyang.ac.kr</div>
             </div>
-
-
+        </div>
     </section>
+    
     <section class="container py-3 fade-up-section">
         <div>
             <div class="row justify-content-center">
@@ -245,27 +251,45 @@
       });
     </script>
 
-    <!-- Fade-in 효과 스크립트 -->
-    <script>
-      const faders = document.querySelectorAll('.fade-up-section');
+<!-- Fade-in 효과 스크립트 -->
+<script>
+  const faders = document.querySelectorAll('.fade-up-section');
+
+  const appearOptions = {
+    threshold: 0.15,
+    rootMargin: "0px 0px -20px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+<!-- hover -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const profileImg = document.querySelector(".profile-hover-img");
+    const originalSrc = profileImg.getAttribute("src");
+    const hoverSrc = profileImg.getAttribute("data-hover");
+
+    profileImg.addEventListener("mouseover", () => {
+      profileImg.setAttribute("src", hoverSrc);
+    });
+
+    profileImg.addEventListener("mouseout", () => {
+      profileImg.setAttribute("src", originalSrc);
+    });
+  });
+</script>
     
-      const appearOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -20px 0px"
-      };
-    
-      const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        });
-      }, appearOptions);
-    
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-    </script>
 </body>
 
 </html>
