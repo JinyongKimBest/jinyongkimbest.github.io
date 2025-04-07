@@ -92,16 +92,8 @@
         <!-- d-flex flex-column flex-md-row
                         justify-content-between mb-4 -->
         <div class="image-hover-wrapper me-md-4 mb-4 mb-md-0">
-          <img
-            src="assets/img/Jinyong_Profile_Homepage.jpg"
-            class="profile-img front-img"
-            alt="Prof. Jinyong Kim"
-          />
-          <img
-            src="assets/img/good.jpg"
-            class="profile-img back-img"
-            alt="Prof. Jinyong Kim Hover"
-          />
+          <img src="assets/img/Jinyong_Profile_Homepage.jpg" class="profile-img front-img" alt="Jinyong Kim" />
+          <img src="assets/img/good.jpg" class="profile-img back-img" alt="Jinyong Kim Hover" />
         </div>
             <!-- <img class="img-fluid" style="height: 80px; object-fit: cover;" src="assets/img/Logo2_navy.png" />                    
             <br>                                    
@@ -275,23 +267,6 @@
 
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
-  });
-</script>
-
-<!-- hover -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const profileImg = document.querySelector(".profile-hover-img");
-    const originalSrc = profileImg.getAttribute("src");
-    const hoverSrc = profileImg.getAttribute("data-hover");
-
-    profileImg.addEventListener("mouseover", () => {
-      profileImg.setAttribute("src", hoverSrc);
-    });
-
-    profileImg.addEventListener("mouseout", () => {
-      profileImg.setAttribute("src", originalSrc);
-    });
   });
 </script>
     
