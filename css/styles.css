@@ -12791,3 +12791,35 @@ section {
 .image-hover-wrapper:hover .back-img {
   opacity: 1;
 }
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+  padding-left: 20px;
+}
+
+.profile-icons {
+  margin-top: 15px;
+}
+
+.profile-icons img {
+  width: 40px;
+  margin-right: 15px;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+.profile-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* 반응형 처리 */
+@media (max-width: 768px) {
+  .profile-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .profile-icons img {
+    margin: 10px;
+  }
+}
