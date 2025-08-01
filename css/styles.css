@@ -12798,17 +12798,18 @@ section {
 }
 
 .profile-icons {
-  margin-top: 15px;
+  font-size: 0; /* 공백 문자 제거 */
 }
+
 .profile-icons a {
   display: inline-block;
   text-decoration: none;
+  font-size: initial; /* 텍스트 초기화 */
 }
+
 .profile-icons img {
-  width: 40px;
-  margin-right: 15px;
-  transition: transform 0.2s ease;
   vertical-align: middle;
+  transition: transform 0.2s ease;
 }
 
 .profile-icons img:hover {
