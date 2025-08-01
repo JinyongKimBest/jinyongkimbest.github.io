@@ -1,59 +1,184 @@
-<section class="py-5 container fade-up-section">
-  <h3 class="mb-4 biggest_important_research text-center">LAB News</h3>
-  <div class="row g-4">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- 카드 시작 -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="news-detail-1.html" class="card h-100 text-decoration-none text-dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>[한양대 신재생엔진분석 연구실] Renewable Engine Analysis Lab @ HYU </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="REAL" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR&family=Roboto&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
+      <div class="container-fluid position-relative">
+        
+        <!-- 로고: 왼쪽 고정 -->
+        <a class="navbar-brand position-absolute start-0 ms-3 d-flex align-items-center" href="index.html" style="z-index: 2;">
+          <img src="assets/img/Logo2_white.png" style="height: 50px;" />
+        </a>
+    
+        <!-- 반응형 메뉴 버튼 (모바일용) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- 메뉴: 가운데 정렬 -->
+        <!--<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">-->
+        <div class="d-none d-lg-flex mx-auto" style = "max-width: 1200px;">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="research.html">Research</a></li>
+            <li class="nav-item"><a class="nav-link active" href="pi.html">Prof. Kim</a></li>
+            <li class="nav-item"><a class="nav-link active" href="team.html">Team Members</a></li>
+            <li class="nav-item"><a class="nav-link active" href="pubs.html">Publication</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas offcanvas-end bg-navy text-white d-lg-none" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column gap-2 ps-3">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="research.html">Research</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="pi.html">Prof. Kim</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="team.html">Team Members</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="pubs.html">Publication</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+</head>
+<body>
+
+  <!-- 네비게이션 -->
+<header class="bg-image-full"
+    style="background-image: url('assets/img/background.jpg'); background-position: center; height: 160px;">
+    <div class="container d-flex align-items-center justify-content-center h-100">
+        <!-- <img class="img-fluid" style="height: 130px; object-fit: cover;" src="assets/img/Logo2_white.png" /> -->
+        <h1 class="text-white fs-big fw-bolder lato-bold mx-auto with-shadow"> LAB News
+            
+        <div class="bar"></div>
+        </h1>
+    </div>
+</header>
+<section class="container py-5 fade-up-section">
+  <h3 class="mb-4 biggest_important_research text-center">LAB News</h3>
+
+  <div class="row g-4">
+    <!-- 카드 1 -->
+    <div class="col-md-4">
+      <a href="news/news_1.html" class="card h-100 text-decoration-none text-dark">
         <img src="assets/img/KSAE2_2024.jpg" class="card-img-top" alt="KSAE 2024" style="height: 220px; object-fit: cover;">
         <div class="card-body">
           <h5 class="card-title">[2024-11-21] 자동차공학회 추계학술대회 참가</h5>
-          <p class="card-text">자동차공학회에 참가하여 열폭주 시뮬레이션 툴을 발표했습니다. 새로운 논문도 준비 중입니다!</p>
+          <p class="card-text">자동차공학회에서 열폭주 시뮬레이션 툴을 발표했습니다. 새로운 논문도 준비 중입니다!</p>
         </div>
         <div class="card-footer bg-white border-0">
-          <small class="text-muted">Read more →</small>
+          <small class="text-muted">자세히 보기 →</small>
         </div>
       </a>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="news-detail-2.html" class="card h-100 text-decoration-none text-dark">
-        <img src="assets/img/Paper1_2024.png" class="card-img-top" alt="Paper 1" style="height: 220px; object-fit: cover;">
+    <!-- 카드 2 -->
+    <div class="col-md-4">
+      <a href="news/news_2.html" class="card h-100 text-decoration-none text-dark">
+        <img src="assets/img/Paper1_2024.png" class="card-img-top" alt="논문 게재" style="height: 220px; object-fit: cover;">
         <div class="card-body">
           <h5 class="card-title">[2024-08-15] 연구실의 첫 논문 게재</h5>
-          <p class="card-text">우리 연구실에서 첫 논문을 게재하였습니다. 앞으로도 더 많은 논문을 준비하고 있습니다.</p>
+          <p class="card-text">첫 논문을 Applied Thermal Engineering에 게재했습니다.</p>
         </div>
         <div class="card-footer bg-white border-0">
-          <small class="text-muted">Read more →</small>
+          <small class="text-muted">자세히 보기 →</small>
         </div>
       </a>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="news-detail-3.html" class="card h-100 text-decoration-none text-dark">
-        <img src="assets/img/presentation.jpg" class="card-img-top" alt="presentation" style="height: 220px; object-fit: cover;">
-        <div class="card-body">
-          <h5 class="card-title">[2024-06-19] 자동차공학회 춘계학술대회 참가</h5>
-          <p class="card-text">전기차 화재대응 관련 연구성과를 학회에서 발표하였습니다.</p>
-        </div>
-        <div class="card-footer bg-white border-0">
-          <small class="text-muted">Read more →</small>
-        </div>
-      </a>
-    </div>
-
-    <!-- 추가 카드 계속 -->
-
+    <!-- ... 추가 카드들 ... -->
   </div>
-
-  <!-- 페이지네이션 -->
-  <nav class="mt-5 d-flex justify-content-center">
-    <ul class="pagination">
-      <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">»</a></li>
-    </ul>
-  </nav>
 </section>
+<!-- 주소 -->
+<footer class="py-3 bg-navy">
+    <div class="container ">
+        <div class="d-flex row align-items-center justify-content-center">
+            <div class="col-auto mx-3">
+                <img class="img-fluid "  style="height: 60px; object-fit: cover;" src="assets/img/hyu_logo_white.png" />
+            </div>
+            <div class="col">
+                <div class="bigger_important text-white">Address</div>
+                <div class="explanation_important_nanumGothic text-white b">(15588) 경기도 안산시 상록구 한양대학로 55, 한양대학교
+                    ERICA, 제5공학관
+                    502 호 (교수연구실), 427 호 (실험실)</div>
+                <div class="explanation_important  text-white">(15588) Engineering Bldg. V, Hanyang University ERICA
+                    55 Hanyangdaehak-ro, Sangrok-gu, Ansan, Gyeonggi-do, South Korea
+                    Rm #502 (Prof. Office), Rm #427 (Laboratory) </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
+<!-- fade css -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Swiper 초기화 -->
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        effect: 'fade',
+        speed: 1000,
+      });
+    </script>
+
+    <!-- Fade-in 효과 스크립트 -->
+    <script>
+      const faders = document.querySelectorAll('.fade-up-section');
+    
+      const appearOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -20px 0px"
+      };
+    
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+    
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+</body>
+</html>
