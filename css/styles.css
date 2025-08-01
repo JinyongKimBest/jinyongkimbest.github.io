@@ -12800,7 +12800,10 @@ section {
 .profile-icons {
   margin-top: 15px;
 }
-
+.profile-icons a {
+  display: inline-block;
+  text-decoration: none;
+}
 .profile-icons img {
   width: 40px;
   margin-right: 15px;
