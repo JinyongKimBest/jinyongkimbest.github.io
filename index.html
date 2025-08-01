@@ -71,7 +71,26 @@
         </div>
       </div>
     </nav>
-
+    <style>
+      /* 페이지네이션 스타일 */
+      .swiper-pagination {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        opacity: 0.6;
+        margin: 0 5px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #003366;
+        opacity: 1;
+      }
+    </style>
 </head>
 
 <body>
@@ -196,24 +215,26 @@
       </div>
         <!-- 페이지네이션 -->
         <div class="swiper-pagination mt-3"></div>
-            <!-- Swiper 스크립트 추가 -->
-            <script>
-          new Swiper('.labnews-swiper', {
-            loop: true,
-            autoplay: {
-              delay: 5000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-              bulletClass: 'swiper-pagination-bullet',
-              bulletActiveClass: 'swiper-pagination-bullet-active',
-            },
-          });
-        </script>
       </div>
     </section>
+
+    <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
+    <script>
+      new Swiper('.labnews-swiper', {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+    </script>
+
     
     
 <!--     <section class="py-5 container fade-up-section">
