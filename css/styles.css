@@ -12977,7 +12977,13 @@ padding: 2rem;
   font-size: 0.95rem;
   line-height: 1.5;
 }
-
+.news-desc a {
+  display: inline-block;
+  border-bottom: none;
+  text-decoration: underline;
+  line-height: 1.5;
+  vertical-align: middle;
+}
 .news-slider {
   padding: 50px 0;
 }
