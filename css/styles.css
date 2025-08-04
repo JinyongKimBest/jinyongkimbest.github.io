@@ -8621,14 +8621,14 @@ body, .nav-link {
 .shadow-background::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 배경 색상 */
-  border-radius: 8px; /* 모서리 부드럽게 */
-  filter: blur(4px); /* 그림자처럼 퍼지게 */
+  width: 102%;
+  height: 105%;
+  background-color: rgba(30, 30, 30, 0.4); /* 배경 색상 */
+  border-radius: 2px; /* 모서리 부드럽게 */
+  filter: blur(2px); /* 그림자처럼 퍼지게 */
   z-index: -1; /* 글자 뒤로 */
 }
 .fs-1 {
