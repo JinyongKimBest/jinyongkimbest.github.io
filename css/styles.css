@@ -12964,3 +12964,32 @@ padding: 2rem;
     max-height: 300px;
   }
 }
+.news-slider {
+  position: relative;
+}
+
+.news-slider .swiper-pagination.custom-pagination {
+  position: absolute;
+  top: 50%;
+  right: -20px;  /* 살짝 오른쪽 여백을 줄 수 있음 */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;  /* 동그라미 간 간격 */
+  z-index: 10;
+}
+
+.news-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  opacity: 0.6;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.news-slider .swiper-pagination-bullet-active {
+  background-color: #003366;
+  opacity: 1;
+}
