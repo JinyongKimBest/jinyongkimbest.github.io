@@ -8629,6 +8629,32 @@ body, .nav-link {
   opacity: 0.8;
   pointer-events: none;
 }
+.text-stack-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-stack-container h1 {
+  font-size: calc(2.5rem + 1.5vw);
+  font-weight: 800;
+  font-family: 'Pretendard', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.text-shadow-under {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1e293b;  /* 진한 회색/남색 배경용 */
+  z-index: 0;
+}
+
+.text-shadow-over {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);  /* 살짝 투명한 흰색 */
+  z-index: 1;
+}
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
