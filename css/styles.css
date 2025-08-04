@@ -13026,6 +13026,12 @@ padding: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
+.news-swiper .card img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .news-slider-wrapper {
     max-width: 90%;
