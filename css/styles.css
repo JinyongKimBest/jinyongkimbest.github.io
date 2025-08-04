@@ -13068,19 +13068,31 @@ padding: 2rem;
 
 /* Publication CSS */
 @media (max-width: 768px) {
+  /* 논문 항목: 텍스트와 이미지를 세로 정렬 */
   .pub-item {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center;
   }
 
+  /* 텍스트 블록 너비 전체로 확장 */
   .pub-text {
     width: 100%;
   }
 
+  /* 이미지 위로 여백 추가 */
   .pub-item img {
     margin-top: 16px;
   }
-}
+
+  /* 이미지 없는 항목의 빈 공간 제거 */
+  .publication-img-placeholder {
+    display: none;
+  }
+  /* 이미지 없는 항목의 PC용 공간 유지 */
+  .publication-img-placeholder {
+    width: 250px;
+    height: 1px;
+  }
 
 
