@@ -13058,8 +13058,7 @@ padding: 2rem;
   }
   .news-slider .custom-pagination {
     position: static !important;
-3:40
-transform: none !important; 
+    transform: none !important; 
     flex-direction: row !important;
     justify-content: center;
     margin-top: 20px; 
