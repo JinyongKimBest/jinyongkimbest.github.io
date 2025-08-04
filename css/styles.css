@@ -13000,15 +13000,15 @@ padding: 2rem;
   margin: 0 auto;
 }
 .news-slider .swiper-pagination.custom-pagination {
-  position: absolute;
-  top: 50%;
-  right: -100px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;  /* 동그라미 간 간격 */
-  z-index: 10;
+  position: absolute !important;
+  top: 50% !important;
+  right: -100px !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 12px !important;
+  z-index: 10 !important;
 }
 
 .news-slider .swiper-pagination-bullet {
