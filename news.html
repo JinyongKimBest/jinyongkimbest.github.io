@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR&family=Roboto&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
@@ -184,12 +186,12 @@
   </div>
 
   <!-- 상세 보기 섹션 -->
-  <div id="news-detail" class="mt-5 p-4 border rounded d-none">
+<!--   <div id="news-detail" class="mt-5 p-4 border rounded d-none">
     <img id="detail-img" class="img-fluid mb-3 rounded" style="max-height: 400px; object-fit: cover;">
     <h4 id="detail-title" class="mb-2"></h4>
     <p id="detail-date" class="text-muted mb-3"></p>
     <p id="detail-text" class="lh-lg"></p>
-  </div>
+  </div> -->
 </section>
 
 <!-- 주소 -->
@@ -270,52 +272,52 @@
         });
       });
 </script>
-<div class="news-modal row g-0 bg-white p-4 rounded shadow-lg" style="max-width: 900px; width: 100%;">
-  <button class="close-btn position-absolute top-0 end-0 m-3 fs-4" id="closeModal">&times;</button>
-
-  <div class="col-md-6 pe-md-4 mb-3 mb-md-0">
-    <img id="modalImg" src="" alt="News Image" class="img-fluid rounded shadow-sm w-100">
-  </div>
-
-  <div class="col-md-6">
-    <h4 class="fw-bold mb-2" id="modalTitle"></h4>
-    <div class="text-muted mb-2" id="modalDate"></div>
-    <p id="modalText" class="lh-lg mb-0"></p>
+<div id="newsModalOverlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none justify-content-center align-items-center" style="z-index: 1050;">
+  <div class="news-modal row g-0 bg-white p-4 rounded shadow-lg animate__animated animate__fadeInUp" style="max-width: 900px; width: 95%;">
+    <button class="close-btn position-absolute top-0 end-0 m-3 fs-4 btn-close" id="closeModal" aria-label="Close"></button>
+    <div class="col-md-6 pe-md-4 mb-3 mb-md-0">
+      <img id="modalImg" src="" alt="News Image" class="img-fluid rounded shadow-sm w-100" style="max-height: 400px; object-fit: cover;">
+    </div>
+    <div class="col-md-6">
+      <h4 class="fw-bold mb-2" id="modalTitle"></h4>
+      <div class="text-muted mb-2" id="modalDate"></div>
+      <p id="modalText" class="lh-lg mb-0"></p>
+    </div>
   </div>
 </div>
 <script>
-const cards = document.querySelectorAll('.news-card');
-const modalOverlay = document.getElementById('newsModalOverlay');
-const modalImg = document.getElementById('modalImg');
-const modalTitle = document.getElementById('modalTitle');
-const modalDate = document.getElementById('modalDate');
-const modalText = document.getElementById('modalText');
-const closeBtn = document.getElementById('closeModal');
+  const cards = document.querySelectorAll('.news-card');
+  const modalOverlay = document.getElementById('newsModalOverlay');
+  const modalImg = document.getElementById('modalImg');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDate = document.getElementById('modalDate');
+  const modalText = document.getElementById('modalText');
+  const closeBtn = document.getElementById('closeModal');
 
-cards.forEach(card => {
-card.addEventListener('click', () => {
-  modalImg.src = card.dataset.img;
-  modalTitle.textContent = card.dataset.title;
-  modalDate.textContent = card.dataset.date;
-  modalText.innerHTML = card.dataset.text;
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      modalImg.src = card.dataset.img;
+      modalTitle.textContent = card.dataset.title;
+      modalDate.textContent = card.dataset.date;
+      modalText.innerHTML = card.dataset.text;
 
-  modalOverlay.style.display = 'flex';
-  document.body.style.overflow = 'hidden'; // 스크롤 막기
-});
-});
+      modalOverlay.classList.remove('d-none');
+      document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+    });
+  });
 
-closeBtn.addEventListener('click', () => {
-modalOverlay.style.display = 'none';
-document.body.style.overflow = ''; // 다시 스크롤 가능
-});
+  closeBtn.addEventListener('click', () => {
+    modalOverlay.classList.add('d-none');
+    document.body.style.overflow = '';
+  });
 
-// ESC 키로 닫기
-document.addEventListener('keydown', e => {
-if (e.key === 'Escape') {
-  modalOverlay.style.display = 'none';
-  document.body.style.overflow = '';
-}
-});
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      modalOverlay.classList.add('d-none');
+      document.body.style.overflow = '';
+    }
+  });
 </script>
+
 </body>
 </html>
