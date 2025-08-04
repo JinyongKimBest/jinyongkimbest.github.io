@@ -13044,32 +13044,33 @@ padding: 2rem;
 }
 
 /* Publication CSS */
+/* 기본 데스크탑: 가로 정렬 */
+.publication-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* 모바일(768px 이하): 세로 정렬 */
 @media (max-width: 768px) {
-  /* 논문 항목: 텍스트와 이미지를 세로 정렬 */
-  .pub-item {
-    flex-direction: column !important;
-    align-items: center !important;
+  .publication-item {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  /* 텍스트 블록 너비 전체로 확장 */
   .pub-text {
     width: 100%;
   }
 
-  /* 이미지 위로 여백 추가 */
-  .pub-item img {
+  .pub-image {
     margin-top: 16px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
-
-  /* 이미지 없는 항목의 빈 공간 제거 */
-  .publication-img-placeholder {
-    display: none;
-  }
-  /* 이미지 없는 항목의 PC용 공간 유지 */
-  .publication-img-placeholder {
-    width: 250px;
-    height: 1px;
-  }
+}
 
 
