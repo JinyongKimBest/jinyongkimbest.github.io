@@ -13030,9 +13030,6 @@ padding: 2rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.news-swiper .swiper-pagination {
-  display: none !important;
-}
 @media (max-width: 768px) {
   .news-slider .swiper-pagination.custom-pagination {
     top: auto;
