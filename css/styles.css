@@ -12908,3 +12908,15 @@ section {
     to { opacity: 1; transform: scale(1); }
   }
 </style>
+.main-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-slider .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
