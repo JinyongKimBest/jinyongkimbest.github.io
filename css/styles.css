@@ -12843,3 +12843,10 @@ section {
   background-color: #003366;
   opacity: 1;
 }
+.news-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.news-card:hover {
+  transform: scale(1.02);
+}
