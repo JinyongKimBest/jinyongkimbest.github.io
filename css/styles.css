@@ -12719,7 +12719,8 @@ section {
 
 .slider-subtitle .real-bold {
   font-weight: 850;
-  color: #78B7D0;
+  /*color: #78B7D0;*/
+  color: #0E4A84;
   font-size: 5.0rem;/* 강조된 REAL */
 }
 
@@ -12732,14 +12733,15 @@ section {
 }
 /*흰색 테두리*/
 .slider-subtitle {
-  -webkit-text-stroke: 3px white;
-  text-stroke: 3px white;
+  -webkit-text-stroke: 4px white;
+  text-stroke: 4px white;
   paint-order: stroke fill;
 }
 .normal {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #78B7D0;
+  /*color: #78B7D0;*/
+  color: #0E4A84;
 }
 .normal_sub {
   font-size: 3.0rem;
