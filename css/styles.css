@@ -13035,7 +13035,7 @@ padding: 2rem;
   margin-top: 20px; /* 슬라이드 아래 여백 */
   position: absolute; /* 위치 고정 */
   left: 50%;
-  bottom: 25%;
+  bottom: 25px;
 }
 
 .news-slider .swiper-pagination-bullet {
