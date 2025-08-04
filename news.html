@@ -270,6 +270,48 @@
         });
       });
 </script>
+<div id="newsModalOverlay" class="news-modal-overlay">
+  <div class="news-modal">
+    <button class="close-btn" id="closeModal">&times;</button>
+    <img id="modalImg" src="" alt="News Image">
+    <h4 class="mt-3" id="modalTitle"></h4>
+    <p class="text-muted" id="modalDate"></p>
+    <p id="modalText" class="mt-3 lh-lg"></p>
+  </div>
+</div>
+<script>
+const cards = document.querySelectorAll('.news-card');
+const modalOverlay = document.getElementById('newsModalOverlay');
+const modalImg = document.getElementById('modalImg');
+const modalTitle = document.getElementById('modalTitle');
+const modalDate = document.getElementById('modalDate');
+const modalText = document.getElementById('modalText');
+const closeBtn = document.getElementById('closeModal');
 
+cards.forEach(card => {
+card.addEventListener('click', () => {
+  modalImg.src = card.dataset.img;
+  modalTitle.textContent = card.dataset.title;
+  modalDate.textContent = card.dataset.date;
+  modalText.innerHTML = card.dataset.text;
+
+  modalOverlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // 스크롤 막기
+});
+});
+
+closeBtn.addEventListener('click', () => {
+modalOverlay.style.display = 'none';
+document.body.style.overflow = ''; // 다시 스크롤 가능
+});
+
+// ESC 키로 닫기
+document.addEventListener('keydown', e => {
+if (e.key === 'Escape') {
+  modalOverlay.style.display = 'none';
+  document.body.style.overflow = '';
+}
+});
+</script>
 </body>
 </html>
