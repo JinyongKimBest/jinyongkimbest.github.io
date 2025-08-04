@@ -12953,12 +12953,12 @@ padding: 2rem;
 .news-slider .swiper-pagination.custom-pagination {
   position: absolute;
   top: 50%;
-  right: -30px;  /* 살짝 오른쪽 여백을 줄 수 있음 */
+  left: 100%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;  /* 동그라미 간 간격 */
+  align-items: flex-start;
+  gap: 12px;  /* 동그라미 간 간격 */
   z-index: 10;
 }
 
