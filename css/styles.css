@@ -13020,7 +13020,7 @@ padding: 2rem;
   margin: 0 auto; /* 전체를 브라우저 중앙에 배치 */
 }
 .news-swiper {
-  widt: 100%;
+  width: 100%;
   border-radius: 16px;
   overflow: hidden; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
