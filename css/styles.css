@@ -12963,9 +12963,11 @@ padding: 2rem;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.05);  /* 위에서 아래로 얇은 그림자 */
-  border-top: 1px solid #eee;               /* 얇은 선 */
+/*   border-top: 1px solid #eee;               /* 얇은 선 */ */
 }
-
+.news-desc-box.with-border {
+  border-top: 1px solid #eee;
+}
 .news-title {
   font-weight: 700;
   color: #003366;
@@ -12977,13 +12979,7 @@ padding: 2rem;
   font-size: 0.95rem;
   line-height: 1.5;
 }
-.news-desc a {
-  display: inline-block;
-  border-bottom: none;
-  text-decoration: underline;
-  line-height: 1.5;
-  vertical-align: middle;
-}
+
 .news-slider {
   padding: 50px 0;
 }
