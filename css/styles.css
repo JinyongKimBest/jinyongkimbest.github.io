@@ -13031,7 +13031,10 @@ padding: 2rem;
   object-fit: cover;
   width: 100%;
 }
-
+.news-swiper .card img.landscape {
+  object-fit: contain;
+  background-color: #f8f8f8; /* 여백이 너무 티 안 나게 */
+}
 @media (max-width: 768px) {
   .news-swiper .card img {
     height: 250px;
