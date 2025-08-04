@@ -12991,3 +12991,20 @@ padding: 2rem;
     gap: 10px;
   }
 }
+
+/* Publication CSS */
+@media (max-width: 768px) {
+  .pub-item {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .pub-text {
+    width: 100%;
+  }
+
+  .pub-item img {
+    margin-top: 16px;
+  }
+}
