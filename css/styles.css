@@ -13044,16 +13044,14 @@ padding: 2rem;
 }
 
 /* Publication CSS */
-/* 기본 데스크탑: 가로 정렬 */
-.publication-item {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  margin-bottom: 40px;
+/* 기본 데스크탑용 */
+.pub-image {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
 }
 
-/* 모바일(768px 이하): 세로 정렬 */
+/* 모바일용 (768px 이하) */
 @media (max-width: 768px) {
   .publication-item {
     flex-direction: column;
