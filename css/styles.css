@@ -12742,8 +12742,7 @@ section {
 .normal {
   font-size: 3.5rem;
   font-weight: 700;
-  /*color: #78B7D0;*/
-  color:#0E4A84;
+  color: #78B7D0;
 }
 .normal_sub {
   font-size: 3.0rem;
