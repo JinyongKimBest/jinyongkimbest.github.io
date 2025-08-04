@@ -12959,15 +12959,21 @@ padding: 2rem;
 }
 
 .news-slider .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  opacity: 0.6;
+  width: 20px;
+  height: 20px;
+  background-color: #6699ccc;
+  opacity: 0.8;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-
+.news-slider .swiper-pagination-bullet:hover {
+  transform: scale(1.2);
+}
 .news-slider .swiper-pagination-bullet-active {
   background-color: #003366;
   opacity: 1;
+}
+.news-swiper {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
