@@ -8626,7 +8626,7 @@ body, .nav-link {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(30, 41, 59, 0.8); /* 진회색 + 반투명 */
+  background-color: rgba(30, 41, 59, 0.3); /* 진회색 + 반투명 */
   filter: blur(1px);
   border-radius: 0.25rem;
   pointer-events: none;
