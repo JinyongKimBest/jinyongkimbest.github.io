@@ -12998,6 +12998,7 @@ padding: 2rem;
   position: relative;
   max-width: 900px;
   margin: 0 auto;
+  overflow: visible; 
 }
 .news-slider .swiper-pagination.custom-pagination {
   position: absolute !important;
