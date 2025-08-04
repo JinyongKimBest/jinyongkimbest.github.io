@@ -13010,3 +13010,13 @@ padding: 2rem;
     margin-top: 16px;
   }
 }
+
+
+/* index white shadow */
+.slider-subtitle {
+  text-shadow: 
+    -1px -1px 0 #fff, 
+     1px -1px 0 #fff, 
+    -1px  1px 0 #fff, 
+     1px  1px 0 #fff;
+}
