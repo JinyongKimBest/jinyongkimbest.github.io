@@ -13033,7 +13033,9 @@ padding: 2rem;
   flex-direction: row; /* 가로 정렬 */
   gap: 10px;
   margin-top: 20px; /* 슬라이드 아래 여백 */
-  position: relative; /* 위치 고정 */
+  position: absolute; /* 위치 고정 */
+  left: 50%;
+  bottom: 25%;
 }
 
 .news-slider .swiper-pagination-bullet {
