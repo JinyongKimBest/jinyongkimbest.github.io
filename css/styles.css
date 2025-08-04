@@ -13032,9 +13032,9 @@ padding: 2rem;
   width: 100%;
 }
 
-@media (max-width: 992px) {
-  .news-slider-wrapper {
-    max-width: 90%;
+@media (max-width: 768px) {
+  .news-swiper .card img {
+    height: 250px;
   }
 }
 
