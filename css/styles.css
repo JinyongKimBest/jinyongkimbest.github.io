@@ -12734,6 +12734,7 @@ section {
 .slider-subtitle {
   -webkit-text-stroke: 2px white;
   text-stroke: 2px white;
+  paint-order: stroke fill;
 }
 .normal {
   font-size: 3.5rem;
