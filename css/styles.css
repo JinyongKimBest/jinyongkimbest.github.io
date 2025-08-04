@@ -13030,6 +13030,8 @@ padding: 2rem;
   height: 350px;
   object-fit: cover;
   width: 100%;
+  display: block;
+  background-color: #f8f8f8; /* 여백 방지 */
 }
 .news-swiper .card img.landscape {
   object-fit: contain;
