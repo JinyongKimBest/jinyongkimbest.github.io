@@ -348,7 +348,17 @@
     <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".news-swiper .card img").forEach(img => {
+          img.onload = () => {
+            if (img.naturalWidth > img.naturalHeight * 1.5) {
+              img.classList.add("landscape");
+            }
+          };
+        });
+      });
+    </script>
     <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
