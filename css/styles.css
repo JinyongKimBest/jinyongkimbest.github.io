@@ -12733,10 +12733,10 @@ section {
 /*흰색 테두리*/
 .slider-subtitle {
   text-shadow: 
-    -1px -1px 0 #fff, 
-    1px -1px 0 #fff, 
-    -1px  1px 0 #fff, 
-    1px  1px 0 #fff;
+    -3px -3px 0 #fff, 
+    3px -3px 0 #fff, 
+    -3px  3px 0 #fff, 
+    3px  3px 0 #fff;
 }
 .normal {
   font-size: 3.5rem;
