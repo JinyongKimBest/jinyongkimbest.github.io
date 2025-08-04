@@ -253,25 +253,7 @@
         appearOnScroll.observe(fader);
       });
     </script>
-<script>
-      const cards = document.querySelectorAll('.news-card');
-      const detail = document.getElementById('news-detail');
-      const detailImg = document.getElementById('detail-img');
-      const detailTitle = document.getElementById('detail-title');
-      const detailDate = document.getElementById('detail-date');
-      const detailText = document.getElementById('detail-text');
-    
-      cards.forEach(card => {
-        card.addEventListener('click', () => {
-          detailImg.src = card.dataset.img;
-          detailTitle.textContent = card.dataset.title;
-          detailDate.textContent = card.dataset.date;
-          detailText.innerHTML = card.dataset.text;
-          detail.classList.remove('d-none');
-          detail.scrollIntoView({ behavior: 'smooth' });
-        });
-      });
-</script>
+
 <div id="newsModalOverlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-none justify-content-center align-items-center" style="z-index: 1050;">
   <div class="news-modal row g-0 bg-white p-4 rounded shadow-lg animate__animated animate__fadeInUp" style="max-width: 900px; width: 95%;">
     <button class="close-btn position-absolute top-0 end-0 m-3 fs-4 btn-close" id="closeModal" aria-label="Close"></button>
