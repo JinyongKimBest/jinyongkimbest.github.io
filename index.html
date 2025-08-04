@@ -351,19 +351,21 @@
     
     <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
       new Swiper('.news-swiper', {
-          loop: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.custom-pagination',
-            clickable: true,
-            bulletClass: 'swiper-pagination-bullet',
-            bulletActiveClass: 'swiper-pagination-bullet-active',
-          },
-        });
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.custom-pagination',
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+    });
     </script>
     <!-- Swiper 초기화 -->
     <script>
