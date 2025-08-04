@@ -5314,7 +5314,12 @@ body, .nav-link {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-
+.card-img-top-per {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2; /* 또는 비율에 맞게 조정 */
+  object-fit: contain;
+}
 .card-img,
 .card-img-bottom {
   border-bottom-right-radius: calc(0.25rem - 1px);
