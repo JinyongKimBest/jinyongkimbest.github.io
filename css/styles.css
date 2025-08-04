@@ -8607,7 +8607,7 @@ body, .nav-link {
 }
 
 .fs-big-bar {
-  font-size: calc(2rem + 1.0vw) !important;
+  font-size: calc(3.0rem + 2.0vw) !important;
 }
 
 .fs-1 {
