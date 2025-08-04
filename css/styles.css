@@ -13044,14 +13044,19 @@ padding: 2rem;
 }
 
 /* Publication CSS */
-/* 기본 데스크탑용 */
+/* ✅ 기본 데스크탑용 */
 .pub-image {
   width: 250px;
   height: auto;
   object-fit: contain;
 }
 
-/* 모바일용 (768px 이하) */
+.publication-img-placeholder {
+  width: 250px;
+  height: 1px;
+}
+
+/* ✅ 모바일용 */
 @media (max-width: 768px) {
   .publication-item {
     flex-direction: column;
@@ -13068,6 +13073,10 @@ padding: 2rem;
     width: 100%;
     max-width: 300px;
     height: auto;
+  }
+
+  .publication-img-placeholder {
+    display: none;  /* 모바일에서는 placeholder 제거 */
   }
 }
 
