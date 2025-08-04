@@ -8629,25 +8629,18 @@ body, .nav-link {
   opacity: 0.8;
   pointer-events: none;
 }
-.text-stack-container {
+.header-overlay {
+  background-image: url('assets/img/golden bridge.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 320px;
   position: relative;
-  display: inline-block;
 }
 
-.text-stack-container h1 {
-  font-size: calc(2.5rem + 1.5vw);
-  font-weight: 800;
-  font-family: 'Pretendard', sans-serif;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.text-shadow-under {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #1e293b;  /* 진한 회색/남색 배경용 */
-  z-index: 0;
+.overlay-text-box {
+  background-color: rgba(0, 0, 0, 0.4); /* 어두운 반투명 */
+  border-radius: 0.5rem;                /* 살짝 둥글게 (선택) */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* 깊이감 */
 }
 
 .text-shadow-over {
