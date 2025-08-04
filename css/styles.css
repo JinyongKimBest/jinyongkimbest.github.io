@@ -12958,3 +12958,9 @@ padding: 2rem;
 .custom-pagination .swiper-pagination-bullet-active {
   background-color: #003366;
 }
+/* responsive 모달 이미지 크기 조절 */
+@media (max-width: 768px) {
+  #modalImg {
+    max-height: 300px;
+  }
+}
