@@ -13027,7 +13027,7 @@ padding: 2rem;
   opacity: 1;
 }
 .news-swiper {
-  position: relative;
+  position: relative !important;
   margin-bottom: 0;
   padding-bottom: 0;
 }
