@@ -8606,6 +8606,10 @@ body, .nav-link {
   font-size: calc(1.5rem + 1.0vw) !important;
 }
 
+.fs-big-bar {
+  font-size: calc(2rem + 1.0vw) !important;
+}
+
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
