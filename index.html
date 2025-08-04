@@ -220,25 +220,6 @@
   </div>
 </section>
 
-    <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
-    <script>
-      new Swiper('.news-slider .swiper', {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-      });
-    </script>
-
-    
-    
 <!--     <section class="py-5 container fade-up-section">
         
         <h3 class="mb-4 biggest_important_research">LAB News </h3>
@@ -383,17 +364,33 @@
 <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
+    <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
+    <script>
+      new Swiper('.news-swiper', {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            bulletClass: 'swiper-pagination-bullet',
+            bulletActiveClass: 'swiper-pagination-bullet-active',
+          },
+        });
+    </script>
     <!-- Swiper 초기화 -->
     <script>
-      const mainSlider = new Swiper('.main-slider', {
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        effect: 'fade',
-        speed: 1000,
-      });
+      new Swiper('.main-swiper', {
+          loop: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          effect: 'fade',
+          speed: 1000,
+        });
     </script>
 
     <!-- Fade-in 효과 스크립트 -->
