@@ -13035,7 +13035,8 @@ padding: 2rem;
   margin-top: 20px; /* 슬라이드 아래 여백 */
   position: absolute; /* 위치 고정 */
   left: 50%;
-  bottom: 25px;
+  top: calc(100% + 20px);
+  z-index: 10;
 }
 
 .news-slider .swiper-pagination-bullet {
@@ -13058,6 +13059,7 @@ padding: 2rem;
 .news-slider-wrapper {
   position: relative;
   max-width: 1000px;
+  padding-bottom: 60px;
   margin: 0 auto; /* 전체를 브라우저 중앙에 배치 */
 }
 .news-swiper {
