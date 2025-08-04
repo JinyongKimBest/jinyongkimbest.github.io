@@ -12854,75 +12854,13 @@ section {
 .news-card:hover {
   transform: scale(1.02);
 }
-<style>
-  .news-card {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
-  .news-card:hover {
-    transform: scale(1.02);
-  }
-
-  .news-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    display: none;
-    z-index: 1050;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .news-modal {
-    background: white;
-    max-width: 800px;
-    width: 90%;
-    max-height: 90%;
-    overflow-y: auto;
-    border-radius: 16px;
-    padding: 24px;
-    position: relative;
-    animation: fadeIn 0.4s ease;
-  }
-
-  .news-modal img {
-    max-height: 400px;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 12px;
-  }
-
-  .news-modal .close-btn {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-  }
-</style>
-.main-slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.news-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.main-slider .swiper-slide {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+.news-card:hover {
+  transform: scale(1.02);
 }
 .news-modal-overlay {
   position: fixed;
@@ -12930,33 +12868,93 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
+  background: rgba(0,0,0,0.7);
   display: none;
+  z-index: 1050;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
-  .custom-pagination {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 10;
-  }
 
-  .custom-pagination .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 1;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-  }
+.news-modal {
+  background: white;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
 
-  .custom-pagination .swiper-pagination-bullet-active {
-    background-color: #003366;
-  }
+.news-modal img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.news-modal .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+</style>
+.main-slider {
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+.main-slider .swiper-slide {
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+.news-modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+z-index: 9999;
+display: none;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+}
+.custom-pagination {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #003366;
+}
