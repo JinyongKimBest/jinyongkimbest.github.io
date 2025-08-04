@@ -8624,7 +8624,7 @@ body, .nav-link {
   top: 0;
   left: 0;
   z-index: -1;
-  color: #1e293b; /* 진회색 (네가 보내준 bar 색상 기반) */
+  background-color: rgba(30, 41, 59, 0.8); /* 진회색 + 반투명 */
   filter: blur(2px);
   opacity: 0.8;
   pointer-events: none;
