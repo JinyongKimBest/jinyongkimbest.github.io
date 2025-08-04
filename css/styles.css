@@ -12996,6 +12996,18 @@ padding: 2rem;
   margin: 0 auto;
   overflow: visible; 
 }
+.news-slider .custom-pagination {
+  position: absolute !important;
+  top: 50% !important;
+  /* 컨테이너의 오른쪽 끝에 배치 */
+  right: 0 !important;
+  transform: translateY(-50%) !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  z-index: 10 !important;
+}
 .news-slider .swiper-pagination.custom-pagination {
   position: absolute !important;
   top: 50% !important;
@@ -13023,26 +13035,34 @@ padding: 2rem;
   background-color: #003366;
   opacity: 1;
 }
+.news-slider-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .news-swiper {
   max-width: 900px;
-  margin: 0;
+  margin-left: 0;
+  margin-right: auto;
+  border-radius: 16px;
+  overflow: hidden;
 }
-@media (max-width: 768px) {
-  .swiper-wrapper-container {
-    max-width: 100%;
+@media (max-width: 1024px) {
+  .news-slider-wrapper {
+    max-width: 100%; /* 화면 꽉 채우기 */
   }
-  
   .news-swiper {
-    margin: 0 auto; 
+    max-width: 100%;
+    margin: 0 auto; /* 모바일에선 다시 중앙 정렬 */
   }
-
-  .news-slider .swiper-pagination.custom-pagination {
-    top: auto;
-    bottom: 10px;
-    right: 50%;
-    transform: translateX(50%);
-    flex-direction: row;
-    gap: 10px;
+  .news-slider .custom-pagination {
+    /* 페이지네이션을 슬라이더 아래 중앙으로 이동 */
+    top: auto !important;
+    bottom: -30px !important; /* 슬라이더 아래쪽으로 30px 만큼 내림 */
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    flex-direction: row !important; /* 가로로 배열 */
   }
 }
 
