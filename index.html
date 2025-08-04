@@ -97,7 +97,7 @@
     <!-- Responsive navbar-->
 
     <!-- Header - set the background image for the header in the line below-->
-    <section class="swiper-container main-slider">
+    <section class="main-slider">
         <div class="swiper-wrapper">
         <div class="swiper-slide" style="background-image: url('assets/img/Ansys1_2024.jpg')">
           <div class="overlay-dark"></div>
@@ -148,7 +148,7 @@
 
     </section>
     <hr>
-    <section class="swiper-container main-slider">
+    <section class="news-slider">
       <h2 class="mb-4 text-center lato-bold">LAB News</h2>
       <div class="swiper labnews-swiper" style="max-width: 900px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
         <div class="swiper-wrapper">
@@ -220,7 +220,7 @@
 
     <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
     <script>
-      new Swiper('.labnews-swiper', {
+      new Swiper('.news-slider .swiper', {
         loop: true,
         autoplay: {
           delay: 5000,
@@ -383,7 +383,7 @@
     
     <!-- Swiper 초기화 -->
     <script>
-      const swiper = new Swiper('.swiper-container', {
+      const mainSlider = new Swiper('.main-slider', {
         loop: true,
         autoplay: {
           delay: 4000,
