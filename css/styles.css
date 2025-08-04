@@ -13000,8 +13000,8 @@ padding: 2rem;
 }
 .news-slider .swiper-pagination.custom-pagination {
   position: absolute !important;
-  top: 50% !important;
-  right: -100px !important;
+  top: 20% !important;
+  right: 100px !important;
   transform: translateY(-50%) !important;
   display: flex !important;
   flex-direction: column !important;
