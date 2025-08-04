@@ -355,6 +355,9 @@
             if (img.naturalWidth > img.naturalHeight * 1.5) {
               img.classList.add("landscape");
             }
+            if (img.naturalWidth / img.naturalHeight >= 1.2) {
+              img.classList.add("landscape");
+            }
           };
         });
       });
