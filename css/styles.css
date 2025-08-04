@@ -5315,10 +5315,10 @@ body, .nav-link {
   border-top-right-radius: calc(0.25rem - 1px);
 }
 .card-img-top-per {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2; /* 또는 비율에 맞게 조정 */
   object-fit: contain;
+  width: 100%;
+  height: 220px; /* 고정 높이 필수 */
+  background-color: #f8f9fa; /* 비어 있는 부분 색 채우기 */
 }
 .card-img,
 .card-img-bottom {
