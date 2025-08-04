@@ -13027,15 +13027,15 @@ padding: 2rem;
   overflow: visible; 
 }
 .news-slider .custom-pagination {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row; /* 가로 정렬 */
-  transform: translateX(-50%);
-  gap: 10px;
+  top: calc(100% + 20px);
   position: absolute;  /* ✅ 기본 흐름에서 아래에 위치 */
-  top: calc(100% + 15px);
   left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
   z-index: 10;
 }
 
