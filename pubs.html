@@ -92,21 +92,38 @@
     <section class="container py-5" style="text-align: center;">
       <div style="font-size: 1.2em;">
         <div class="explanation_research_bold mb-2 bigger" style="font-weight: bold;">11 Journal articles have been published so far.</div>
-        <div class="explanation_research_bold mb-2 bigger" style="font-weight: bold;"><span id="citations-all-line">Loading citations…</span></div>
+        <div class="explanation_research_bold mb-2 bigger" style="font-weight: bold;"><span id="citations-total">Loading citations…</span><span id="citations-updated" class="updated-time"></span></div>
         <script>
-        (async function () {
+        (async () => {
+          const $total = document.getElementById("citations-total");
+          const $updated = document.getElementById("citations-updated");
           try {
             const r = await fetch("/assets/citation.json?ts=" + Date.now(), { cache: "no-store" });
             const data = await r.json();
+        
             const total = (typeof data.total === "number")
               ? data.total
               : (Array.isArray(data.items) ? data.items.reduce((s, it) => s + (it.citations || 0), 0) : 0);
-            const when = new Date(data.updated_at || Date.now())
-              .toLocaleString("en-US", { month: "short", year: "numeric", timeZone: "Asia/Seoul" });
-            document.getElementById("citations-all-line").textContent =
-              `${total.toLocaleString()} citations in total (${when}).`;
-          } catch {
-            document.getElementById("citations-all-line").textContent = "Citations unavailable";
+        
+            // 시간 → 날짜 → 연도 (KST)
+            const d = new Date(data.updated_at || Date.now());
+            const parts = new Intl.DateTimeFormat("en-US", {
+              timeZone: "Asia/Seoul",
+              hour12: false,
+              hour: "2-digit", minute: "2-digit",
+              day: "2-digit", month: "short", year: "numeric",
+            }).formatToParts(d);
+            const pick = t => parts.find(p => p.type === t)?.value || "";
+            const timeStr = `${pick('hour')}:${pick('minute')}`;           // 09:00
+            const dateStr = `${pick('day')} ${pick('month')} ${pick('year')}`; // 09 Sep 2025
+            const when = `${timeStr} ${dateStr} KST`;
+        
+            $total.textContent = `${total.toLocaleString()} citations in total`;
+            $updated.textContent = `(${when})`;
+          } catch (e) {
+            console.error(e);
+            $total.textContent = "Citations unavailable";
+            $updated.textContent = "";
           }
         })();
         </script>
