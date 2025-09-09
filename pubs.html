@@ -93,6 +93,23 @@
       <div style="font-size: 1.2em;">
         <div class="explanation_research_bold mb-2 bigger" style="font-weight: bold;">11 Journal articles have been published so far.</div>
         <div class="explanation_research_bold mb-2 bigger" style="font-weight: bold;"><span id="citations-all-line">Loading citations…</span></div>
+        <script>
+        (async function () {
+          try {
+            const r = await fetch("/assets/citation.json?ts=" + Date.now(), { cache: "no-store" });
+            const data = await r.json();
+            const total = (typeof data.total === "number")
+              ? data.total
+              : (Array.isArray(data.items) ? data.items.reduce((s, it) => s + (it.citations || 0), 0) : 0);
+            const when = new Date(data.updated_at || Date.now())
+              .toLocaleString("en-US", { month: "short", year: "numeric", timeZone: "Asia/Seoul" });
+            document.getElementById("citations-all-line").textContent =
+              `${total.toLocaleString()} citations in total (${when}).`;
+          } catch {
+            document.getElementById("citations-all-line").textContent = "Citations unavailable";
+          }
+        })();
+        </script>
         <!--<div class="explanation_research_bold mb-2 bigger" style="font-weight: bold;">578 citations in total (Aug 2025).</div>-->
         <div style="margin-top: 8px; font-size: 1em;">Google Scholar:<a href="https://scholar.google.com/citations?user=5B2BRooAAAAJ&hl=ko">Link</a></div>
         <div style="font-size: 1em; margin-top: 4px;">(<b style="color: blue;">Blue</b>: Lab Member, *: Corresponding Author, +: Co-first Author)</div>
