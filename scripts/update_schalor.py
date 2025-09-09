@@ -67,8 +67,7 @@ def main():
         "items": items,
     }
 
-    # JSON을 사이트 루트의 /assets 아래에 저장
-    out_path = pathlib.Path("assets") / "citations.json"
+    out_path = pathlib.Path("assets") / "citation.json"  # ← 네가 쓰는 파일명/경로
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print("Wrote", out_path, "total =", total)
