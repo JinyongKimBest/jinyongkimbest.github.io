@@ -1,3 +1,4 @@
+# scripts/update_scholar.py
 import json, re, unicodedata, datetime, pathlib, requests
 from bs4 import BeautifulSoup
 
@@ -7,7 +8,7 @@ URL = f"https://scholar.google.com/citations?hl=en&user={SCHOLAR_ID}&view_op=lis
 TARGET_TITLES = [
   "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
   "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach",
-  "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models",
+  "A robust numerical treatment of solid-phase diffusion in pseudo two dimensional lithium ion battery models",
   "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs",
   "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
   "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
@@ -67,7 +68,7 @@ def main():
         "items": items,
     }
 
-    out_path = pathlib.Path("assets") / "citation.json"  # ← 네가 쓰는 파일명/경로
+    out_path = pathlib.Path("assets") / "citation.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print("Wrote", out_path, "total =", total)
