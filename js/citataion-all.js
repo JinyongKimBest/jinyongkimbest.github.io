@@ -12,10 +12,10 @@
     const iso = (data && data.updated_at) ? data.updated_at : new Date().toISOString();
     const when = new Date(iso).toLocaleString("en-US", { month: "short", year: "numeric", timeZone: "Asia/Seoul" });
 
-    document.getElementById("citations-11-line").textContent =
+    document.getElementById("citations-all-line").textContent =
       `${(total || 0).toLocaleString()} citations in total (${when}).`;
   } catch (e) {
     console.error(e);
-    document.getElementById("citations-11-line").textContent = "Citations unavailable";
+    document.getElementById("citations-all-line").textContent = "Citations unavailable";
   }
 })();
