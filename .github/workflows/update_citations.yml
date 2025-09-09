@@ -1,3 +1,32 @@
-- name: Pull JSON from Apps Script and save
-  run: |
-    curl -A "Mozilla/5.0" -fsSL "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbxLbobFHulTTNDAIZckk1IQwqtqOLGZvyRbb9Fwmyq7DeP8t1CH0lhNtG2xuiXSrBEr/exec" -o assets/citation.json
+name: Update citations (daily 09:00 KST)
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull JSON from Apps Script and save
+        run: |
+          mkdir -p assets
+          curl -A "Mozilla/5.0" -fsSL "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbxLbobFHulTTNDAIZckk1IQwqtqOLGZvyRbb9Fwmyq7DeP8t1CH0lhNtG2xuiXSrBEr/exec" -o assets/citation.json
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: update citations (auto)"
+            git push
+          fi
