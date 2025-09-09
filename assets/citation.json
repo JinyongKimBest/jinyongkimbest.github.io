@@ -1,1 +1,88 @@
-{"updated_at":"2025-09-09T11:49:53.479Z","scholar_user":"5B2BRooAAAAJ","source_url_used":null,"fallback_search":true,"items":[{"title":"Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries","citations":null},{"title":"Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach","citations":null},{"title":"A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models","citations":null},{"title":"A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs","citations":null},{"title":"Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway","citations":null},{"title":"Transport Processes in a Li-ion Cell during an Internal Short-Circuit","citations":null},{"title":"Modeling Extreme Deformations in Lithium-ion Batteries","citations":null},{"title":"Two-dimensional modeling for physical processes in direct flame fuel cells","citations":null},{"title":"A multipoint voltage-monitoring method for fuel cell inconsistency analysis","citations":null},{"title":"Modeling liquid water re-distribution in bi-porous layer flow-fields of proton exchange membrane fuel cells","citations":null},{"title":"Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells","citations":null}],"total":0}
+{
+  "updated_at": "2025-09-09T13:06:47.680Z",
+  "source_chain": [
+    "openalex",
+    "crossref",
+    "opencitations"
+  ],
+  "total": 510,
+  "items": [
+    {
+      "title": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
+      "citations": 0,
+      "_src": "openalex",
+      "_matched": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
+      "_score": 1
+    },
+    {
+      "title": "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach",
+      "citations": 0,
+      "_src": "openalex",
+      "_matched": "Accelerating simulations of Li-ion battery thermal runaway using modified Patankar–Runge–Kutta approach",
+      "_score": 1
+    },
+    {
+      "title": "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models",
+      "citations": 11,
+      "_src": "openalex",
+      "_matched": "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models",
+      "_score": 1
+    },
+    {
+      "title": "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs",
+      "citations": 14,
+      "_src": "openalex",
+      "_matched": "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs",
+      "_score": 1
+    },
+    {
+      "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
+      "citations": 149,
+      "_src": "openalex",
+      "_matched": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
+      "_score": 1
+    },
+    {
+      "title": "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
+      "citations": 31,
+      "_src": "openalex",
+      "_matched": "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
+      "_score": 1
+    },
+    {
+      "title": "Modeling Extreme Deformations in Lithium-ion Batteries",
+      "citations": 61,
+      "_src": "openalex",
+      "_matched": "Modeling extreme deformations in lithium ion batteries",
+      "_score": 1
+    },
+    {
+      "title": "Two-dimensional modeling for physical processes in direct flame fuel cells",
+      "citations": 2,
+      "_src": "openalex",
+      "_matched": "Two-dimensional modeling for physical processes in direct flame fuel cells",
+      "_score": 1
+    },
+    {
+      "title": "A multipoint voltage-monitoring method for fuel cell inconsistency analysis",
+      "citations": 36,
+      "_src": "openalex",
+      "_matched": "A multipoint voltage-monitoring method for fuel cell inconsistency analysis",
+      "_score": 1
+    },
+    {
+      "title": "Modeling liquid water re-distribution in bi-porous layer flow-fields of proton exchange membrane fuel cells",
+      "citations": 28,
+      "_src": "openalex",
+      "_matched": "Modeling liquid water re-distributions in bi-porous layer flow-fields of proton exchange membrane fuel cells",
+      "_score": 0
+    },
+    {
+      "title": "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells",
+      "citations": 178,
+      "_src": "openalex",
+      "_matched": "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells",
+      "_score": 1
+    }
+  ]
+}
