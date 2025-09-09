@@ -17,7 +17,7 @@ jobs:
       - name: Pull JSON from Apps Script and save
         run: |
           mkdir -p assets
-          curl -A "Mozilla/5.0" -fsSL "https://script.google.com/macros/s/AKfycbxLbobFHulTTNDAIZckk1IQwqtqOLGZvyRbb9Fwmyq7DeP8t1CH0lhNtG2xuiXSrBEr/exec" -o assets/citation.json
+          curl -A "Mozilla/5.0" -fsSL "https://script.google.com/macros/s/AKfycbxqq24ipUkVGLPL_wHKBfBI_LvEAxUEyv8d-kSFeeypLJcJ-JEohqdpOVyvo-d1Kwdw/exec/exec" -o assets/citation.json
 
       - name: Commit & push if changed
         run: |
