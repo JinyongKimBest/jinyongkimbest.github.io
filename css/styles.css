@@ -13148,7 +13148,7 @@ padding: 2rem;
 }
 
 .updated-time {
-  font-size: 0.8em;         /* 더 작게 하고 싶으면 0.75em */
+  font-size: 0.7em;         /* 더 작게 하고 싶으면 0.75em */
   font-weight: 500;
   color: #6b7280;           /* 회색 톤 */
   margin-left: .5em;
