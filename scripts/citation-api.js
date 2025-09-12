@@ -45,13 +45,6 @@ function cleanDOI(s){
     .replace(/^doi:\s*/i, "")
     .trim();
 }
-async function jget(url){
-  if(!inAllowlist(url)) throw new Error(`blocked_url: ${url}`);
-  const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
-  if([401,402,403].includes(r.status)) throw new Error(`paid_or_blocked: ${r.status} ${url}`);
-  if(!r.ok) throw new Error(`HTTP ${r.status} ${url}`);
-  return r.json();
-}
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 function loadPrev(){
@@ -61,13 +54,36 @@ function loadPrev(){
   return null;
 }
 
+// 간단한 재시도 포함 GET
+async function jget(url, {retries=2, pause=500} = {}){
+  if(!inAllowlist(url)) throw new Error(`blocked_url: ${url}`);
+  let lastErr;
+  for (let attempt=0; attempt<=retries; attempt++){
+    try{
+      const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+      if([401,402,403].includes(r.status)) throw new Error(`paid_or_blocked: ${r.status} ${url}`);
+      if(!r.ok) throw new Error(`HTTP ${r.status} ${url}`);
+      return await r.json();
+    }catch(e){
+      lastErr = e;
+      if (attempt < retries) await sleep(pause * (attempt+1));
+    }
+  }
+  throw lastErr;
+}
+
 // ---- OpenAlex / Crossref / OpenCitations (모두 DOI 기반) ----
+// OpenAlex: cited_by_count + updated_date 함께 반환 (신선도 확인용)
 async function oaByDOI(doi){
-  const base = `https://api.openalex.org/works/${encodeURIComponent("doi:"+doi)}?select=display_name,ids,cited_by_count`;
+  const base = `https://api.openalex.org/works/${encodeURIComponent("doi:"+doi)}?select=display_name,ids,cited_by_count,updated_date`;
   const url = MAILTO ? `${base}&mailto=${encodeURIComponent(MAILTO)}` : base;
   const data = await jget(url);
-  return (typeof data.cited_by_count === "number") ? data.cited_by_count : null;
+  return {
+    count: (typeof data.cited_by_count === "number") ? data.cited_by_count : null,
+    updated_date: data.updated_date || null
+  };
 }
+
 async function crByDOI(doi){
   const base = `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
   const url = MAILTO ? `${base}?mailto=${encodeURIComponent(MAILTO)}` : base;
@@ -75,6 +91,7 @@ async function crByDOI(doi){
   const msg = data.message || {};
   return (typeof msg["is-referenced-by-count"] === "number") ? msg["is-referenced-by-count"] : null;
 }
+
 async function ocByDOI(doi){
   const url = `https://opencitations.net/index/api/v1/citation-count/${encodeURIComponent(doi)}`;
   const data = await jget(url);
@@ -95,7 +112,7 @@ async function ocByDOI(doi){
 
     for (const item of TARGET_ITEMS) {
       const key = norm(item.title);
-      const countsByDOI = {};   // 디버깅용
+      const countsByDOI = {};   // 디버깅/검증용
       let itemSum = 0;
 
       for (const doiRaw of item.dois) {
@@ -103,17 +120,34 @@ async function ocByDOI(doi){
         if (!doi) continue;
 
         const triple = {};
-        try { triple.openalex = await oaByDOI(doi); } catch {}
-        await sleep(120);
-        try { triple.crossref = await crByDOI(doi); } catch {}
-        await sleep(120);
-        try { triple.opencitations = await ocByDOI(doi); } catch {}
 
-        countsByDOI[doi] = triple;
+        // OpenAlex (count + updated_date)
+        try { triple.openalex = await oaByDOI(doi); } catch (e) { triple.openalex = { count: null, updated_date: null, _err: String(e.message||e) }; }
+        await sleep(120);
+
+        // Crossref
+        try { triple.crossref = await crByDOI(doi); } catch (e) { triple.crossref = null; }
+        await sleep(120);
+
+        // OpenCitations
+        try { triple.opencitations = await ocByDOI(doi); } catch (e) { triple.opencitations = null; }
+
+        // 디버깅 저장(언제 기준인지 확인 가능)
+        countsByDOI[doi] = {
+          openalex_count: (typeof triple.openalex?.count === "number") ? triple.openalex.count : null,
+          openalex_updated: triple.openalex?.updated_date || null,
+          crossref_count: (typeof triple.crossref === "number") ? triple.crossref : null,
+          opencitations_count: (typeof triple.opencitations === "number") ? triple.opencitations : null
+        };
 
         // DOI 하나에 대해 셋 중 최대값 선택(과소계수 방지)
-        const nums = Object.values(triple).filter(v => typeof v === "number");
+        const nums = [
+          triple.openalex?.count,
+          triple.crossref,
+          triple.opencitations
+        ].filter(v => typeof v === "number");
         const one = nums.length ? Math.max(...nums) : 0;
+
         itemSum += one;
         await sleep(120);
       }
