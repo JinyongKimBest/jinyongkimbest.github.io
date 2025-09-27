@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-09-26T00:47:06.296Z",
+  "updated_at": "2025-09-27T00:45:26.133Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -78,7 +78,7 @@
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 150,
           "openalex_updated": "2025-09-19T07:47:08.194297",
-          "crossref_count": 145,
+          "crossref_count": 146,
           "opencitations_count": null
         }
       }
