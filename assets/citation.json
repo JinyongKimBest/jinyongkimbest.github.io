@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-10-01T00:54:51.944Z",
+  "updated_at": "2025-10-02T00:46:35.570Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 514,
+  "total": 515,
   "items": [
     {
       "title": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
@@ -130,7 +130,7 @@
     },
     {
       "title": "A multipoint voltage-monitoring method for fuel cell inconsistency analysis",
-      "citations": 37,
+      "citations": 38,
       "_dois": [
         "10.1016/j.enconman.2018.09.077"
       ],
@@ -138,7 +138,7 @@
         "10.1016/j.enconman.2018.09.077": {
           "openalex_count": 36,
           "openalex_updated": "2025-09-24T01:09:20.774640",
-          "crossref_count": 37,
+          "crossref_count": 38,
           "opencitations_count": null
         }
       }
