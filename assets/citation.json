@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-10-09T00:47:51.374Z",
+  "updated_at": "2025-10-10T00:47:38.598Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 517,
+  "total": 518,
   "items": [
     {
       "title": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
@@ -46,8 +46,8 @@
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2022.232413": {
-          "openalex_count": 11,
-          "openalex_updated": "2025-09-19T05:04:24.822834",
+          "openalex_count": 12,
+          "openalex_updated": "2025-10-09T10:23:30.098198",
           "crossref_count": 13,
           "opencitations_count": null
         }
@@ -70,15 +70,15 @@
     },
     {
       "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
-      "citations": 151,
+      "citations": 152,
       "_dois": [
         "10.1016/j.jpowsour.2021.229496"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 151,
-          "openalex_updated": "2025-09-28T14:58:27.665044",
-          "crossref_count": 146,
+          "openalex_count": 152,
+          "openalex_updated": "2025-10-09T13:13:05.974583",
+          "crossref_count": 147,
           "opencitations_count": null
         }
       }
