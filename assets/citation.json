@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-10-19T00:55:36.789Z",
+  "updated_at": "2025-10-20T00:53:53.884Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 518,
+  "total": 520,
   "items": [
     {
       "title": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
@@ -47,7 +47,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2022.232413": {
           "openalex_count": 12,
-          "openalex_updated": "2025-10-09T10:23:30.098198",
+          "openalex_updated": "2025-10-19T09:21:22.279180",
           "crossref_count": 13,
           "opencitations_count": null
         }
@@ -62,7 +62,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
           "openalex_count": 14,
-          "openalex_updated": "2025-09-19T05:08:45.672847",
+          "openalex_updated": "2025-10-19T09:25:49.632251",
           "crossref_count": 13,
           "opencitations_count": null
         }
@@ -70,14 +70,14 @@
     },
     {
       "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
-      "citations": 152,
+      "citations": 153,
       "_dois": [
         "10.1016/j.jpowsour.2021.229496"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 152,
-          "openalex_updated": "2025-10-09T13:13:05.974583",
+          "openalex_count": 153,
+          "openalex_updated": "2025-10-19T12:08:07.383654",
           "crossref_count": 147,
           "opencitations_count": null
         }
@@ -85,14 +85,14 @@
     },
     {
       "title": "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
-      "citations": 31,
+      "citations": 32,
       "_dois": [
         "10.1149/1945-7111/ab995d"
       ],
       "_debug_counts": {
         "10.1149/1945-7111/ab995d": {
-          "openalex_count": 31,
-          "openalex_updated": "2025-08-31T17:54:23.506443",
+          "openalex_count": 32,
+          "openalex_updated": "2025-10-19T12:57:50.131931",
           "crossref_count": 31,
           "opencitations_count": null
         }
