@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-10-23T00:50:37.392Z",
+  "updated_at": "2025-10-24T00:45:52.954Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -32,7 +32,7 @@
       "_debug_counts": {
         "10.1016/j.applthermaleng.2024.123518": {
           "openalex_count": 1,
-          "openalex_updated": "2025-10-12T12:39:23.758850",
+          "openalex_updated": "2025-10-23T03:08:04.724472",
           "crossref_count": 1,
           "opencitations_count": null
         }
@@ -78,7 +78,7 @@
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 153,
           "openalex_updated": "2025-10-19T12:08:07.383654",
-          "crossref_count": 147,
+          "crossref_count": 148,
           "opencitations_count": null
         }
       }
@@ -93,7 +93,7 @@
         "10.1149/1945-7111/ab995d": {
           "openalex_count": 32,
           "openalex_updated": "2025-10-19T12:57:50.131931",
-          "crossref_count": 31,
+          "crossref_count": 32,
           "opencitations_count": null
         }
       }
