@@ -10,6 +10,7 @@ const path = require("path");
 
 // ===== 여기에 논문과 DOI를 넣음 (네가 준 순서대로 매핑) =====
 const TARGET_ITEMS = [
+  { title: "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules", dois: ["10.1149/1945-7111/ae1ab5"] },
   { title: "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries", dois: ["10.1149/1945-7111/adfd1a"] },
   { title: "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach", dois: ["10.1016/j.applthermaleng.2024.123518"] },
   { title: "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models", dois: ["10.1016/j.jpowsour.2022.232413"] },
