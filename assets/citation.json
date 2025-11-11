@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-11-10T00:54:49.397Z",
+  "updated_at": "2025-11-11T00:53:32.094Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 541,
+  "total": 542,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -85,13 +85,13 @@
     },
     {
       "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
-      "citations": 162,
+      "citations": 163,
       "_dois": [
         "10.1016/j.jpowsour.2021.229496"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 162,
+          "openalex_count": 163,
           "openalex_updated": "2025-11-06T03:46:38.306776",
           "crossref_count": 150,
           "opencitations_count": null
