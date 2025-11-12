@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-11-11T00:53:32.094Z",
+  "updated_at": "2025-11-12T00:53:05.244Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 542,
+  "total": 543,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -115,13 +115,13 @@
     },
     {
       "title": "Modeling Extreme Deformations in Lithium-ion Batteries",
-      "citations": 64,
+      "citations": 65,
       "_dois": [
         "10.1016/j.etran.2020.100065"
       ],
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
-          "openalex_count": 64,
+          "openalex_count": 65,
           "openalex_updated": "2025-11-06T03:46:38.306776",
           "crossref_count": 58,
           "opencitations_count": null
