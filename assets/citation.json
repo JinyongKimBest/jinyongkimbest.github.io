@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-11-13T00:52:37.764Z",
+  "updated_at": "2025-11-14T00:52:33.113Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 543,
+  "total": 544,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -93,7 +93,7 @@
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 163,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 150,
+          "crossref_count": 151,
           "opencitations_count": null
         }
       }
@@ -175,13 +175,13 @@
     },
     {
       "title": "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells",
-      "citations": 182,
+      "citations": 183,
       "_dois": [
         "10.1016/j.jpowsour.2017.09.003"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2017.09.003": {
-          "openalex_count": 182,
+          "openalex_count": 183,
           "openalex_updated": "2025-11-06T03:46:38.306776",
           "crossref_count": 179,
           "opencitations_count": null
