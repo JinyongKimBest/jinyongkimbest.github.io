@@ -14767,6 +14767,36 @@ button, input, select, textarea {
   .offcanvas.show {
     visibility: visible !important;
   }
+  
+  /* Fix offcanvas body visibility */
+  .offcanvas-body {
+    display: block !important;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .offcanvas-body .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .offcanvas-body .nav-item {
+    display: block !important;
+    padding: 0.5rem 0;
+  }
+  
+  .offcanvas-body .nav-link {
+    display: block !important;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    color: white !important;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .offcanvas-body .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 /* Ensure navbar is always on top */
@@ -14776,5 +14806,14 @@ button, input, select, textarea {
 
 .offcanvas.bg-navy {
   background-color: var(--real-navy) !important;
+}
+
+/* Offcanvas full height fix */
+.offcanvas.offcanvas-end {
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh !important;
+  max-height: 100vh !important;
 }
 
