@@ -14748,44 +14748,26 @@ button, input, select, textarea {
   }
 }
 
-/* Mobile Navbar Fixes */
+/* Mobile Navbar - Offcanvas fixes */
 @media (max-width: 991.98px) {
   .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.3);
   }
   
-  /* Let the collapse flow naturally within the navbar */
-  .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    background-color: var(--real-navy);
-    margin-top: 0.5rem;
-    padding: 1rem;
-    border-radius: 8px;
+  /* Offcanvas menu styling */
+  .offcanvas {
+    z-index: 1050;
   }
   
-  .navbar-collapse .navbar-nav {
-    width: 100%;
-  }
-  
-  .navbar-collapse .nav-item {
-    text-align: center;
+  .offcanvas-body .nav-link {
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .navbar-collapse .nav-item:last-child {
-    border-bottom: none;
-  }
-  
-  .navbar-collapse .nav-link {
-    color: white !important;
-    padding: 0.75rem 1rem;
-    font-size: 1.1rem;
-  }
-  
-  .navbar-collapse .nav-link:hover,
-  .navbar-collapse .nav-link.active {
+  .offcanvas-body .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 0.5rem;
   }
 }
 
