@@ -14750,48 +14750,37 @@ button, input, select, textarea {
 
 /* Mobile Navbar Fixes */
 @media (max-width: 991.98px) {
-  .navbar {
-    position: fixed !important;
-  }
-  
-  .navbar .container-fluid {
-    position: relative;
-  }
-  
   .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.3);
   }
   
+  /* Let the collapse flow naturally within the navbar */
   .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    flex-basis: 100%;
+    flex-grow: 1;
     background-color: var(--real-navy);
+    margin-top: 0.5rem;
     padding: 1rem;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 1000;
+    border-radius: 8px;
   }
   
   .navbar-collapse .navbar-nav {
-    text-align: center;
-    display: flex !important;
-    flex-direction: column !important;
     width: 100%;
   }
   
   .navbar-collapse .nav-item {
-    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-collapse .nav-item:last-child {
+    border-bottom: none;
   }
   
   .navbar-collapse .nav-link {
     color: white !important;
     padding: 0.75rem 1rem;
     font-size: 1.1rem;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-    display: block !important;
   }
   
   .navbar-collapse .nav-link:hover,
