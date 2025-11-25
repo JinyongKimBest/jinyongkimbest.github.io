@@ -1,0 +1,153 @@
+# Equipment & Facilities Data File
+# ========================================
+# Lab equipment and computational resources
+# ========================================
+
+# Simulation Software
+software:
+  commercial:
+    - name: "Ansys Fluent"
+      description: "CFD simulation with Battery Module"
+      use_cases:
+        - "Battery thermal simulation"
+        - "BTMS design"
+        - "Pack-level analysis"
+      licenses: "Academic license"
+    
+    - name: "Converge CFD"
+      description: "Specialized CFD for battery fire simulation"
+      use_cases:
+        - "Thermal runaway venting"
+        - "Gas-phase reactions"
+        - "Fire propagation"
+      licenses: "Research license"
+    
+    - name: "COMSOL Multiphysics"
+      description: "Multi-physics simulation platform"
+      use_cases:
+        - "Electrochemical modeling"
+        - "Coupled thermal-electrochemical"
+        - "Fuel cell simulation"
+      licenses: "Academic license"
+    
+    - name: "STAR-CCM+"
+      description: "CFD and multi-physics simulation"
+      use_cases:
+        - "Complex geometry"
+        - "Conjugate heat transfer"
+      licenses: "Available through HPC"
+    
+    - name: "MATLAB/Simulink"
+      description: "Algorithm development and system simulation"
+      use_cases:
+        - "BMS algorithm development"
+        - "Control system design"
+        - "Data analysis"
+      licenses: "Campus license"
+
+  in_house:
+    - name: "REAL P2D Model"
+      language: "Python/MATLAB"
+      description: "Newman's pseudo-2D electrochemical model with robust numerics"
+      capabilities:
+        - "Extreme condition simulation"
+        - "Fast charging protocols"
+        - "Temperature effects"
+    
+    - name: "REAL TR Propagation Code"
+      language: "Python"
+      description: "Thermal runaway propagation simulation"
+      capabilities:
+        - "Module/pack level"
+        - "Heat transfer between cells"
+        - "Barrier effectiveness"
+    
+    - name: "REAL Degradation Model"
+      language: "Python"
+      description: "Battery aging and degradation prediction"
+      capabilities:
+        - "SEI growth"
+        - "Capacity fade"
+        - "Cycle life prediction"
+
+# Experimental Equipment
+experimental:
+  electrochemical:
+    - name: "Battery Cycler (Neware)"
+      model: "CT-4008T"
+      channels: 8
+      specifications:
+        - "Voltage range: 0-5V"
+        - "Current range: ±6A per channel"
+        - "Temperature chamber compatible"
+      use_cases:
+        - "Cycle testing"
+        - "Capacity measurement"
+        - "Rate capability"
+    
+    - name: "Electrochemical Workstation"
+      model: "Gamry Interface 1010E"
+      specifications:
+        - "EIS capability"
+        - "CV/LSV"
+        - "Chronoamperometry"
+      use_cases:
+        - "Impedance spectroscopy"
+        - "Degradation analysis"
+        - "Material characterization"
+
+  thermal:
+    - name: "Environmental Chamber"
+      model: ""
+      specifications:
+        - "Temperature range: -40°C to 150°C"
+        - "Humidity control"
+      use_cases:
+        - "Temperature-dependent testing"
+        - "Accelerated aging"
+    
+    - name: "Thermal Imaging Camera"
+      model: "FLIR"
+      specifications:
+        - "IR imaging"
+        - "Temperature mapping"
+      use_cases:
+        - "Thermal runaway observation"
+        - "Hot spot detection"
+        - "Validation experiments"
+
+  safety:
+    - name: "Safety Testing Chamber"
+      description: "For thermal runaway experiments"
+      specifications:
+        - "Exhaust ventilation"
+        - "Fire suppression"
+        - "Remote monitoring"
+      use_cases:
+        - "TR triggering tests"
+        - "Venting characterization"
+
+# Computational Resources
+computing:
+  local:
+    - name: "Lab Workstations"
+      specs: "High-performance workstations for simulation"
+      count: 5
+  
+  hpc:
+    - name: "Hanyang University HPC"
+      description: "Campus high-performance computing cluster"
+      access: "Available for large simulations"
+    
+    - name: "KISTI Nurion"
+      description: "National supercomputing resources"
+      access: "Upon project allocation"
+
+# Lab Space
+facilities:
+  - name: "Professor's Office"
+    location: "Engineering Bldg. V, Rm #502"
+  
+  - name: "Research Lab"
+    location: "Engineering Bldg. V, Rm #427"
+    description: "Main research laboratory with workstations and experimental equipment"

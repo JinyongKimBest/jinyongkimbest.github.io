@@ -1,0 +1,308 @@
+# Research Areas Data File
+# ========================================
+# Structured research areas with sectors, capabilities, projects, and publications
+# ========================================
+
+# Battery Research - Main Area
+battery_research:
+  title: "Battery Research"
+  title_kr: "배터리 연구"
+  icon: "🔋"
+  badge: "Core Focus"
+  overview_image: "assets/img/EV_concerns.JPG"
+  
+  introduction:
+    en: "We tackle the three key challenges in EV industry by developing various multi-physics simulation tools. We consider various physical phenomena simultaneously to enhance battery performance, life, and safety. We can simulate battery behavior at electrode-, cell-, module-, and pack-level."
+    kr: "REAL 연구실은 전기차 산업의 세 가지 핵심 과제인 성능, 수명, 안전성을 해결하기 위해 다양한 다중물리 시뮬레이션 도구를 개발하고 있습니다. 저희는 전극, 셀, 모듈, 팩 수준에서 배터리 거동을 시뮬레이션할 수 있습니다."
+
+  # Research Sectors (Card-based)
+  sectors:
+    - id: "thermal-runaway"
+      title: "Thermal Runaway & Battery Safety"
+      title_kr: "열폭주 및 배터리 안전"
+      icon: "🔥"
+      color: "#dc3545"  # Red
+      image: "assets/img/thermal_runaway.jpg"
+      
+      description:
+        en: "Prof. Kim developed the very first tool for battery fire CFD simulation. This tool allows us to predict pressure and flow behavior in battery cells, as well as turbulent combustion behavior outside of battery cells due to the jet flow coming out from safety vents."
+        kr: "김진용 교수는 배터리 화재 CFD 시뮬레이션을 위한 세계 최초의 도구를 개발하였습니다. 이 도구는 배터리 셀 내부의 압력 및 유동 거동, 안전 밸브에서 나오는 제트 유동으로 인한 외부 난류 연소 거동을 예측할 수 있습니다."
+      
+      capabilities:
+        - "Cell venting and gas-phase reaction modeling"
+        - "Thermal runaway propagation simulation"
+        - "Pack-level fire CFD analysis"
+        - "Safety vent design optimization"
+        - "Thermal barrier effectiveness evaluation"
+      
+      tools:
+        - "Converge CFD"
+        - "Ansys Fluent"
+        - "In-house TR propagation code"
+      
+      past_projects:
+        - name: "전기차 화재대응 소방기술 공동개발"
+          sponsor: "소방청"
+          year: "2024-Present"
+          description: "전기차 화재 확산 예측 기술 개발"
+        
+        - name: "Battery Safety at NREL"
+          sponsor: "DOE/NREL"
+          year: "2019-2021"
+          description: "Cell venting model development for Converge CFD"
+      
+      publications:
+        - title: "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach"
+          authors: "J. Kim*, D. Kim, S. Lim, S. Lee, J. Oh*, G. Lee"
+          journal: "Applied Thermal Engineering"
+          year: 2024
+        
+        - title: "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway"
+          authors: "J. Kim, A. Mallarapu, D. F. Finegan, S. Santhanagopalan*"
+          journal: "Journal of Power Sources"
+          year: 2021
+        
+        - title: "Transport Processes in a Li-ion Cell during an Internal Short-Circuit"
+          authors: "J. Kim, A. Mallarapu, S. Santhanagopalan*"
+          journal: "Journal of the Electrochemical Society"
+          year: 2020
+
+    - id: "physics-based-modeling"
+      title: "Physics-Based Modeling (P2D/MSMD)"
+      title_kr: "물리 기반 모델링"
+      icon: "📐"
+      color: "#0d6efd"  # Blue
+      image: "assets/img/P2D_modeling.jpg"
+      
+      description:
+        en: "Our in-house Newman's pseudo-two-dimensional (P2D) model equipped with robust numerical algorithms can simulate batteries at extreme operating conditions, such as extreme-fast-charging (XFC) over a wide range of temperatures and material properties."
+        kr: "자체 개발한 Newman P2D 모델은 강건한 수치 알고리즘을 갖추고 있어 극한 작동 조건에서의 배터리 시뮬레이션이 가능합니다. 다양한 온도 및 재료 특성에서 극초고속 충전(XFC) 시뮬레이션을 수행할 수 있습니다."
+      
+      capabilities:
+        - "Newman's P2D electrochemical model"
+        - "Multi-scale Multi-dimensional (MSMD) simulation"
+        - "Extreme fast charging protocol design"
+        - "Cold-start operation optimization"
+        - "Large-format cell simulation"
+      
+      tools:
+        - "In-house P2D code (Python/MATLAB)"
+        - "Ansys Fluent Battery Module"
+        - "COMSOL Multiphysics"
+      
+      past_projects:
+        - name: "XFC Protocol Development"
+          sponsor: "Rivian Automotive"
+          year: "2022-2023"
+          description: "Extreme fast charging protocol optimization"
+        
+        - name: "Large Format Cell Simulation"
+          sponsor: "Industry Partner"
+          year: "2024-Present"
+          description: "MSMD-based large format cell optimization"
+      
+      publications:
+        - title: "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models"
+          authors: "J. Kim*, A. Mallarapu, S. Santhanagopalan, J. Newman"
+          journal: "Journal of Power Sources"
+          year: 2023
+
+    - id: "thermal-management"
+      title: "Battery Thermal Management (BTMS)"
+      title_kr: "배터리 열관리 시스템"
+      icon: "❄️"
+      color: "#20c997"  # Teal
+      image: "assets/img/BTMS.jpg"
+      
+      description:
+        en: "Our 3D battery multi-physics simulation tools based on MSMD Approach enables electrochemical-thermal simulations of large-format cells. This is critical for optimizing form factors to meet required specifications such as pack-level charging times and driving range."
+        kr: "MSMD 접근법을 기반으로 한 3D 배터리 다중물리 시뮬레이션 도구는 대형 셀의 전기화학-열 시뮬레이션을 가능하게 합니다. 이는 팩 수준의 충전 시간과 주행 거리 등 요구 사양을 충족하는 폼팩터 최적화에 중요합니다."
+      
+      capabilities:
+        - "Pack-level thermal simulation"
+        - "Cooling/heating system design"
+        - "Phase change material (PCM) analysis"
+        - "Immersion cooling evaluation"
+        - "Thermal runaway propagation prevention"
+      
+      tools:
+        - "Ansys Fluent"
+        - "STAR-CCM+"
+        - "OpenFOAM"
+      
+      past_projects:
+        - name: "EV Pack Thermal Management"
+          sponsor: "현대자동차"
+          year: "2024-Present"
+          description: "Pack-level thermal management optimization"
+      
+      publications:
+        - title: "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs"
+          authors: "J. Kim*, C. Yang, J. Lamb, A. Kurzawski, J. Hewson, L. Torres-Castro, A. Mallarapu, S. Santhanagopalan"
+          journal: "Journal of the Electrochemical Society"
+          year: 2022
+
+    - id: "bms-algorithms"
+      title: "BMS & State Estimation"
+      title_kr: "BMS 알고리즘 및 상태 추정"
+      icon: "🧠"
+      color: "#6f42c1"  # Purple
+      image: "assets/img/BMS.jpg"
+      
+      description:
+        en: "We develop advanced algorithms for battery management systems including state-of-charge (SOC), state-of-health (SOH), and remaining useful life (RUL) estimation using physics-based and data-driven approaches."
+        kr: "물리 기반 및 데이터 기반 접근법을 활용하여 충전 상태(SOC), 건강 상태(SOH), 잔여 수명(RUL) 추정을 위한 고급 배터리 관리 시스템 알고리즘을 개발합니다."
+      
+      capabilities:
+        - "SOC/SOH/RUL estimation algorithms"
+        - "Fault detection and diagnosis"
+        - "Degradation prediction"
+        - "Machine learning-based state estimation"
+        - "Real-time monitoring systems"
+      
+      tools:
+        - "Python (TensorFlow, PyTorch)"
+        - "MATLAB/Simulink"
+        - "LabVIEW"
+      
+      past_projects:
+        - name: "Battery Fault Detection System"
+          sponsor: "KITECH"
+          year: "2024-Present"
+          description: "AI-based battery fault detection"
+      
+      publications: []
+
+    - id: "degradation"
+      title: "Battery Degradation & Lifetime"
+      title_kr: "배터리 열화 및 수명 예측"
+      icon: "📉"
+      color: "#fd7e14"  # Orange
+      image: "assets/img/degradation.jpg"
+      
+      description:
+        en: "We study battery degradation mechanisms and develop predictive models for battery lifetime assessment. Our models consider various aging mechanisms including SEI growth, lithium plating, and mechanical degradation."
+        kr: "배터리 열화 메커니즘을 연구하고 배터리 수명 평가를 위한 예측 모델을 개발합니다. SEI 성장, 리튬 도금, 기계적 열화 등 다양한 노화 메커니즘을 고려합니다."
+      
+      capabilities:
+        - "SEI growth modeling"
+        - "Lithium plating prediction"
+        - "Cycle life simulation"
+        - "Calendar aging analysis"
+        - "Capacity fade prediction"
+      
+      tools:
+        - "In-house degradation models"
+        - "Accelerated aging test protocols"
+      
+      past_projects: []
+      
+      publications: []
+
+# Fuel Cell Research - Main Area
+fuelcell_research:
+  title: "Fuel Cell Research"
+  title_kr: "연료전지 연구"
+  icon: "⚡"
+  badge: "Clean Energy"
+  overview_image: "assets/img/PEMFC_Modeling.JPG"
+  
+  introduction:
+    en: "One of the major challenges facing the fuel cell electric vehicle (FCEV) industry is its high cost. However, manufacturers can reduce production costs by enhancing the operating current density of fuel cell electrodes."
+    kr: "연료전지 전기차(FCEV) 산업이 직면한 주요 과제 중 하나는 높은 비용입니다. 그러나 제조업체들은 연료전지 전극의 작동 전류 밀도를 향상시켜 생산 비용을 절감할 수 있습니다."
+
+  sectors:
+    - id: "pemfc-modeling"
+      title: "PEMFC Modeling & Simulation"
+      title_kr: "PEMFC 모델링 및 시뮬레이션"
+      icon: "⚗️"
+      color: "#198754"  # Green
+      image: "assets/img/PEMFC.jpg"
+      
+      description:
+        en: "Prof. Kim developed a simulation tool that considers the two-phase Forchheimer's inertial effect. This simulation demonstrates that the two-phase Forchheimer's inertial effect facilitates liquid water removal in the cathode flow channels and electrodes."
+        kr: "김진용 교수는 2상 Forchheimer 관성 효과를 고려한 시뮬레이션 도구를 개발하였습니다. 이 시뮬레이션은 2상 Forchheimer 관성 효과가 캐소드 유로 및 전극에서 액체 물 제거를 촉진함을 보여줍니다."
+      
+      capabilities:
+        - "Two-phase flow modeling"
+        - "Liquid water management simulation"
+        - "Electrode optimization"
+        - "Flow channel design"
+        - "High-current density operation analysis"
+      
+      tools:
+        - "In-house PEMFC code"
+        - "Ansys Fluent"
+        - "COMSOL Multiphysics"
+      
+      past_projects:
+        - name: "PEMFC Two-Phase Flow Research"
+          sponsor: "Penn State / DOE"
+          year: "2014-2019"
+          description: "Ph.D. research on two-phase flow in PEMFC"
+      
+      publications:
+        - title: "Two-dimensional modeling for physical processes in direct flame fuel cells"
+          authors: "J. Kim*, A. Tyagi, Y. Kim"
+          journal: "International Journal of Hydrogen Energy"
+          year: 2019
+        
+        - title: "Modeling liquid water re-distribution in bi-porous layer flow-fields of proton exchange membrane fuel cells"
+          authors: "J. Kim, G. Luo, C.Y. Wang*"
+          journal: "Journal of Power Sources"
+          year: 2018
+        
+        - title: "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells"
+          authors: "J. Kim, G. Luo, C.Y. Wang*"
+          journal: "Journal of Power Sources"
+          year: 2017
+
+    - id: "sofc"
+      title: "Solid Oxide Fuel Cells (SOFC)"
+      title_kr: "고체산화물 연료전지"
+      icon: "🔆"
+      color: "#6c757d"  # Gray
+      image: "assets/img/SOFC.jpg"
+      
+      description:
+        en: "Research on solid oxide fuel cells for stationary power generation applications, focusing on thermal management and durability."
+        kr: "정지형 발전 응용을 위한 고체산화물 연료전지 연구로, 열관리 및 내구성에 중점을 둡니다."
+      
+      capabilities:
+        - "SOFC stack modeling"
+        - "Thermal stress analysis"
+        - "System integration"
+      
+      tools:
+        - "COMSOL Multiphysics"
+        - "Ansys Mechanical"
+      
+      past_projects: []
+      
+      publications: []
+
+# Research Capabilities Summary
+capabilities_summary:
+  simulation_tools:
+    - "Ansys Fluent (Battery Module)"
+    - "Converge CFD"
+    - "COMSOL Multiphysics"
+    - "STAR-CCM+"
+    - "OpenFOAM"
+    - "In-house P2D/MSMD codes"
+    - "Python/MATLAB for algorithm development"
+  
+  experimental_facilities:
+    - "Battery cycler (Neware)"
+    - "Thermal chamber"
+    - "Electrochemical workstation"
+    - "Thermal imaging camera"
+  
+  industry_partners:
+    - "현대자동차"
+    - "LG 에너지솔루션"
+    - "삼성SDI"
+    - "Rivian Automotive"
+    - "Microvast"
+    - "NREL"
+    - "KITECH"

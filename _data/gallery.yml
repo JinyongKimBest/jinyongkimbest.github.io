@@ -1,0 +1,96 @@
+# Gallery Data File
+# ========================================
+# Add new gallery items at the TOP of the list (newest first)
+# The gallery page will automatically display all items
+# ========================================
+# Format:
+# - title: "Event Title"
+#   date: "2025-11-12"
+#   image: "assets/img/example.jpg"
+#   description: "Description of the event"
+
+gallery_items:
+  - title: "2025 자동차공학회 추계학술대회 참가"
+    date: "2025-11-12"
+    image: "assets/img/KSAE_2025_SHOT.jpg"
+    description: "2025 한국자동차공학회 추계학술대회에 참가하였습니다.<br>참여해주신 연구원분들 및 발표해주신 교수님 고생많으셨습니다."
+
+  - title: "BK21 교육연구단 교류회 발표"
+    date: "2025-08-08"
+    image: "assets/img/bk21_conf_1.jpg"
+    description: "교수님께서 BK21 교육연구단 교류회 발표 세션에서 발표를 진행하셨습니다.<br>또한, 우리 학과뿐만 아니라 다른 학과들과 연구를 공유하는 시간을 가졌습니다."
+
+  - title: "생일 축하 파티"
+    date: "2025-06-17"
+    image: "assets/img/Birthday_Party_202506.jpg"
+    description: "연구원들의 생일을 맞아 다같이 축하 파티를 하였습니다.<br>생일 축하드립니다."
+
+  - title: "캘리포니아 요세미티 탐방"
+    date: "2025-05-29"
+    image: "assets/img/SF_1.png"
+    description: "Battery Thermal Management Conference 참가 후<br>요세미티 국립 공원을 탐방하는 시간을 가졌습니다."
+
+  - title: "BTM 학회 참석"
+    date: "2025-05-27"
+    image: "assets/img/BTM_Conf_3.png"
+    description: "Battery Thermal Management Conference 참가하였습니다.<br>다음에는 우리 연구원들 중 발표를 했으면 좋겠습니다."
+
+  - title: "구글 본사 방문"
+    date: "2025-05-27"
+    image: "assets/img/SF_2.png"
+    description: "스탠포드 대학교에서 손종현 박사님과 미팅을 한 후<br>구글 본사를 포함하여 다양한 기업들을 탐방하러 갔습니다."
+
+  - title: "벚꽃 단체사진"
+    date: "2025-04-10"
+    image: "assets/img/Campus4_2025.jpg"
+    description: "한양대학교 에리카에 2025년의 벚꽃이 피었습니다.<br>교수님의 바쁜 일정으로 인해서 연구실원들끼리 단체사진을 찍어보았습니다."
+
+  - title: "한국생산제조학회 추계학술대회 참가"
+    date: "2024-12-12"
+    image: "assets/img/Manuconf2_2024.jpg"
+    description: "서경주연구원이 한국생산제조학회 추계학술대회에서 포스터 구두발표하였습니다."
+
+  - title: "KITECH 제주기술실용화본부 방문"
+    date: "2024-11-22"
+    image: "assets/img/JejuKIT_2024.jpg"
+    description: "한국생산기술연구원의 홍영선 박사님의 초청으로<br>한국생산기술연구원 제주기술실용화본부에 방문하였습니다."
+
+  - title: "제주도 단체사진"
+    date: "2024-11-22"
+    image: "assets/img/Jeju3_2024.jpg"
+    description: "자동차공학회 추계학술대회 일정을 끝낸 후<br>연구원들과 제주도의 이곳저곳 탐방하는 시간을 가졌습니다."
+
+  - title: "2024 자동차공학회 추계학술대회 참가"
+    date: "2024-11-19"
+    image: "assets/img/KSAE_2024.jpg"
+    description: "우리 연구실이 춘계에 이어 추계 자동차공학회에 참가하였습니다."
+
+  - title: "Ansys Simulation World Korea 방문"
+    date: "2024-11-12"
+    image: "assets/img/Ansys1_2024.jpg"
+    description: "우리 연구실이 Ansys Simulation World Korea에 초청받아 참석하였습니다."
+
+  - title: "LG 에너지솔루션 산학협력 컨퍼런스 참가"
+    date: "2024-07-15"
+    image: "assets/img/2024 LG conference.jpg"
+    description: "제 2회 LG 에너지솔루션 산학협력 컨퍼런스에 참가하였습니다.<br>우수 포스터 발표 부문에서 석사과정 김동현 연구원이 장려상을 수상하였습니다."
+
+  - title: "2024 자동차공학회 춘계학술대회 참가"
+    date: "2024-06-19"
+    image: "assets/img/jpg (2).jpg"
+    description: "우리 연구원들이 처음으로 국내 학회에 참가하였습니다."
+
+  - title: "첫 논문 Accept 기념 저녁 식사"
+    date: "2024-05-30"
+    image: "assets/img/20240530_185350.jpg"
+    description: "우리 연구실 논문 게재 확정된 것을 기념하여 저녁 식사를 함께 했습니다."
+
+  - title: "중간 고사 끝난 기념 저녁 식사"
+    date: "2024-05-03"
+    image: "assets/img/group3.jpg"
+    description: "모든 연구원이 모여 맛있는 치킨을 먹었습니다.<br>2024년 1학기 우리 연구원의 학점 평균이 4.0을 넘는 기염을 토했습니다."
+
+  - title: "최수민 학생 환영 기념 점심 식사"
+    date: "2024-04-05"
+    image: "assets/img/group1.jpg"
+    description: "새로온 수민학생과 함께 맛있는 쌈밥을 먹었습니다.<br>우리 연구실에 오신 것을 환영합니다!"

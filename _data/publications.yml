@@ -1,0 +1,272 @@
+# Publications Data File
+# ========================================
+# Comprehensive publication list with all details
+# Add new publications at the TOP of the list
+# ========================================
+
+# All Journal Publications (ordered by number, newest first)
+all_publications:
+  - number: 12
+    title: "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules"
+    authors_html: '<b style="color: blue;">D.Kim</b>, <b style="color: blue;">K.Seo</b>, <b style="color: blue;">S.Lim</b>, <b style="color: blue;">S.Lee</b>, <b>J. Kim*</b>'
+    journal: "Journal of The Electrochemical Society"
+    year: 2025
+    link: ""
+    image: "assets/img/article 12 figure.png"
+    category: "battery"
+
+  - number: 11
+    title: "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries"
+    authors_html: '<b style="color: blue;">M. Kim</b>, <b style="color: blue;">S. Choi</b>, <b style="color: blue;">K. Seo</b>, <b>J. Kim*</b>'
+    journal: "Journal of The Electrochemical Society"
+    year: 2025
+    link: "https://iopscience.iop.org/article/10.1149/1945-7111/adfd1a/meta"
+    image: "assets/img/article 11 figure.png"
+    category: "battery"
+
+  - number: 10
+    title: "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach"
+    authors_html: '<b>J. Kim*</b>, <b style="color: blue;">D. Kim</b>, <b style="color: blue;">S. Lim</b>, <b style="color: blue;">S. Lee</b>, J. Oh*, G. Lee'
+    journal: "Applied Thermal Engineering"
+    year: 2024
+    link: "https://www.sciencedirect.com/science/article/pii/S1359431124011864"
+    image: "assets/img/article 10 figure.PNG"
+    category: "battery"
+
+  - number: 9
+    title: "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models"
+    authors_html: '<b>J. Kim*</b>, A. Mallarapu, S. Santhanagopalan, J. Newman'
+    journal: "Journal of Power Sources"
+    year: 2023
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775322013908"
+    image: "assets/img/article 9 figure.PNG"
+    category: "battery"
+
+  - number: 8
+    title: "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs"
+    authors_html: '<b>J. Kim*</b>, C. Yang, J. Lamb, A. Kurzawski, J. Hewson, L. Torres-Castro, A. Mallarapu, S. Santhanagopalan'
+    journal: "Journal of the Electrochemical Society"
+    year: 2022
+    link: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9ee4"
+    image: "assets/img/article 8 figure.PNG"
+    category: "battery"
+
+  - number: 7
+    title: "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway"
+    authors_html: '<b>J. Kim</b>, A. Mallarapu, D. F. Finegan, S. Santhanagopalan*'
+    journal: "Journal of Power Sources"
+    year: 2021
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775321000458"
+    image: "assets/img/article 7 figure.PNG"
+    category: "battery"
+
+  - number: 6
+    title: "Transport Processes in a Li-ion Cell during an Internal Short-Circuit"
+    authors_html: '<b>J. Kim*</b>, A. Mallarapu, S. Santhanagopalan*'
+    journal: "Journal of the Electrochemical Society"
+    year: 2020
+    link: "https://iopscience.iop.org/article/10.1149/1945-7111/ab995d"
+    image: "assets/img/article 6 figure.PNG"
+    category: "battery"
+
+  - number: 5
+    title: "Modeling Extreme Deformations in Lithium-ion Batteries"
+    authors_html: 'A. Mallarapu, <b>J. Kim</b>, K. Carney, P. Du Bois, S. Santhanagopalan*'
+    journal: "eTransportation"
+    year: 2020
+    link: "https://www.sciencedirect.com/science/article/pii/S2590116820300229"
+    image: "assets/img/Void.png"
+    category: "battery"
+
+  - number: 4
+    title: "Two-dimensional modeling for physical processes in direct flame fuel cells"
+    authors_html: '<b>J. Kim*</b>, A. Tyagi, Y. Kim'
+    journal: "International Journal of Hydrogen Energy"
+    year: 2019
+    link: "https://www.sciencedirect.com/science/article/pii/S0360319918341715"
+    image: "assets/img/article 4 figure.PNG"
+    category: "fuelcell"
+
+  - number: 3
+    title: "A multipoint voltage-monitoring method for fuel cell inconsistency analysis"
+    authors_html: 'Z. Hu, L. Xu*, J. Li*, Q. Q. Gan, X. Xu, M. Ouyang, Z. Song, <b>J. Kim</b>'
+    journal: "Energy Conversion and Management"
+    year: 2018
+    link: "https://www.sciencedirect.com/science/article/pii/S019689041831080X"
+    image: "assets/img/Void.png"
+    category: "fuelcell"
+
+  - number: 2
+    title: "Modeling liquid water re-distribution in bi-porous layer flow-fields of proton exchange membrane fuel cells"
+    authors_html: '<b>J. Kim*</b>, G. Luo, C.Y. Wang*'
+    journal: "Journal of Power Sources"
+    year: 2018
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775318308772"
+    image: "assets/img/article 2 figure.PNG"
+    category: "fuelcell"
+
+  - number: 1
+    title: "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells"
+    authors_html: '<b>J. Kim*</b>, G. Luo, C.Y. Wang*'
+    journal: "Journal of Power Sources"
+    year: 2017
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775317311606"
+    image: "assets/img/article 1 figure.PNG"
+    category: "fuelcell"
+
+# Battery Publications (for research.html selected publications)
+battery_publications:
+  - title: "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries"
+    authors: "M. Kim, S. Choi, K. Seo, J. Kim*"
+    journal: "Journal of The Electrochemical Society"
+    year: 2025
+    link: "https://iopscience.iop.org/article/10.1149/1945-7111/adfd1a/meta"
+    image: "assets/img/article 11 figure.png"
+    sector: "physics-based-modeling"
+    highlight: true
+
+  - title: "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach"
+    authors: "J. Kim*, D. Kim, S. Lim, S. Lee, J. Oh*, G. Lee"
+    journal: "Applied Thermal Engineering"
+    year: 2024
+    link: "https://www.sciencedirect.com/science/article/pii/S1359431124011864"
+    image: "assets/img/article 10 figure.PNG"
+    sector: "thermal-runaway"
+    highlight: true
+
+  - title: "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models"
+    authors: "J. Kim*, A. Mallarapu, S. Santhanagopalan, J. Newman"
+    journal: "Journal of Power Sources"
+    year: 2023
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775322013908"
+    image: "assets/img/article 9 figure.PNG"
+    sector: "physics-based-modeling"
+    highlight: true
+
+  - title: "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs"
+    authors: "J. Kim*, C. Yang, J. Lamb, A. Kurzawski, J. Hewson, L. Torres-Castro, A. Mallarapu, S. Santhanagopalan"
+    journal: "Journal of the Electrochemical Society"
+    year: 2022
+    link: "https://iopscience.iop.org/article/10.1149/1945-7111/ac9ee4"
+    image: "assets/img/article 8 figure.PNG"
+    sector: "thermal-management"
+    highlight: true
+
+  - title: "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway"
+    authors: "J. Kim, A. Mallarapu, D. F. Finegan, S. Santhanagopalan*"
+    journal: "Journal of Power Sources"
+    year: 2021
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775321000458"
+    image: "assets/img/article 7 figure.PNG"
+    sector: "thermal-runaway"
+    highlight: true
+
+  - title: "Transport Processes in a Li-ion Cell during an Internal Short-Circuit"
+    authors: "J. Kim, A. Mallarapu, S. Santhanagopalan*"
+    journal: "Journal of the Electrochemical Society"
+    year: 2020
+    link: "https://iopscience.iop.org/article/10.1149/1945-7111/ab995d"
+    image: "assets/img/article 6 figure.PNG"
+    sector: "thermal-runaway"
+    highlight: false
+
+  - title: "Modeling Extreme Deformations in Lithium-ion Batteries"
+    authors: "A. Mallarapu, J. Kim, K. Carney, P. Du Bois, S. Santhanagopalan*"
+    journal: "eTransportation"
+    year: 2020
+    link: "https://www.sciencedirect.com/science/article/pii/S2590116820300229"
+    image: "assets/img/Void.png"
+    sector: "physics-based-modeling"
+    highlight: false
+
+# Journal Articles - Fuel Cell Research
+fuelcell_publications:
+  - title: "Two-dimensional modeling for physical processes in direct flame fuel cells"
+    authors: "J. Kim*, A. Tyagi, Y. Kim"
+    journal: "International Journal of Hydrogen Energy"
+    year: 2019
+    link: "https://www.sciencedirect.com/science/article/pii/S0360319918341715"
+    image: "assets/img/article 4 figure.PNG"
+    sector: "pemfc-modeling"
+    highlight: true
+
+  - title: "A multipoint voltage-monitoring method for fuel cell inconsistency analysis"
+    authors: "Z. Hu, L. Xu**, J. Li*, Q. Q. Gan, X. Xu, M. Ouyang, Z. Song, J. Kim"
+    journal: "Energy Conversion and Management"
+    year: 2018
+    link: "https://www.sciencedirect.com/science/article/pii/S019689041831080X"
+    image: "assets/img/Void.png"
+    sector: "pemfc-modeling"
+    highlight: false
+
+  - title: "Modeling liquid water re-distribution in bi-porous layer flow-fields of proton exchange membrane fuel cells"
+    authors: "J. Kim, G. Luo, C.Y. Wang*"
+    journal: "Journal of Power Sources"
+    year: 2018
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775318308772"
+    image: "assets/img/article 2 figure.PNG"
+    sector: "pemfc-modeling"
+    highlight: true
+
+  - title: "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells"
+    authors: "J. Kim, G. Luo, C.Y. Wang*"
+    journal: "Journal of Power Sources"
+    year: 2017
+    link: "https://www.sciencedirect.com/science/article/pii/S0378775317311606"
+    image: "assets/img/article 1 figure.PNG"
+    sector: "pemfc-modeling"
+    highlight: true
+
+# Conference Papers
+conference_papers:
+  - title: "배터리 열폭주 열전이 시뮬레이션"
+    authors: "J. Kim, D. Kim, K. Seo"
+    conference: "한국자동차공학회 추계학술대회"
+    year: 2025
+    location: "Korea"
+    type: "oral"
+
+  - title: "대형 리튬이온 배터리 MSMD 시뮬레이션"
+    authors: "S. Lee, S. Lim, J. Kim"
+    conference: "한국자동차공학회 춘계학술대회"
+    year: 2025
+    location: "Korea"
+    type: "oral"
+
+  - title: "Battery Thermal Management Optimization"
+    authors: "J. Kim"
+    conference: "Battery Thermal Management Innovation Summit USA"
+    year: 2025
+    location: "San Francisco, USA"
+    type: "invited"
+
+  - title: "전기차 열폭주 모델링 연구"
+    authors: "J. Kim, K. Seo, D. Kim"
+    conference: "한국자동차공학회 추계학술대회"
+    year: 2024
+    location: "Jeju, Korea"
+    type: "oral"
+
+  - title: "열폭주 CFD 시뮬레이션"
+    authors: "K. Seo, J. Kim"
+    conference: "한국생산제조학회 추계학술대회"
+    year: 2024
+    location: "Korea"
+    type: "poster"
+    award: "혁신상"
+
+  - title: "전기차 화재대응 소방기술 - 열폭주 모델링"
+    authors: "J. Kim"
+    conference: "한국자동차공학회 춘계학술대회"
+    year: 2024
+    location: "Korea"
+    type: "oral"
+
+# Publication Statistics
+statistics:
+  total_journal_papers: 12
+  total_conference_papers: 15
+  h_index: 8
+  total_citations: 500
+  last_updated: "2025-11-25"
+

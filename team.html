@@ -1,12 +1,14 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>[한양대 신재생엔진분석 연구실] Renewable Engine Analysis Lab @ HYU </title>
+    <meta name="description" content="REAL Lab Team Members - Graduate and Undergraduate Researchers at Hanyang University ERICA" />
+    <meta name="author" content="REAL Lab" />
+    <title>[한양대 신재생엔진분석 연구실] Team Members | REAL Lab @ HYU</title>
     <!-- Favicon-->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -20,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR&family=Roboto&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
     
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
@@ -27,7 +30,7 @@
         
         <!-- 로고: 왼쪽 고정 -->
         <a class="navbar-brand position-absolute start-0 ms-3 d-flex align-items-center" href="index.html" style="z-index: 2;">
-          <img src="assets/img/Logo2_white.png" style="height: 50px;" />
+          <img src="assets/img/Logo2_white.png" alt="REAL Lab Logo" style="height: 50px;" />
         </a>
     
         <!-- 반응형 메뉴 버튼 (모바일용) -->
@@ -65,7 +68,7 @@
               <li class="nav-item"><a class="nav-link text-white" href="team.html">Team Members</a></li>
               <li class="nav-item"><a class="nav-link text-white" href="pubs.html">Publication</a></li>
               <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-              <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
             </ul>
           </div>
         </div>
@@ -79,186 +82,169 @@
     <header class="bg-image-full"
         style="background-image: url('assets/img/golden bridge.jpg'); background-position: center; height: 320px;">
         <div class="container d-flex align-items-center justify-content-center h-100">
-            <!-- <img class="img-fluid" style="height: 130px; object-fit: cover;" src="assets/img/Logo2_white.png" /> -->
             <h1 class="text-white fs-big-bar fw-bolder lato-bold mx-auto shadow-background">Team Members</h1>
         </div>
     </header>
 
-    
-    <!-- Content section-->                    
-<section class="py-5 fade-up-section">
-    <div class="container my-0">
-        <h2 class="mb-10 biggest_important text-start" style="margin-bottom: 50px; font-size: 42px;">MS/Ph.D Student</h2>
-        <div class="row g-5">
-            <div class="col-12 col-md-6">
-                <div class="d-flex flex-column flex-md-row align-items-center">
-                    <!--<img src="assets/img/Namjun Cho2024.jpg" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />-->
-                    <div class="image-hover-wrapper mb-3 me-md-4">
-                      <img src="assets/img/Namjun Cho2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                      <img src="assets/img/2025_Namjun.png" class="profile-img back-img" alt="Donghyun Kim Hover" />
-                    </div>
-                    <div style="flex: 1;">
-                    <h3 class="mb-2 biggest_important" style="color: black;">Namjun Cho</h3>
-                    <div class="mb-2 explanation_style"><span class="explanation_research_bold">MS/Ph.D 2024.3~</span></div>
-                    <div class="mb-2 explanation_style">Battery Property</div>
-                    <div class="mb-2 explanation_style">skawns1228@hanyang.ac.kr </div>
-                    </div>
-                </div>
+    <!-- MS/Ph.D Students Section -->
+    <section class="py-5 fade-up-section">
+        <div class="container my-0">
+            <div class="section-header text-start mb-5">
+                <span class="section-badge">🎓 Graduate Students</span>
+                <h2 class="biggest_important">MS/Ph.D Students</h2>
+                <div class="section-divider"></div>
             </div>
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <!--<img src="assets/img/Soomin Choi2024.jpg" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />-->
-                <div class="image-hover-wrapper mb-3 me-md-4">
-                    <img src="assets/img/Soomin Choi2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                    <img src="assets/img/2025_Soomin.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
+            <div class="row g-4">
+                {% for member in site.data.team.phd_students %}
+                <div class="col-12 col-md-6">
+                    <div class="team-member-card-new">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            {% if member.back_image and member.back_image != "" %}
+                            <div class="image-hover-wrapper mb-3 me-md-4">
+                                <img src="{{ member.front_image }}" class="profile-img front-img" alt="{{ member.name_en }}" />
+                                <img src="{{ member.back_image }}" class="profile-img back-img" alt="{{ member.name_en }} Hover" />
+                            </div>
+                            {% else %}
+                            <img src="{{ member.front_image }}" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="{{ member.name_en }}" />
+                            {% endif %}
+                            <div class="member-info">
+                                <h3 class="member-name">{{ member.name_en }}</h3>
+                                <div class="member-name-kr">{{ member.name_kr }}</div>
+                                <div class="member-position">{{ member.position }} {{ member.start_date }}</div>
+                                {% if member.google_scholar and member.google_scholar != "" %}
+                                <div class="member-links">
+                                    <a href="{{ member.google_scholar }}" target="_blank" class="scholar-link" title="Google Scholar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14a7 7 0 0 0 0-14z"/></svg>
+                                    </a>
+                                </div>
+                                {% endif %}
+                                <div class="member-interests">
+                                    {% for interest in member.research_interests %}
+                                    <span class="interest-tag">{{ interest }}</span>
+                                    {% endfor %}
+                                </div>
+                                <div class="member-email">📧 {{ member.email }}</div>
+                            </div>
+                        </div>
                     </div>
-                <div style="flex: 1;">
-                    <h3 class="mb-2 biggest_important" style="color: black;">Soomin Choi</h3>
-                    <div class="mb-2 explanation_style"><span class="explanation_research_bold">MS/Ph.D 2025.3~</span></div>
-                    <span class="mb-2 explanation_style"><span class="explanation_style"><a href="https://scholar.google.com/citations?user=0oGmKXcAAAAJ&hl=ko">Google Scholar</a></span>
-                    <div class="mb-2 explanation_style">Electrochemical Modeling</div>
-                    <div class="mb-2 explanation_style">qkqhsm1@hanyang.ac.kr</div>
                 </div>
-                </div>
-            </div>
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <!--<img src="assets/img/Kyoungju Seo2024.jpg" style="width: 250px; height: auto; " class="img-round_edge d-block mb-3 me-md-4" alt="..." /> -->
-                <div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Kyoungju Seo2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/sunglass_ju.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
-                </div>
-                <div style="flex: 1;">    
-                    <h3 class="mb-2 biggest_important" style="color: black;">Kyoungju Seo </h3>
-                    <div class="mb-2 explanation_style"><span class="explanation_research_bold">MS/Ph.D 2025.3~</span></div>
-                    <span class="mb-2 explanation_style"><span class="explanation_style"><a href="https://scholar.google.co.kr/citations?user=HYIBTR4AAAAJ&hl=ko&oi=ao">Google Scholar</a></span>
-                    <div class="mb-2 explanation_style">Thermal Runaway CFD</div>
-                    <div class="mb-2 explanation_style">godjju0614@hanyang.ac.kr</div>
-                </div>
+                {% endfor %}
             </div>
         </div>
-    </div>
-    </div>
-</section>
-                
-<section class="py-5 fade-up-section">
-    <div class="container my-0">
-        <h2 class="mb-10 biggest_important text-start" style="margin-bottom: 50px; font-size: 42px;">MS Student</h2>
-       <div class="row g-5">
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                    <!-- <img src="assets/img/Donghyun Kim2024.jpg" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />-->
-                <div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Donghyun Kim2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/monkey_donghyun.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
-                </div>
-                <div style="flex: 1;">
-                    <h3 class="mb-2 biggest_important" style="color: black;">Donghyun Kim </h3>
-                    <div class="mb-2 explanation_style"><span class="explanation_research_bold">MS 2024.3~</span></div>
-                    <span class="mb-2 explanation_style"><span class="explanation_style"><a href="https://scholar.google.com/citations?view_op=list_works&hl=ko&user=siav4XIAAAAJ">Google Scholar</a></span>
-                    <div class="mb-0 explanation_style">CFD</div>
-                    <div class="mb-2 explanation_style">Battery Safety Design</div>
-                    <div class="mb-2 explanation_style">donghyun4212@hanyang.ac.kr</div>
-                </div>
-            </div>
-        </div>
-            <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <img src="assets/img/Donggeun Yu2025.png" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />
-                <!--<div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Kyoungju Seo2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/sunglass_ju.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
-                </div>-->
-                    <div style="flex: 1;">
-                    <h3 class="mb-2 biggest_important" style="color: black;">Donggeun Yu</h3>
-                    <div class="mb-2 explanation_style"><span class="explanation_research_bold">MS 2024.9~</span></div>
-                    <div class="mb-2 explanation_style">KITECH</div>
-                    <div class="mb-0 explanation_style">Battery Fault Detection</div>
-                    <div class="mb-2 explanation_style">Degradation Prediction</div>
-                    <div class="mb-2 explanation_style">piy06060@hanyang.ac.kr</div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-5 fade-up-section">
-  <div class="container my-0">
-    <h2 class="mb-10 biggest_important text-start" style="margin-bottom: 50px; font-size: 42px;">Undergraduate Student</h2>
-  <div class="row g-5">
-    <div class="col-12 col-md-6">
-        <div class="d-flex flex-column flex-md-row align-items-center">
-                <!--<img src="assets/img/Seongmin Lim2024.jpg" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />-->
-                <div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Seongmin Lim2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/2025_Seongmin.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
+    <!-- MS Students Section -->
+    <section class="py-5 fade-up-section">
+        <div class="container my-0">
+            <div class="section-header text-start mb-5">
+                <span class="section-badge">📚 Master's Program</span>
+                <h2 class="biggest_important">MS Students</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4">
+                {% for member in site.data.team.ms_students %}
+                <div class="col-12 col-md-6">
+                    <div class="team-member-card-new">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            {% if member.back_image and member.back_image != "" %}
+                            <div class="image-hover-wrapper mb-3 me-md-4">
+                                <img src="{{ member.front_image }}" class="profile-img front-img" alt="{{ member.name_en }}" />
+                                <img src="{{ member.back_image }}" class="profile-img back-img" alt="{{ member.name_en }} Hover" />
+                            </div>
+                            {% else %}
+                            <img src="{{ member.front_image }}" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="{{ member.name_en }}" />
+                            {% endif %}
+                            <div class="member-info">
+                                <h3 class="member-name">{{ member.name_en }}</h3>
+                                <div class="member-name-kr">{{ member.name_kr }}</div>
+                                <div class="member-position">{{ member.position }} {{ member.start_date }}</div>
+                                {% if member.affiliation %}
+                                <div class="member-affiliation">{{ member.affiliation }}</div>
+                                {% endif %}
+                                {% if member.google_scholar and member.google_scholar != "" %}
+                                <div class="member-links">
+                                    <a href="{{ member.google_scholar }}" target="_blank" class="scholar-link" title="Google Scholar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14a7 7 0 0 0 0-14z"/></svg>
+                                    </a>
+                                </div>
+                                {% endif %}
+                                <div class="member-interests">
+                                    {% for interest in member.research_interests %}
+                                    <span class="interest-tag">{{ interest }}</span>
+                                    {% endfor %}
+                                </div>
+                                <div class="member-email">📧 {{ member.email }}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <div style="flex: 1;">
-                <h3 class="mb-2 biggest_important" style="color: black;">Seongmin Lim </h3>
-                <span class="mb-2 explanation_style"><span class="explanation_style"><a href="https://scholar.google.com/citations?user=vWrJovoAAAAJ&hl=ko">Google Scholar</a></span>
-                <div class="mb-0 explanation_style">Thermal Model</div>
-                <div class="mb-2 explanation_style">Cell to Pack</div>
-                <div class="mb-2 explanation_style">tjdals7244@hanyang.ac.kr</div>
+                {% endfor %}
             </div>
         </div>
-    </div>
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <!--<img src="assets/img/Seungyeop Lee2024.jpg" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />-->
-                <div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Seungyeop Lee2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/2025_Seungyeop.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
+    </section>
+
+    <!-- Undergraduate Students Section -->
+    <section class="py-5 fade-up-section">
+        <div class="container my-0">
+            <div class="section-header text-start mb-5">
+                <span class="section-badge">📖 Undergraduates</span>
+                <h2 class="biggest_important">Undergraduate Researchers</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4">
+                {% for member in site.data.team.undergraduate_students %}
+                <div class="col-12 col-md-6">
+                    <div class="team-member-card-new">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            {% if member.back_image and member.back_image != "" %}
+                            <div class="image-hover-wrapper mb-3 me-md-4">
+                                <img src="{{ member.front_image }}" class="profile-img front-img" alt="{{ member.name_en }}" />
+                                <img src="{{ member.back_image }}" class="profile-img back-img" alt="{{ member.name_en }} Hover" />
+                            </div>
+                            {% else %}
+                            <img src="{{ member.front_image }}" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="{{ member.name_en }}" />
+                            {% endif %}
+                            <div class="member-info">
+                                <h3 class="member-name">{{ member.name_en }}</h3>
+                                <div class="member-name-kr">{{ member.name_kr }}</div>
+                                <div class="member-position">{{ member.position }}</div>
+                                {% if member.google_scholar and member.google_scholar != "" %}
+                                <div class="member-links">
+                                    <a href="{{ member.google_scholar }}" target="_blank" class="scholar-link" title="Google Scholar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14a7 7 0 0 0 0-14z"/></svg>
+                                    </a>
+                                </div>
+                                {% endif %}
+                                <div class="member-interests">
+                                    {% for interest in member.research_interests %}
+                                    <span class="interest-tag">{{ interest }}</span>
+                                    {% endfor %}
+                                </div>
+                                <div class="member-email">📧 {{ member.email }}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <div style="flex: 1;">
-                <h3 class="mb-2 biggest_important" style="color: black;">Seungyeop Lee </h3>
-                <span class="mb-2 explanation_style"><span class="explanation_style"><a href="https://scholar.google.com/citations?user=5VO-NWYAAAAJ&hl=ko">Google Scholar</a></span>
-                <div class="mb-0 explanation_style">Large Format Battery</div>
-                <div class="mb-2 explanation_style">MSMD</div>
-                <div class="mb-2 explanation_style">story7123@hanyang.ac.kr</div>
-            </div>                    
-        </div>
-    </div>
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">   
-                <!--<img src="assets/img/Minseo Kim2024.jpg" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />-->
-                <div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Minseo Kim2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/sigma_sigma_bboy.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
+                {% endfor %}
+                
+                <!-- Opening Position -->
+                {% for opening in site.data.team.openings %}
+                <div class="col-12 col-md-6">
+                    <div class="team-member-card-new opening-card">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <img src="{{ opening.image }}" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="Opening" />
+                            <div class="member-info">
+                                <h3 class="member-name" style="color: var(--real-navy);">🎯 Opening for {{ opening.year }}</h3>
+                                <div class="member-position">{{ opening.position }}</div>
+                                <div class="opening-description">{{ opening.description }}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <div style="flex: 1;">
-                <h3 class="mb-2 biggest_important" style="color: black;">Minseo Kim </h3>
-                <span class="mb-2 explanation_style"><span class="explanation_style"><a href="https://scholar.google.com/citations?hl=ko&user=Odu9HZgAAAAJ">Google Scholar</a></span>
-                <div class="mb-2 explanation_style">Electrochemical Modeling</div>
-                <div class="mb-2 explanation_style">gomi1347@hanyang.ac.kr</div>
+                {% endfor %}
             </div>
         </div>
-    </div>
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <img src="assets/img/2025_Seungho.JPG" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />
-                <!--<div class="image-hover-wrapper mb-3 me-md-4">
-                  <img src="assets/img/Kyoungju Seo2024.jpg" class="profile-img front-img" alt="Donghyun Kim" />
-                  <img src="assets/img/sunglass_ju.jpg" class="profile-img back-img" alt="Donghyun Kim Hover" />
-                </div>-->
-                <div style="flex: 1;">
-                <h3 class="mb-2 biggest_important" style="color: black;">Seungho Lee</h3>
-                <div class="mb-2 explanation_style">Thermal Model</div>
-                <div class="mb-2 explanation_style">climbthesky@hanyang.ac.kr</div>
-            </div>
-        </div>
-    </div>
-        <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <img src="assets/img/adoptnyang.png" style="width: 250px; height: auto;" class="img-round_edge d-block mb-3 me-md-4" alt="..." />
-                <div style="flex: 1;">
-                    <h3 class="mb-0 biggest_important"  style="color: black;">Opening for 2026 </h3>
-                </div>
-            </div>
-          </div>
-        </div>
-  </div>
-</section>
+    </section>
 
     <!-- Image element - set the background image for the header in the line below-->
     <!-- 
@@ -281,25 +267,26 @@
                 </div>
     </footer> -->
 
-    <footer class="py-3 bg-navy">
-        <div class="container ">
+    <footer class="py-4 bg-navy footer-enhanced">
+        <div class="container">
             <div class="d-flex row align-items-center justify-content-center">
-                <div class="col-auto mx-3">
-                    <img class="img-fluid "  style="height: 60px; object-fit: cover;" src="assets/img/hyu_logo_white.png" />
+                <div class="col-auto mx-3 mb-3 mb-md-0">
+                    <img class="img-fluid" style="height: 70px; object-fit: cover;" src="assets/img/hyu_logo_white.png" />
                 </div>
-                <div class="col">
-                    <div class="bigger_important text-white">Address</div>
-                    <div class="explanation_important_nanumGothic text-white b">(15588) 경기도 안산시 상록구 한양대학로 55, 한양대학교
+                <div class="col-lg-8 col-md-10">
+                    <div class="bigger_important text-white mb-2" style="font-size: 1.3rem;">📍 Address</div>
+                    <div class="explanation_important_nanumGothic text-white b mb-1">(15588) 경기도 안산시 상록구 한양대학로 55, 한양대학교
                         ERICA, 제5공학관
                         502 호 (교수연구실), 427 호 (실험실)</div>
-                    <div class="explanation_important  text-white">(15588) Engineering Bldg. V, Hanyang University ERICA
+                    <div class="explanation_important text-white mb-3" style="opacity: 0.85;">(15588) Engineering Bldg. V, Hanyang University ERICA
                         55 Hanyangdaehak-ro, Sangrok-gu, Ansan, Gyeonggi-do, South Korea
-                        Rm #502 (Prof. Office), Rm #427 (Laboratory) </div>
+                        Rm #502 (Prof. Office), Rm #427 (Laboratory)</div>
                 </div>
             </div>
-            
+            <div class="text-center mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <small class="text-white" style="opacity: 0.6;">© 2025 REAL Lab, Hanyang University ERICA. All rights reserved.</small>
+            </div>
         </div>
-
     </footer>
     
 <script src="js/scripts.js"></script>

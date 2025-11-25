@@ -1,0 +1,122 @@
+# Projects Data File
+# ========================================
+# Track all research projects - past and ongoing
+# ========================================
+
+# Ongoing Projects (진행중인 프로젝트)
+ongoing_projects:
+  - id: "ev-fire-2024"
+    title_en: "EV Fire Response Technology Development"
+    title_kr: "전기차 화재대응 소방기술 공동개발"
+    sponsor: "소방청 (National Fire Agency)"
+    role: "전기차 화재 확산 예측 기술 개발"
+    period: "2024.01 - Present"
+    budget: ""  # Optional
+    pi: "Prof. Jinyong Kim"
+    description:
+      en: "Development of predictive models for electric vehicle fire propagation to support firefighting strategies."
+      kr: "소방 전략 지원을 위한 전기차 화재 확산 예측 모델 개발"
+    related_sectors:
+      - "thermal-runaway"
+    team_members:
+      - "Kyoungju Seo"
+      - "Donghyun Kim"
+
+  - id: "hyundai-btms-2024"
+    title_en: "EV Pack Thermal Management Optimization"
+    title_kr: "전기차 팩 열관리 최적화"
+    sponsor: "현대자동차 (Hyundai Motor Company)"
+    role: "산학 공동연구"
+    period: "2024 - Present"
+    pi: "Prof. Jinyong Kim"
+    description:
+      en: "Pack-level thermal management system optimization for next-generation EVs."
+      kr: "차세대 전기차를 위한 팩 수준 열관리 시스템 최적화"
+    related_sectors:
+      - "thermal-management"
+    team_members:
+      - "Seongmin Lim"
+      - "Seungyeop Lee"
+
+  - id: "kitech-bms-2024"
+    title_en: "AI-based Battery Fault Detection"
+    title_kr: "AI 기반 배터리 고장 진단"
+    sponsor: "KITECH (한국생산기술연구원)"
+    role: "공동연구"
+    period: "2024.09 - Present"
+    pi: "Prof. Jinyong Kim"
+    description:
+      en: "Development of machine learning algorithms for battery fault detection and diagnosis."
+      kr: "배터리 고장 감지 및 진단을 위한 머신러닝 알고리즘 개발"
+    related_sectors:
+      - "bms-algorithms"
+    team_members:
+      - "Donggeun Yu"
+
+  - id: "lg-target-lab-2024"
+    title_en: "LG Energy Solution Target Lab"
+    title_kr: "LG 에너지솔루션 Target Lab"
+    sponsor: "LG Energy Solution"
+    role: "Target Lab 선정"
+    period: "2024.05 - Present"
+    pi: "Prof. Jinyong Kim"
+    description:
+      en: "Academic-industry partnership for next-generation battery research."
+      kr: "차세대 배터리 연구를 위한 산학협력"
+    related_sectors:
+      - "physics-based-modeling"
+      - "thermal-runaway"
+
+# Completed Projects (완료된 프로젝트)
+completed_projects:
+  - id: "nrel-safety-2021"
+    title_en: "Battery Safety Research at NREL"
+    title_kr: "NREL 배터리 안전 연구"
+    sponsor: "DOE / NREL"
+    role: "Postdoctoral Researcher"
+    period: "2019.07 - 2021.05"
+    pi: "Dr. Shriram Santhanagopalan"
+    description:
+      en: "Development of cell venting model implemented in Converge CFD commercial software."
+      kr: "상용 CFD 소프트웨어 Converge에 구현된 셀 벤팅 모델 개발"
+    outcomes:
+      - "Cell venting model in Converge CFD"
+      - "5+ journal publications"
+    related_sectors:
+      - "thermal-runaway"
+
+  - id: "rivian-xfc-2023"
+    title_en: "Extreme Fast Charging Protocol Development"
+    title_kr: "극초고속 충전 프로토콜 개발"
+    sponsor: "Rivian Automotive"
+    role: "Staff Battery Design Engineer"
+    period: "2022.01 - 2023.08"
+    description:
+      en: "Developed optimized charging protocols for extreme fast charging applications."
+      kr: "극초고속 충전 응용을 위한 최적화된 충전 프로토콜 개발"
+    related_sectors:
+      - "physics-based-modeling"
+
+  - id: "psu-pemfc-2019"
+    title_en: "Two-Phase Flow in PEMFC"
+    title_kr: "PEMFC 내 2상 유동 연구"
+    sponsor: "Penn State University / DOE"
+    role: "Ph.D. Research"
+    period: "2014.09 - 2019.05"
+    pi: "Prof. Chao-Yang Wang"
+    description:
+      en: "Ph.D. dissertation research on two-phase flow modeling in proton exchange membrane fuel cells."
+      kr: "양성자 교환막 연료전지 내 2상 유동 모델링에 관한 박사 학위 연구"
+    outcomes:
+      - "Ph.D. Dissertation"
+      - "3+ journal publications"
+    related_sectors:
+      - "pemfc-modeling"
+
+# Project Statistics
+statistics:
+  total_ongoing: 4
+  total_completed: 10  # Approximate
+  total_funding: ""  # Can add if desired
+  industry_partners: 5
+  government_sponsors: 2

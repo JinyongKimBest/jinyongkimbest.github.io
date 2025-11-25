@@ -1,0 +1,71 @@
+{
+  "updated_at": "2025-09-09T13:12:19.776Z",
+  "map": {
+    "effectofcurvatureoftheelectrodesontheelectrochemicalbehaviorofliionbatteries": {
+      "openalex_id": "W4413334676",
+      "doi": "10.1149/1945-7111/adfd1a",
+      "matched": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
+      "score": 1
+    },
+    "acceleratingsimulationsofliionbatterythermalrunawayusingmodifiedpatankarrungekuttaapproach": {
+      "openalex_id": "W4399028508",
+      "doi": "10.1016/j.applthermaleng.2024.123518",
+      "matched": "Accelerating simulations of Li-ion battery thermal runaway using modified Patankar–Runge–Kutta approach",
+      "score": 1
+    },
+    "arobustnumericaltreatmentofsolidphasediffusioninpseudotwodimensionallithiumionbatterymodels": {
+      "openalex_id": "W4310266193",
+      "doi": "10.1016/j.jpowsour.2022.232413",
+      "matched": "A robust numerical treatment of solid-phase diffusion in pseudo two-dimensional lithium-ion battery models",
+      "score": 1
+    },
+    "acomprehensivenumericalandexperimentalstudyforthepassivethermalmanagementinbatterymodulesandpacks": {
+      "openalex_id": "W4307835683",
+      "doi": "10.1149/1945-7111/ac9ee4",
+      "matched": "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs",
+      "score": 1
+    },
+    "modelingcellventingandgasphasereactionsin18650lithiumionbatteriesduringthermalrunaway": {
+      "openalex_id": "W3122702752",
+      "doi": "10.1016/j.jpowsour.2021.229496",
+      "matched": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
+      "score": 1
+    },
+    "transportprocessesinaliioncellduringaninternalshortcircuit": {
+      "openalex_id": "W3033998703",
+      "doi": "10.1149/1945-7111/ab995d",
+      "matched": "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
+      "score": 1
+    },
+    "modelingextremedeformationsinlithiumionbatteries": {
+      "openalex_id": "W3031890178",
+      "doi": "10.1016/j.etran.2020.100065",
+      "matched": "Modeling extreme deformations in lithium ion batteries",
+      "score": 1
+    },
+    "twodimensionalmodelingforphysicalprocessesindirectflamefuelcells": {
+      "openalex_id": "W2908991385",
+      "doi": "10.1016/j.ijhydene.2018.12.169",
+      "matched": "Two-dimensional modeling for physical processes in direct flame fuel cells",
+      "score": 1
+    },
+    "amultipointvoltagemonitoringmethodforfuelcellinconsistencyanalysis": {
+      "openalex_id": "W2896520152",
+      "doi": "10.1016/j.enconman.2018.09.077",
+      "matched": "A multipoint voltage-monitoring method for fuel cell inconsistency analysis",
+      "score": 1
+    },
+    "modelingliquidwaterredistributioninbiporouslayerflowfieldsofprotonexchangemembranefuelcells": {
+      "openalex_id": "W2887234356",
+      "doi": "10.1016/j.jpowsour.2018.08.018",
+      "matched": "Modeling liquid water re-distributions in bi-porous layer flow-fields of proton exchange membrane fuel cells",
+      "score": 0
+    },
+    "modelingtwophaseflowinthreedimensionalcomplexflowfieldsofprotonexchangemembranefuelcells": {
+      "openalex_id": "W2754563276",
+      "doi": "10.1016/j.jpowsour.2017.09.003",
+      "matched": "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells",
+      "score": 1
+    }
+  }
+}

@@ -1,0 +1,150 @@
+# Team Members Data File
+# ========================================
+# Add new team members by following this format
+# Images: front_image (formal), back_image (casual/fun)
+# ========================================
+
+# Principal Investigator
+pi:
+  name_en: "Prof. Jinyong Kim"
+  name_kr: "김진용"
+  position: "Assistant Professor"
+  department: "Department of Mechanical Engineering"
+  affiliation: "Hanyang University ERICA"
+  email: "jinyongkim@hanyang.ac.kr"
+  front_image: "assets/img/2025_Professor.jpg"
+  back_image: "assets/img/Jinyong_Profile_Homepage.jpg"
+  google_scholar: "https://scholar.google.co.kr/citations?hl=ko&user=5B2BRooAAAAJ"
+  linkedin: "https://www.linkedin.com/in/jinyong-kim-44261a90/"
+  research_interests:
+    - "Battery Safety Modeling"
+    - "Multi-physics Simulation"
+    - "Fuel Cell Systems"
+    - "Thermal Management"
+
+# MS/Ph.D Students (통합과정)
+phd_students:
+  - name_en: "Namjun Cho"
+    name_kr: "조남준"
+    position: "MS/Ph.D Student"
+    start_date: "2024.3~"
+    email: "skawns1228@hanyang.ac.kr"
+    front_image: "assets/img/Namjun Cho2024.jpg"
+    back_image: "assets/img/2025_Namjun.png"
+    google_scholar: ""
+    research_interests:
+      - "Battery Property"
+      - "Material Characterization"
+
+  - name_en: "Soomin Choi"
+    name_kr: "최수민"
+    position: "MS/Ph.D Student"
+    start_date: "2025.3~"
+    email: "qkqhsm1@hanyang.ac.kr"
+    front_image: "assets/img/Soomin Choi2024.jpg"
+    back_image: "assets/img/2025_Soomin.jpg"
+    google_scholar: "https://scholar.google.com/citations?user=0oGmKXcAAAAJ&hl=ko"
+    research_interests:
+      - "Electrochemical Modeling"
+      - "P2D Simulation"
+
+  - name_en: "Kyoungju Seo"
+    name_kr: "서경주"
+    position: "MS/Ph.D Student"
+    start_date: "2025.3~"
+    email: "godjju0614@hanyang.ac.kr"
+    front_image: "assets/img/Kyoungju Seo2024.jpg"
+    back_image: "assets/img/sunglass_ju.jpg"
+    google_scholar: "https://scholar.google.co.kr/citations?user=HYIBTR4AAAAJ&hl=ko&oi=ao"
+    research_interests:
+      - "Thermal Runaway CFD"
+      - "Battery Fire Simulation"
+
+# MS Students (석사과정)
+ms_students:
+  - name_en: "Donghyun Kim"
+    name_kr: "김동현"
+    position: "MS Student"
+    start_date: "2024.3~"
+    email: "donghyun4212@hanyang.ac.kr"
+    front_image: "assets/img/Donghyun Kim2024.jpg"
+    back_image: "assets/img/monkey_donghyun.jpg"
+    google_scholar: "https://scholar.google.com/citations?view_op=list_works&hl=ko&user=siav4XIAAAAJ"
+    research_interests:
+      - "CFD"
+      - "Battery Safety Design"
+
+  - name_en: "Donggeun Yu"
+    name_kr: "유동근"
+    position: "MS Student"
+    start_date: "2024.9~"
+    email: "piy06060@hanyang.ac.kr"
+    front_image: "assets/img/Donggeun Yu2025.png"
+    back_image: ""  # No hover image
+    google_scholar: ""
+    affiliation: "KITECH"
+    research_interests:
+      - "Battery Fault Detection"
+      - "Degradation Prediction"
+
+# Undergraduate Students (학부연구생)
+undergraduate_students:
+  - name_en: "Seongmin Lim"
+    name_kr: "임성민"
+    position: "Undergraduate Researcher"
+    email: "tjdals7244@hanyang.ac.kr"
+    front_image: "assets/img/Seongmin Lim2024.jpg"
+    back_image: "assets/img/2025_Seongmin.jpg"
+    google_scholar: "https://scholar.google.com/citations?user=vWrJovoAAAAJ&hl=ko"
+    research_interests:
+      - "Thermal Model"
+      - "Cell to Pack"
+
+  - name_en: "Seungyeop Lee"
+    name_kr: "이승엽"
+    position: "Undergraduate Researcher"
+    email: "story7123@hanyang.ac.kr"
+    front_image: "assets/img/Seungyeop Lee2024.jpg"
+    back_image: "assets/img/2025_Seungyeop.jpg"
+    google_scholar: "https://scholar.google.com/citations?user=5VO-NWYAAAAJ&hl=ko"
+    research_interests:
+      - "Large Format Battery"
+      - "MSMD"
+
+  - name_en: "Minseo Kim"
+    name_kr: "김민서"
+    position: "Undergraduate Researcher"
+    email: "gomi1347@hanyang.ac.kr"
+    front_image: "assets/img/Minseo Kim2024.jpg"
+    back_image: "assets/img/sigma_sigma_bboy.jpg"
+    google_scholar: "https://scholar.google.com/citations?hl=ko&user=Odu9HZgAAAAJ"
+    research_interests:
+      - "Electrochemical Modeling"
+
+  - name_en: "Seungho Lee"
+    name_kr: "이승호"
+    position: "Undergraduate Researcher"
+    email: "climbthesky@hanyang.ac.kr"
+    front_image: "assets/img/2025_Seungho.JPG"
+    back_image: ""  # No hover image
+    google_scholar: ""
+    research_interests:
+      - "Thermal Model"
+
+# Alumni (졸업생)
+alumni:
+  # Add alumni here when students graduate
+  # - name_en: "Graduate Name"
+  #   name_kr: "한글이름"
+  #   degree: "MS" or "PhD"
+  #   graduation_year: 2025
+  #   current_position: "Current Job Title"
+  #   company: "Company Name"
+  #   thesis_title: "Thesis Title"
+
+# Opening Positions
+openings:
+  - position: "Undergraduate Researcher"
+    year: 2026
+    description: "We are looking for motivated undergraduate students!"
+    image: "assets/img/adoptnyang.png"
