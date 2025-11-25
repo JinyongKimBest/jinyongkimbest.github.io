@@ -9,7 +9,6 @@ baseurl: ""
 
 # Exclude files from Jekyll processing
 exclude:
-  - DESIGN_GUIDELINES.md
   - Gemfile
   - Gemfile.lock
   - README.md
