@@ -14771,6 +14771,7 @@ button, input, select, textarea {
   .navbar-nav .nav-link {
     padding: 0.75rem 1rem;
     font-size: 1.1rem;
+    font-weight: 700;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
   }
