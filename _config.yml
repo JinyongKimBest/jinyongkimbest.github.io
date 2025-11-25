@@ -1,0 +1,25 @@
+# Jekyll Configuration for REAL Lab Website
+# ==========================================
+
+# Site settings
+title: "REAL Lab - Hanyang University ERICA"
+description: "Renewable Energy & Automotive Lab at Hanyang University ERICA - Research on Battery Modeling, Thermal Runaway, Fuel Cell CFD, and BMS"
+url: "https://real.hanyang.ac.kr"
+baseurl: ""
+
+# Exclude files from Jekyll processing
+exclude:
+  - DESIGN_GUIDELINES.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _site
+  - .git
+  - .gitignore
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Timezone
+timezone: Asia/Seoul
