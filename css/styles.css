@@ -14761,15 +14761,28 @@ button, input, select, textarea {
     margin-top: 0.5rem;
   }
   
-  .navbar-collapse .nav-link {
-    padding: 0.75rem 0;
-    font-size: 1.1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* CRITICAL: Force vertical layout on mobile */
+  .navbar-nav {
+    flex-direction: column !important;
+    padding-left: 0 !important;
+    gap: 0 !important;
+    width: 100%;
   }
   
-  .navbar-collapse .nav-link:hover {
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem !important;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    padding-left: 0.5rem;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
   }
 }
 
