@@ -217,7 +217,7 @@ fuelcell_publications:
     sector: "pemfc-modeling"
     highlight: true
 
-# Conference Papers
+# Conference Papers (just a place holder, we need to make changes)
 conference_papers:
   - title: "배터리 열폭주 열전이 시뮬레이션"
     authors: "J. Kim, D. Kim, K. Seo"
