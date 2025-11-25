@@ -23,8 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR&family=Roboto&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
-    
+</head>
 
+<body>
+    <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
       <div class="container-fluid position-relative">
         
@@ -41,7 +43,7 @@
         </button>
     
         <!-- 메뉴: 가운데 정렬 -->
-        <div class="d-none d-lg-flex mx-auto" style = "max-width: 1200px;">
+        <div class="d-none d-lg-flex mx-auto" style="max-width: 1200px;">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link active" href="research.html">Research</a></li>
@@ -73,9 +75,6 @@
         </div>
       </div>
     </nav>
-</head>
-
-<body>
     <header class="bg-image-full"
         style="background-image: url('assets/img/golden bridge.jpg'); background-position: center; height: 320px;">
         <div class="container d-flex align-items-center justify-content-center h-100">
@@ -99,7 +98,7 @@
             {% for item in site.data.gallery.gallery_items %}
             <div class="col-12 col-md-6 fade-up-section">
                 <div class="gallery-card">
-                    <a href="{{ item.image }}" target="_blank" class="gallery-image-link">
+                    <a href="#" class="gallery-image-link" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="{{ item.image }}" data-title="{{ item.title }}">
                         <div class="gallery-image-wrapper">
                             <img class="img-fluid gallery-img" src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" />
                             <div class="gallery-date-badge">{{ item.date }}</div>
@@ -115,6 +114,23 @@
             {% endfor %}
         </div>
     </section>
+    
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-header border-0" style="position: absolute; top: 0; right: 0; z-index: 10;">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="font-size: 1.5rem; opacity: 1; filter: drop-shadow(0 0 3px rgba(0,0,0,0.5));"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img id="galleryModalImage" src="" alt="" class="img-fluid rounded" style="max-height: 85vh; cursor: pointer;" />
+                </div>
+                <div class="modal-footer border-0 justify-content-center" style="background: rgba(0,0,0,0.7); border-radius: 0 0 8px 8px;">
+                    <h5 id="galleryModalTitle" class="text-white mb-0"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Image element - set the background image for the header in the line below-->
     <!-- 
     <footer class="py-3 bg-navy">
@@ -193,6 +209,38 @@
     
       faders.forEach(fader => {
         appearOnScroll.observe(fader);
+      });
+    </script>
+    
+    <!-- Gallery Lightbox Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const galleryModal = document.getElementById('galleryModal');
+        const modalImage = document.getElementById('galleryModalImage');
+        const modalTitle = document.getElementById('galleryModalTitle');
+        
+        // Handle gallery image clicks
+        document.querySelectorAll('.gallery-image-link').forEach(function(link) {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgSrc = this.getAttribute('data-img');
+            const imgTitle = this.getAttribute('data-title');
+            modalImage.src = imgSrc;
+            modalImage.alt = imgTitle;
+            modalTitle.textContent = imgTitle;
+          });
+        });
+        
+        // Close modal when clicking on the image
+        modalImage.addEventListener('click', function() {
+          const modal = bootstrap.Modal.getInstance(galleryModal);
+          modal.hide();
+        });
+        
+        // Reset image when modal closes
+        galleryModal.addEventListener('hidden.bs.modal', function() {
+          modalImage.src = '';
+        });
       });
     </script>
     
