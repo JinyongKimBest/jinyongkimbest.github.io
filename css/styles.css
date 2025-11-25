@@ -14748,24 +14748,26 @@ button, input, select, textarea {
   }
 }
 
-/* Mobile Navbar - Offcanvas fixes */
+/* Mobile Navbar - Simple Bootstrap collapse */
 @media (max-width: 991.98px) {
   .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.3);
   }
   
-  /* Offcanvas menu styling */
-  .offcanvas {
-    z-index: 1050;
+  .navbar-collapse {
+    background-color: #1a2a4a;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    margin-top: 0.5rem;
   }
   
-  .offcanvas-body .nav-link {
+  .navbar-collapse .nav-link {
     padding: 0.75rem 0;
     font-size: 1.1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .offcanvas-body .nav-link:hover {
+  .navbar-collapse .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     padding-left: 0.5rem;
   }
