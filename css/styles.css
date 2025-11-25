@@ -4664,19 +4664,26 @@ body, .nav-link {
 
 .navbar-nav {
   display: flex;
-  flex-direction: row;
-  padding-left: 125px;
+  flex-direction: column;
+  padding-left: 0;
   margin-left: 0px;
   margin-bottom: 0;
   list-style: none;
-  gap: 1rem;
 }
 
-.navbar-nav .nav-link {
-  font-size: 1.4rem;
-  font-weight: 650;
-  padding-left: 0.9rem;
-  padding-right: 0.75rem;
+/* Desktop navbar styles */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.4rem;
+    font-weight: 650;
+    padding-left: 0.9rem;
+    padding-right: 0.75rem;
+  }
 }
 
 .navbar-nav .dropdown-menu {
@@ -14761,28 +14768,15 @@ button, input, select, textarea {
     margin-top: 0.5rem;
   }
   
-  /* CRITICAL: Force vertical layout on mobile */
-  .navbar-nav {
-    flex-direction: column !important;
-    padding-left: 0 !important;
-    gap: 0 !important;
-    width: 100%;
-  }
-  
   .navbar-nav .nav-link {
-    padding: 0.75rem 1rem !important;
+    padding: 0.75rem 1rem;
     font-size: 1.1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: block;
-    width: 100%;
+    color: white;
   }
   
   .navbar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .navbar-nav .nav-item {
-    width: 100%;
   }
 }
 
