@@ -14748,3 +14748,33 @@ button, input, select, textarea {
   }
 }
 
+/* Mobile Navbar Fixes */
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: flex !important;
+    z-index: 1100;
+    position: relative;
+  }
+  
+  .offcanvas {
+    z-index: 1080 !important;
+  }
+  
+  .offcanvas-backdrop {
+    z-index: 1070 !important;
+  }
+  
+  .offcanvas.show {
+    visibility: visible !important;
+  }
+}
+
+/* Ensure navbar is always on top */
+.navbar.fixed-top {
+  z-index: 1050;
+}
+
+.offcanvas.bg-navy {
+  background-color: var(--real-navy) !important;
+}
+
