@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-12-01T01:03:28.356Z",
+  "updated_at": "2025-12-02T00:54:09.274Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 545,
+  "total": 546,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Accelerating Simulations of Li-ion Battery Thermal Runaway Using Modified Patankar–Runge–Kutta Approach",
-      "citations": 1,
+      "citations": 2,
       "_dois": [
         "10.1016/j.applthermaleng.2024.123518"
       ],
@@ -48,7 +48,7 @@
         "10.1016/j.applthermaleng.2024.123518": {
           "openalex_count": 1,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 1,
+          "crossref_count": 2,
           "opencitations_count": null
         }
       }
@@ -78,7 +78,7 @@
         "10.1149/1945-7111/ac9ee4": {
           "openalex_count": 14,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 13,
+          "crossref_count": 14,
           "opencitations_count": null
         }
       }
@@ -93,7 +93,7 @@
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 164,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 151,
+          "crossref_count": 152,
           "opencitations_count": null
         }
       }
@@ -108,7 +108,7 @@
         "10.1149/1945-7111/ab995d": {
           "openalex_count": 35,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 33,
+          "crossref_count": 34,
           "opencitations_count": null
         }
       }
@@ -123,7 +123,7 @@
         "10.1016/j.etran.2020.100065": {
           "openalex_count": 65,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 58,
+          "crossref_count": 59,
           "opencitations_count": null
         }
       }
