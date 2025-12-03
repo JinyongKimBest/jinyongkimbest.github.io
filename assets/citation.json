@@ -1,12 +1,12 @@
 {
-  "updated_at": "2025-12-02T00:54:09.274Z",
+  "updated_at": "2025-12-03T00:53:45.332Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 546,
+  "total": 549,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -85,28 +85,28 @@
     },
     {
       "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
-      "citations": 164,
+      "citations": 165,
       "_dois": [
         "10.1016/j.jpowsour.2021.229496"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 164,
+          "openalex_count": 165,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 152,
+          "crossref_count": 153,
           "opencitations_count": null
         }
       }
     },
     {
       "title": "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
-      "citations": 35,
+      "citations": 36,
       "_dois": [
         "10.1149/1945-7111/ab995d"
       ],
       "_debug_counts": {
         "10.1149/1945-7111/ab995d": {
-          "openalex_count": 35,
+          "openalex_count": 36,
           "openalex_updated": "2025-11-06T03:46:38.306776",
           "crossref_count": 34,
           "opencitations_count": null
@@ -175,13 +175,13 @@
     },
     {
       "title": "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells",
-      "citations": 183,
+      "citations": 184,
       "_dois": [
         "10.1016/j.jpowsour.2017.09.003"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2017.09.003": {
-          "openalex_count": 183,
+          "openalex_count": 184,
           "openalex_updated": "2025-11-06T03:46:38.306776",
           "crossref_count": 180,
           "opencitations_count": null
