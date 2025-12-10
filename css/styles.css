@@ -12843,26 +12843,26 @@ section {
   transition: transform 0.3s ease;
 }
 
-.profile-img {
+.image-hover-wrapper .profile-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease !important;
   border-radius: 12px;
 }
 
-.front-img {
-  z-index: 2;
-  opacity: 1;
+.image-hover-wrapper .front-img {
+  z-index: 2 !important;
+  opacity: 1 !important;
   pointer-events: auto;
 }
 
-.back-img {
-  z-index: 1;
-  opacity: 0;
+.image-hover-wrapper .back-img {
+  z-index: 1 !important;
+  opacity: 0 !important;
   pointer-events: none;
 }
 
@@ -12872,12 +12872,12 @@ section {
 }
 
 .image-hover-wrapper:hover .front-img {
-  opacity: 0;
+  opacity: 0 !important;
   pointer-events: none;
 }
 
 .image-hover-wrapper:hover .back-img {
-  opacity: 1;
+  opacity: 1 !important;
   pointer-events: auto;
 }
 .profile-info {
