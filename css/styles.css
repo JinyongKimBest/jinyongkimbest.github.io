@@ -12850,18 +12850,20 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: opacity 0.3s ease;
   border-radius: 12px;
 }
 
 .front-img {
   z-index: 2;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .back-img {
   z-index: 1;
   opacity: 0;
+  pointer-events: none;
 }
 
 .image-hover-wrapper:hover {
@@ -12871,10 +12873,12 @@ section {
 
 .image-hover-wrapper:hover .front-img {
   opacity: 0;
+  pointer-events: none;
 }
 
 .image-hover-wrapper:hover .back-img {
   opacity: 1;
+  pointer-events: auto;
 }
 .profile-info {
   flex: 1;
