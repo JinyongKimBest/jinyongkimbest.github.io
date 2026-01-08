@@ -1,164 +1,305 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            name="description"
+            content="REAL Lab - 한양대학교 ERICA 신재생 엔진 분석 연구실. Battery modeling, thermal runaway simulation, fuel cell CFD, and BMS research."
+        />
+        <meta
+            name="author"
+            content="Prof. Jinyong Kim, REAL Lab, Hanyang University ERICA"
+        />
+        <meta
+            name="keywords"
+            content="battery modeling, thermal runaway, fuel cell, CFD simulation, BMS, 배터리, 연료전지, 열폭주, 한양대학교, ERICA, 신재생에너지"
+        />
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="REAL Lab - 한양대학교 ERICA 신재생 엔진 분석 연구실. Battery modeling, thermal runaway simulation, fuel cell CFD, and BMS research." />
-    <meta name="author" content="Prof. Jinyong Kim, REAL Lab, Hanyang University ERICA" />
-    <meta name="keywords" content="battery modeling, thermal runaway, fuel cell, CFD simulation, BMS, 배터리, 연료전지, 열폭주, 한양대학교, ERICA, 신재생에너지" />
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="REAL Lab - Renewable Engine Analysis Lab @ Hanyang University ERICA" />
-    <meta property="og:description" content="Battery modeling, thermal runaway simulation, fuel cell CFD research at Hanyang University ERICA" />
-    <meta property="og:url" content="https://real.hanyang.ac.kr/" />
-    <meta property="og:image" content="https://real.hanyang.ac.kr/assets/img/Logo2_white.png" />
-    <meta property="og:locale" content="ko_KR" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="REAL Lab - Hanyang University ERICA" />
-    <meta name="twitter:description" content="Battery & Fuel Cell Research Laboratory" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://real.hanyang.ac.kr/" />
-    
-    <title>[한양대 신재생엔진분석 연구실] REAL Lab - Renewable Engine Analysis Lab @ HYU</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="REAL" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR&family=Roboto&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
-</head>
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="REAL Lab - Renewable Engine Analysis Lab @ Hanyang University ERICA"
+        />
+        <meta
+            property="og:description"
+            content="Battery modeling, thermal runaway simulation, fuel cell CFD research at Hanyang University ERICA"
+        />
+        <meta property="og:url" content="https://real.hanyang.ac.kr/" />
+        <meta
+            property="og:image"
+            content="https://real.hanyang.ac.kr/assets/img/Logo2_white.png"
+        />
+        <meta property="og:locale" content="ko_KR" />
 
-<body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/Logo2_white.png" alt="REAL Lab Logo" style="height: 50px;" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pi.html">Prof. Kim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="team.html">Team Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pubs.html">Publication</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="REAL Lab - Hanyang University ERICA"
+        />
+        <meta
+            name="twitter:description"
+            content="Battery & Fuel Cell Research Laboratory"
+        />
 
-    <!-- Header - set the background image for the header in the line below-->
-    <section class="main-slider">
-        <div class ="swiper main-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url('assets/img/Ansys1_2024.jpg')">
-                  <div class="overlay-dark"></div>
-                </div>
-                <div class="swiper-slide" style="background-image: url('assets/img/Campus1_2025.jpg')">
-                  <div class="overlay-dark"></div>
-                </div>
-                <div class="swiper-slide" style="background-image: url('assets/img/Jeju3_2024.jpg')">
-                    <div class="overlay-dark"></div>
-                </div>
-                <div class="swiper-slide" style="background-image: url('assets/img/Campus5_2025.jpg')">
-                    <div class="overlay-dark"></div>
-                </div>
-                <div class="swiper-slide" style="background-image: url('assets/img/Campus3_2025.jpg')">
-                    <div class="overlay-dark"></div>
-                </div>
-            </div>
-        </div>
-    <div class="slider-content">
-        <h2 class="slider-subtitle">
-          <span class="real-bold colored r">R</span><span class="normal">enewable </span>
-          <span class="real-bold colored e">E</span><span class="normal">ngine </span>
-          <span class="real-bold colored a">A</span><span class="normal">nalysis </span>
-          <span class="real-bold colored l">L</span><span class="normal">aboratory</span>
-        </h2>
-        
-        <h3 class="slider-subtitle-small">
-          <span class="normal_sub">Hanyang</span>
-          <span class="normal_sub">University</span>
-          <span class="normal_sub">ERICA</span>
-        </h3>
-    </div>
-        <div class="scroll-down">Scroll ↓</div>
-    </section>  
-    
-    <!-- Content section-->
-    <section class="py-5 container section-enhanced">
-        <div class="section-header">
-            <span class="section-badge">About Us</span>
-            <h2 class="mb-3 lato-bold" style="color: var(--real-navy);">Welcome!</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <p class="explanation_bold_important_nanumGothic b" style="margin-bottom: 1.5rem;">한양대학교 ERICA 신재생 엔진 분석 연구실 홈페이지에 방문하신 것을 진심으로 환영합니다!</p>
-            <p class="explanation_important_nanumGothic" style="line-height: 1.8;">우리 연구실에서는 전산 유체(CFD) 및 전기화학 시뮬레이션을 통해 신재생 엔진의 (ex. 배터리, 연료전지) 열유체 및 내부 거동을 연구하고 있습니다.</p>
-        </div>
-        
-        <!-- Research Keywords Row -->
-        <div class="row g-4 mt-5 justify-content-center">
-            <div class="col-6 col-md-3">
-                <div class="stat-card">
-                    <div class="stat-number" style="font-size: 2rem;">🔋</div>
-                    <div class="stat-label">Battery Modeling</div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-card">
-                    <div class="stat-number" style="font-size: 2rem;">🔥</div>
-                    <div class="stat-label">Thermal Runaway</div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-card">
-                    <div class="stat-number" style="font-size: 2rem;">💧</div>
-                    <div class="stat-label">Fuel Cell CFD</div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stat-card">
-                    <div class="stat-number" style="font-size: 2rem;">📊</div>
-                    <div class="stat-label">BMS</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <hr>
-<section class="news-slider section-enhanced">
-  <div class="section-header">
-    <span class="section-badge">Latest Updates</span>
-    <h2 class="mb-3 lato-bold" style="color: var(--real-navy);">Recent LAB News</h2>
-    <div class="section-divider"></div>
-  </div>
-     <div class="news-slider-wrapper">
-      <div class="swiper news-swiper">
-        <div class="swiper-wrapper">
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://real.hanyang.ac.kr/" />
 
+        <title>
+            [한양대 신재생엔진분석 연구실] REAL Lab - Renewable Engine Analysis
+            Lab @ HYU
+        </title>
+        <!-- Favicon-->
+        <link
+            rel="icon"
+            type="image/png"
+            href="assets/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="REAL" />
+        <link rel="manifest" href="assets/favicon/site.webmanifest" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR&family=Roboto&family=Source+Serif+4:opsz,wght@8..60,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+            rel="stylesheet"
+        />
+    </head>
 
-             <!--2025-->
-<!--              <div class="swiper-slide">
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="assets/img/Logo2_white.png"
+                        alt="REAL Lab Logo"
+                        style="height: 50px"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="research.html"
+                                >Research</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pi.html">Prof. Kim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html"
+                                >Team Members</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pubs.html">Publication</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header - set the background image for the header in the line below-->
+        <section class="main-slider">
+            <div class="swiper main-swiper">
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide"
+                        style="
+                            background-image: url('assets/img/Ansys1_2024.jpg');
+                        "
+                    >
+                        <div class="overlay-dark"></div>
+                    </div>
+                    <div
+                        class="swiper-slide"
+                        style="
+                            background-image: url('assets/img/Campus1_2025.jpg');
+                        "
+                    >
+                        <div class="overlay-dark"></div>
+                    </div>
+                    <div
+                        class="swiper-slide"
+                        style="
+                            background-image: url('assets/img/Jeju3_2024.jpg');
+                        "
+                    >
+                        <div class="overlay-dark"></div>
+                    </div>
+                    <div
+                        class="swiper-slide"
+                        style="
+                            background-image: url('assets/img/Campus5_2025.jpg');
+                        "
+                    >
+                        <div class="overlay-dark"></div>
+                    </div>
+                    <div
+                        class="swiper-slide"
+                        style="
+                            background-image: url('assets/img/Campus3_2025.jpg');
+                        "
+                    >
+                        <div class="overlay-dark"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-content">
+                <h2 class="slider-subtitle">
+                    <span class="real-bold colored r">R</span
+                    ><span class="normal">enewable </span>
+                    <span class="real-bold colored e">E</span
+                    ><span class="normal">ngine </span>
+                    <span class="real-bold colored a">A</span
+                    ><span class="normal">nalysis </span>
+                    <span class="real-bold colored l">L</span
+                    ><span class="normal">aboratory</span>
+                </h2>
+
+                <h3 class="slider-subtitle-small">
+                    <span class="normal_sub">Hanyang</span>
+                    <span class="normal_sub">University</span>
+                    <span class="normal_sub">ERICA</span>
+                </h3>
+            </div>
+            <div class="scroll-down">Scroll ↓</div>
+        </section>
+
+        <!-- Content section-->
+        <section class="py-5 container section-enhanced">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="mb-3 lato-bold" style="color: var(--real-navy)">
+                    Welcome!
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto">
+                <p
+                    class="explanation_bold_important_nanumGothic b"
+                    style="margin-bottom: 1.5rem"
+                >
+                    한양대학교 ERICA 신재생 엔진 분석 연구실 홈페이지에 방문하신
+                    것을 진심으로 환영합니다!
+                </p>
+                <p
+                    class="explanation_important_nanumGothic"
+                    style="line-height: 1.8"
+                >
+                    우리 연구실에서는 전산 유체(CFD) 및 전기화학 시뮬레이션을
+                    통해 신재생 엔진의 (ex. 배터리, 연료전지) 열유체 및 내부
+                    거동을 연구하고 있습니다.
+                </p>
+            </div>
+
+            <!-- Research Keywords Row -->
+            <div class="row g-4 mt-5 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem">
+                            🔋
+                        </div>
+                        <div class="stat-label">Battery Modeling</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem">
+                            🔥
+                        </div>
+                        <div class="stat-label">Thermal Runaway</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem">
+                            💧
+                        </div>
+                        <div class="stat-label">Fuel Cell CFD</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" style="font-size: 2rem">
+                            📊
+                        </div>
+                        <div class="stat-label">BMS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+        <section class="news-slider section-enhanced">
+            <div class="section-header">
+                <span class="section-badge">Latest Updates</span>
+                <h2 class="mb-3 lato-bold" style="color: var(--real-navy)">
+                    Recent LAB News
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="news-slider-wrapper">
+                <div class="swiper news-swiper">
+                    <div class="swiper-wrapper">
+                        <!--2025-->
+                        <!--              <div class="swiper-slide">
                 <a href="news.html" class="text-decoration-none">
                     <div class="card shadow-sm rounded-4 overflow-hidden border-0">
                   <img src="assets/img/Paper_3_2025.png" class="img-fluid w-100" alt="News 1" />
@@ -169,67 +310,168 @@
                 </div>
                 </a>
               </div> -->
-            <div class="swiper-slide">
-                <a href="news.html" class="text-decoration-none">
-                    <div class="card shadow-sm rounded-4 overflow-hidden border-0">
-                  <img src="assets/img/KSAE_2025_2.jpg" class="img-fluid w-100" alt="News 1" />
-                  <div class="news-desc-box">
-                    <div class="news-title">[2025-11-25]2025 자동차공학회 추계학술대회 참가</div>
-                    <div class="news-desc">배터리 열폭주 열전이 시뮬레이션 결과에 대해 발표하였습니다.<br>참여해주신 연구원분들 및 발표해주신 교수님 고생많으셨습니다.</div>
-                  </div>
-                </div>
-                </a>
-              </div>
-            
-            <div class="swiper-slide">
-                <a href="news.html" class="text-decoration-none">
-                    <div class="card shadow-sm rounded-4 overflow-hidden border-0">
-                  <img src="assets/img/Paper_3_2025.png" class="img-fluid w-100" alt="News 1" />
-                  <div class="news-desc-box">
-                    <div class="news-title">[2025-09-03]Journal of The Electrochemical Society에 우리 연구실의 논문이 게재되었습니다.</div>
-                    <div class="news-desc">리튬 이온 배터리의 곡률 변화에 따른 전기화학적인 거동 분석에 대한 논문이 게재되었습니다.<br>주저자로 참여해주신 김민서 학부 연구생 논문작성하시느라 고생하셨습니다!!!</div>
-                  </div>
-                </div>
-                </a>
-              </div>
-            
-            <div class="swiper-slide">
-                <a href="news.html" class="text-decoration-none">
-                    <div class="card shadow-sm rounded-4 overflow-hidden border-0">
-                  <img src="assets/img/BTM_Conf_2.png" class="img-fluid w-100" alt="News 1" />
-                  <div class="news-desc-box">
-                    <div class="news-title">[2025-05-28] Battery Thermal Management Innovation Summit USA 2025 참석</div>
-                    <div class="news-desc">저희 교수님이 BTM 학회 발표자로 참석하였습니다.<br>발표하시느라 고생많으셨습니다!</div>
-                  </div>
-                </div>
-                </a>
-              </div>
-            
-            <div class="swiper-slide">
-                <a href="news.html" class="text-decoration-none">
-                    <div class="card shadow-sm rounded-4 overflow-hidden border-0">
-                  <img src="assets/img/Manuconf_2024_3.jpg" class="img-fluid w-100" alt="News 3" />
-                  <div class="news-desc-box">
-                    <div class="news-title">[2025-05-27] 한국생산제조학회 혁신상 수상</div>
-                    <div class="news-desc">우리 서경주 연구원이 한국생산제조학회 포스터 발표를 하여 혁신상을 수상하였습니다.<br>수고많으셨습니다.</div>
-                  </div>
-                </div>
-                </a>
-              </div>
-            
-            <div class="swiper-slide">
-                <a href="news.html" class="text-decoration-none">
-                    <div class="card shadow-sm rounded-4 overflow-hidden border-0">
-                  <img src="assets/img/KSAE_2025_1.png" class="img-fluid w-100" alt="KSAE_2025_1" />
-                  <div class="news-desc-box">
-                    <div class="news-title">[2025-05-21] 2025 자동차공학회 춘계학술대회 참가</div>
-                    <div class="news-desc">우리 연구실의 2차년도 상반기 성과를 김동현 연구원이 발표하였습니다.<br>발표하시느라 고생많으셨습니다!</div>
-                  </div>
-                </div>
-                </a>
-              </div>
-            <!--2024-->
-            <!-- <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <a href="news.html" class="text-decoration-none">
+                                <div
+                                    class="card shadow-sm rounded-4 overflow-hidden border-0"
+                                >
+                                    <img
+                                        src="assets/img/Donghyun Article News.png"
+                                        class="img-fluid w-100"
+                                        alt="News 1"
+                                    />
+                                    <div class="news-desc-box">
+                                        <div class="news-title">
+                                            [2025-12-01]Journal of The
+                                            Electrochemical Society에 우리
+                                            연구실의 논문이 게재되었습니다.
+                                        </div>
+                                        <div class="news-desc">
+                                            배터리 모듈에서 냉각판과 열패드의
+                                            배치,두께,조합이 열폭주 전파 억제에
+                                            미치는 영향을 규명하고, 안전 설계를
+                                            위한 정량적 설계 가이드를
+                                            제시했습니다.<br />주저자로
+                                            참여해주신 김동현 석사 연구원
+                                            논문작성하시느라 고생하셨고 졸업
+                                            축하드립니다!
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="news.html" class="text-decoration-none">
+                                <div
+                                    class="card shadow-sm rounded-4 overflow-hidden border-0"
+                                >
+                                    <img
+                                        src="assets/img/KSAE_2025_2.jpg"
+                                        class="img-fluid w-100"
+                                        alt="News 1"
+                                    />
+                                    <div class="news-desc-box">
+                                        <div class="news-title">
+                                            [2025-11-25]2025 자동차공학회
+                                            추계학술대회 참가
+                                        </div>
+                                        <div class="news-desc">
+                                            배터리 열폭주 열전이 시뮬레이션
+                                            결과에 대해 발표하였습니다.<br />참여해주신
+                                            연구원분들 및 발표해주신 교수님
+                                            고생많으셨습니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="news.html" class="text-decoration-none">
+                                <div
+                                    class="card shadow-sm rounded-4 overflow-hidden border-0"
+                                >
+                                    <img
+                                        src="assets/img/Paper_3_2025.png"
+                                        class="img-fluid w-100"
+                                        alt="News 1"
+                                    />
+                                    <div class="news-desc-box">
+                                        <div class="news-title">
+                                            [2025-09-03]Journal of The
+                                            Electrochemical Society에 우리
+                                            연구실의 논문이 게재되었습니다.
+                                        </div>
+                                        <div class="news-desc">
+                                            리튬 이온 배터리의 곡률 변화에 따른
+                                            전기화학적인 거동 분석에 대한 논문이
+                                            게재되었습니다.<br />주저자로
+                                            참여해주신 김민서 학부 연구생
+                                            논문작성하시느라 고생하셨습니다!!!
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="news.html" class="text-decoration-none">
+                                <div
+                                    class="card shadow-sm rounded-4 overflow-hidden border-0"
+                                >
+                                    <img
+                                        src="assets/img/BTM_Conf_2.png"
+                                        class="img-fluid w-100"
+                                        alt="News 1"
+                                    />
+                                    <div class="news-desc-box">
+                                        <div class="news-title">
+                                            [2025-05-28] Battery Thermal
+                                            Management Innovation Summit USA
+                                            2025 참석
+                                        </div>
+                                        <div class="news-desc">
+                                            저희 교수님이 BTM 학회 발표자로
+                                            참석하였습니다.<br />발표하시느라
+                                            고생많으셨습니다!
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="news.html" class="text-decoration-none">
+                                <div
+                                    class="card shadow-sm rounded-4 overflow-hidden border-0"
+                                >
+                                    <img
+                                        src="assets/img/Manuconf_2024_3.jpg"
+                                        class="img-fluid w-100"
+                                        alt="News 3"
+                                    />
+                                    <div class="news-desc-box">
+                                        <div class="news-title">
+                                            [2025-05-27] 한국생산제조학회 혁신상
+                                            수상
+                                        </div>
+                                        <div class="news-desc">
+                                            우리 서경주 연구원이
+                                            한국생산제조학회 포스터 발표를 하여
+                                            혁신상을 수상하였습니다.<br />수고많으셨습니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="news.html" class="text-decoration-none">
+                                <div
+                                    class="card shadow-sm rounded-4 overflow-hidden border-0"
+                                >
+                                    <img
+                                        src="assets/img/KSAE_2025_1.png"
+                                        class="img-fluid w-100"
+                                        alt="KSAE_2025_1"
+                                    />
+                                    <div class="news-desc-box">
+                                        <div class="news-title">
+                                            [2025-05-21] 2025 자동차공학회
+                                            춘계학술대회 참가
+                                        </div>
+                                        <div class="news-desc">
+                                            우리 연구실의 2차년도 상반기 성과를
+                                            김동현 연구원이 발표하였습니다.<br />발표하시느라
+                                            고생많으셨습니다!
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--2024-->
+                        <!-- <div class="swiper-slide">
               <div class="card shadow-sm rounded-4 overflow-hidden border-0">
                 <a href="news.html" class="text-decoration-none text-dark">
                   <img src="assets/img/prof_1st.png" class="img-fluid w-100" alt="News 3" />
@@ -306,37 +548,70 @@
             </div>
             </a>
               </div> -->
-        </div>
-    </div>
-    <div class="swiper-pagination custom-pagination"></div>   
-  </div>
- 
-</section>
+                    </div>
+                </div>
+                <div class="swiper-pagination custom-pagination"></div>
+            </div>
+        </section>
 
-    <hr>
-    <section class="py-5 container fade-up-section section-enhanced">
-        <div class="section-header">
-            <span class="section-badge">Join Us</span>
-            <h2 class="mb-3 lato-bold" style="color: var(--real-navy);">Notice</h2>
-            <div class="section-divider"></div>
-        </div>
+        <hr />
+        <section class="py-5 container fade-up-section section-enhanced">
+            <div class="section-header">
+                <span class="section-badge">Join Us</span>
+                <h2 class="mb-3 lato-bold" style="color: var(--real-navy)">
+                    Notice
+                </h2>
+                <div class="section-divider"></div>
+            </div>
             <div class="row g-5">
                 <div class="col-12 col-md-8 mx-auto">
                     <div class="card-enhanced p-4">
                         <div class="row align-items-center">
                             <div class="col-md-5 text-center mb-4 mb-md-0">
-                                <img class="img-fluid rounded-3" style="max-height:350px; object-fit: cover; box-shadow: var(--shadow-md);" src="assets/img/laptop.jpg" />
+                                <img
+                                    class="img-fluid rounded-3"
+                                    style="
+                                        max-height: 350px;
+                                        object-fit: cover;
+                                        box-shadow: var(--shadow-md);
+                                    "
+                                    src="assets/img/laptop.jpg"
+                                />
                             </div>
                             <div class="col-md-7">
-                                <div class="explanation_bold_important_nanumGothic mb-3" style="color: var(--real-navy);">🎓 [2026] REAL 연구원 모집 중</div>
-                                <div class="explanation_important_nanumGothic mb-4">2026년부터 함께 할 석박사 통합과정 학생을 모집하고 있습니다.</div>
-                                <div class="explanation_important_nanumGothic bold mb-2" style="color: var(--real-navy);">📋 수행 프로젝트</div>
-                                <ul class="explanation_important_nanumGothic" style="list-style: none; padding-left: 0;">
-                                    <li style="margin-bottom: 0.5rem;">🔋 배터리 1D 모델 개발</li>
+                                <div
+                                    class="explanation_bold_important_nanumGothic mb-3"
+                                    style="color: var(--real-navy)"
+                                >
+                                    🎓 [2026] REAL 연구원 모집 중
+                                </div>
+                                <div
+                                    class="explanation_important_nanumGothic mb-4"
+                                >
+                                    2026년부터 함께 할 석박사 통합과정 학생을
+                                    모집하고 있습니다.
+                                </div>
+                                <div
+                                    class="explanation_important_nanumGothic bold mb-2"
+                                    style="color: var(--real-navy)"
+                                >
+                                    📋 수행 프로젝트
+                                </div>
+                                <ul
+                                    class="explanation_important_nanumGothic"
+                                    style="list-style: none; padding-left: 0"
+                                >
+                                    <li style="margin-bottom: 0.5rem">
+                                        🔋 배터리 1D 모델 개발
+                                    </li>
                                     <li>🔥 배터리 열폭주 모델 개발</li>
                                 </ul>
                                 <div class="mt-4">
-                                    <a href="mailto:jinyongkim@hanyang.ac.kr" class="btn-real-primary" style="text-decoration: none;">
+                                    <a
+                                        href="mailto:jinyongkim@hanyang.ac.kr"
+                                        class="btn-real-primary"
+                                        style="text-decoration: none"
+                                    >
                                         📧 문의하기
                                     </a>
                                 </div>
@@ -345,10 +620,10 @@
                     </div>
                 </div>
             </div>
-    </section>
-        
-    <!-- Image element - set the background image for the header in the line below-->
-    <!-- 
+        </section>
+
+        <!-- Image element - set the background image for the header in the line below-->
+        <!-- 
     <footer class="py-3 bg-navy">
         <div class="container">
             <p class="m-0 text-center text-white roboto bigger">
@@ -368,90 +643,125 @@
                 </div>
     </footer> -->
 
-    <footer class="py-4 bg-navy footer-enhanced">
-        <div class="container">
-            <div class="d-flex row align-items-center justify-content-center">
-                <div class="col-auto mx-3 mb-3 mb-md-0">
-                    <img class="img-fluid" style="height: 70px; object-fit: cover;" src="assets/img/hyu_logo_white.png" />
-                </div>
-                <div class="col-lg-8 col-md-10">
-                    <div class="bigger_important text-white mb-2" style="font-size: 1.3rem;">📍 Address</div>
-                    <div class="explanation_important_nanumGothic text-white b mb-1">(15588) 경기도 안산시 상록구 한양대학로 55, 한양대학교
-                        ERICA, 제5공학관
-                        502 호 (교수연구실), 427 호 (실험실)</div>
-                    <div class="explanation_important text-white mb-3" style="opacity: 0.85;">(15588) Engineering Bldg. V, Hanyang University ERICA
-                        55 Hanyangdaehak-ro, Sangrok-gu, Ansan, Gyeonggi-do, South Korea
-                        Rm #502 (Prof. Office), Rm #427 (Laboratory)</div>
-                    <div class="d-flex flex-wrap gap-3" style="font-size: 0.95rem;">
-                        <a href="mailto:jinyongkim@hanyang.ac.kr" class="text-white text-decoration-none">
-                            <span style="opacity: 0.7;">📧</span> jinyongkim@hanyang.ac.kr
-                        </a>
+        <footer class="py-4 bg-navy footer-enhanced">
+            <div class="container">
+                <div
+                    class="d-flex row align-items-center justify-content-center"
+                >
+                    <div class="col-auto mx-3 mb-3 mb-md-0">
+                        <img
+                            class="img-fluid"
+                            style="height: 70px; object-fit: cover"
+                            src="assets/img/hyu_logo_white.png"
+                        />
+                    </div>
+                    <div class="col-lg-8 col-md-10">
+                        <div
+                            class="bigger_important text-white mb-2"
+                            style="font-size: 1.3rem"
+                        >
+                            📍 Address
+                        </div>
+                        <div
+                            class="explanation_important_nanumGothic text-white b mb-1"
+                        >
+                            (15588) 경기도 안산시 상록구 한양대학로 55,
+                            한양대학교 ERICA, 제5공학관 502 호 (교수연구실), 427
+                            호 (실험실)
+                        </div>
+                        <div
+                            class="explanation_important text-white mb-3"
+                            style="opacity: 0.85"
+                        >
+                            (15588) Engineering Bldg. V, Hanyang University
+                            ERICA 55 Hanyangdaehak-ro, Sangrok-gu, Ansan,
+                            Gyeonggi-do, South Korea Rm #502 (Prof. Office), Rm
+                            #427 (Laboratory)
+                        </div>
+                        <div
+                            class="d-flex flex-wrap gap-3"
+                            style="font-size: 0.95rem"
+                        >
+                            <a
+                                href="mailto:jinyongkim@hanyang.ac.kr"
+                                class="text-white text-decoration-none"
+                            >
+                                <span style="opacity: 0.7">📧</span>
+                                jinyongkim@hanyang.ac.kr
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div
+                    class="text-center mt-4 pt-3"
+                    style="border-top: 1px solid rgba(255, 255, 255, 0.1)"
+                >
+                    <small class="text-white" style="opacity: 0.6"
+                        >© 2025 REAL Lab, Hanyang University ERICA. All rights
+                        reserved.</small
+                    >
+                </div>
             </div>
-            <div class="text-center mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
-                <small class="text-white" style="opacity: 0.6;">© 2025 REAL Lab, Hanyang University ERICA. All rights reserved.</small>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-      new Swiper('.news-swiper', {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.custom-pagination',
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-      });
-    });
-    </script>
-    <!-- Swiper 초기화 -->
-    <script>
-      new Swiper('.main-swiper', {
-          loop: true,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
-          effect: 'fade',
-          speed: 1000,
-        });
-    </script>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper 스크립트 아래쪽에서 다시 초기화 -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                new Swiper('.news-swiper', {
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.custom-pagination',
+                        clickable: true,
+                        bulletClass: 'swiper-pagination-bullet',
+                        bulletActiveClass: 'swiper-pagination-bullet-active',
+                    },
+                });
+            });
+        </script>
+        <!-- Swiper 초기화 -->
+        <script>
+            new Swiper('.main-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                effect: 'fade',
+                speed: 1000,
+            });
+        </script>
 
-    <!-- Fade-in 효과 스크립트 -->
-    <script>
-      const faders = document.querySelectorAll('.fade-up-section');
-    
-      const appearOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -20px 0px"
-      };
-    
-      const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        });
-      }, appearOptions);
-    
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-    </script>
-</body>
+        <!-- Fade-in 효과 스크립트 -->
+        <script>
+            const faders = document.querySelectorAll('.fade-up-section');
 
+            const appearOptions = {
+                threshold: 0.15,
+                rootMargin: '0px 0px -20px 0px',
+            };
+
+            const appearOnScroll = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    });
+                },
+                appearOptions
+            );
+
+            faders.forEach((fader) => {
+                appearOnScroll.observe(fader);
+            });
+        </script>
+    </body>
 </html>
-
