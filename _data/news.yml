@@ -7,11 +7,11 @@
 #   content: "Full content with <br> for line breaks"
 
 news_items:
-    - title: '국제 학술지 Journal of The Electrochemical Society에 우리 연구실의 논문이 게재되었습니다.'
+    - title: '국제 학술지 Journal of The Electrochemical Society 논문 게재'
       date: '2025-12-01'
       image: 'assets/img/Donghyun Article News.png'
       summary: '주저자로 참여해주신 김동현 연구원 고생하셨습니다!'
-      content: '김동현 연구원의 석사 학위 논문이 국제 학술지에 게재되었습니다.<br>배터리 모듈에서 냉각판과 열패드의 배치,두께,조합이 열폭주 전파 억제에 미치는 영향을 규명하고, 안전 설계를 위한 정량적 설계 가이드를 제시했습니다.<br>모두 김동현 석사 연구원의 졸업과 논문 게재를 축하해주시면 감사하겠습니다'
+      content: '김동현 연구원의 석사 학위 논문이 국제 학술지에 게재되었습니다.<br>배터리 모듈에서 냉각판과 열패드의 배치, 두께, 조합이 열폭주 전파 억제에 미치는 영향을 규명하고, 안전 설계를 위한 정량적 설계 가이드를 제시했습니다.<br>모두 김동현 석사 연구원의 졸업과 논문 게재를 축하해주시면 감사하겠습니다.'
 
     - title: '2025 자동차공학회 추계학술대회 참가'
       date: '2025-11-12'
@@ -19,7 +19,7 @@ news_items:
       summary: '배터리 열폭주 열전이 시뮬레이션 결과에 대해 발표하였습니다.'
       content: '김진용 교수님께서 2025 자동차공학회 추계 학회에서 발표를 진행하셨습니다.<br>2차년도 우리연구실의 성과에 대해 발표하였습니다.'
 
-    - title: '국제 학술지 Journal of The Electrochemical Society에 우리 연구실의 논문이 게재되었습니다.'
+    - title: '국제 학술지 Journal of The Electrochemical Society 논문 게재'
       date: '2025-09-03'
       image: 'assets/img/Paper_3_2025.png'
       summary: '주저자로 참여해주신 김민서 학부 연구생 고생하셨습니다!'
