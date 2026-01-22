@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-01-21T00:58:37.743Z",
+  "updated_at": "2026-01-22T00:58:10.503Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 574,
+  "total": 575,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
-      "citations": 0,
+      "citations": 1,
       "_dois": [
         "10.1149/1945-7111/adfd1a"
       ],
@@ -33,7 +33,7 @@
         "10.1149/1945-7111/adfd1a": {
           "openalex_count": 0,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 0,
+          "crossref_count": 1,
           "opencitations_count": null
         }
       }
