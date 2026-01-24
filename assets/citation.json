@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-23T00:58:25.717Z",
+  "updated_at": "2026-01-24T00:55:50.638Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -31,7 +31,7 @@
       ],
       "_debug_counts": {
         "10.1149/1945-7111/adfd1a": {
-          "openalex_count": 0,
+          "openalex_count": 1,
           "openalex_updated": "2025-11-06T03:46:38.306776",
           "crossref_count": 1,
           "opencitations_count": null
