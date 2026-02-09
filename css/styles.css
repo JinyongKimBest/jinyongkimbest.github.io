@@ -13491,6 +13491,11 @@ section {
   width: 80%;
 }
 
+/* Dropdown 상태에서는 밑줄 제거 */
+.navbar .dropdown:hover .nav-link::after {
+  width: 0 !important;
+}
+
 /* Navbar Dropdown Styling */
 .navbar .dropdown-menu {
   background: var(--real-navy);
@@ -13499,14 +13504,15 @@ section {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   margin-top: 0;
   padding: 0.5rem 0;
-  min-width: 160px;
+  min-width: 180px;
 }
 
 .navbar .dropdown-item {
   color: rgba(255, 255, 255, 0.85);
-  padding: 0.5rem 1.5rem;
+  padding: 0.65rem 1.5rem;
   transition: all var(--transition-fast);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  text-align: center;
 }
 
 .navbar .dropdown-item:hover,
@@ -13528,11 +13534,11 @@ section {
 
 .navbar .dropdown-toggle::after {
   border-top-color: white;
-  transition: transform var(--transition-fast);
+  transition: none;
 }
 
 .navbar .dropdown:hover .dropdown-toggle::after {
-  transform: rotate(180deg);
+  transform: none;
 }
 
 /* Enhanced Hero Text Box */

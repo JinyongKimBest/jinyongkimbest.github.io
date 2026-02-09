@@ -115,6 +115,7 @@ undergraduate_students:
   - name_en: "Seungho Lee"
     name_kr: "이승호"
     position: "Undergraduate Researcher"
+    start_date: "2025.09~"
     email: "climbthesky@hanyang.ac.kr"
     front_image: "assets/img/2025_Seungho.JPG"
     back_image: "" # No hover image
@@ -127,8 +128,8 @@ alumni:
   - name_en: "Donghyun Kim"
     name_kr: "김동현"
     degree: "MS"
-    graduation_year: 2025
-    start_date: "2024.03~2025.02"
+    graduation_year: 2026
+    start_date: "2024.03~2026.02"
     email: "donghyun4212@hanyang.ac.kr"
     front_image: "assets/img/Donghyun Kim2024.jpg"
     back_image: "assets/img/monkey_donghyun.jpg"
