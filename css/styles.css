@@ -13524,9 +13524,8 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-top: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
   min-width: 200px;
   display: none;
   position: absolute;
@@ -13535,11 +13534,11 @@ section {
   transform: translateX(-50%);
 }
 
-/* 드롭다운 상단에 흰색 삼각형 화살표 추가 (Team Members와 메뉴 사이) */
+/* 드롭다운 상단에 흰색 삼각형 화살표 추가 (박스 위 바깥쪽) */
 .navbar .dropdown-menu::before {
   content: '';
   position: absolute;
-  top: 0.25rem;
+  top: -8px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
