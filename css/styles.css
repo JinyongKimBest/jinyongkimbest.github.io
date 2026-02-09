@@ -13648,7 +13648,7 @@ section {
   
   /* 모바일에서 드롭다운 메뉴 기본 숨김 */
   .navbar-collapse .dropdown-menu {
-    display: none !important;
+    display: none;
     position: absolute !important;
     left: 100% !important;
     right: auto !important;
@@ -13665,8 +13665,9 @@ section {
     z-index: 9999 !important;
   }
   
-  /* 드롭다운이 열렸을 때만 표시 */
-  .navbar-collapse .dropdown.show > .dropdown-menu {
+  /* 드롭다운이 열렸을 때만 표시 - 더 강한 우선순위 */
+  .navbar-collapse .dropdown.show > .dropdown-menu,
+  .navbar-collapse .show > .dropdown-menu {
     display: block !important;
   }
   
