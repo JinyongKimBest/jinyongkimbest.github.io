@@ -13524,7 +13524,7 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-top: 0.25rem;
+  margin-top: 0.75rem;
   padding: 0.5rem 0;
   min-width: 200px;
   display: none;
@@ -13532,6 +13532,36 @@ section {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* 드롭다운 상단에 삼각형 화살표 추가 */
+.navbar .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--real-navy);
+  z-index: 1001;
+}
+
+/* 드롭다운 상단에 테두리용 삼각형 (외곽선 효과) */
+.navbar .dropdown-menu::after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
 }
 
 .navbar .dropdown-item {
