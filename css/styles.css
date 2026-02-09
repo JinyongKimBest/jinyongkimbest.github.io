@@ -13491,10 +13491,18 @@ section {
   width: 80%;
 }
 
-/* Dropdown toggle - 밑줄 효과 완전 제거 */
+/* Dropdown toggle - 화살표 위치 조정 */
 .navbar .dropdown-toggle::after {
-  border-top-color: white;
-  transition: none;
+  border: none !important;
+  width: 0;
+  height: 0;
+  margin-left: 0.3rem;
+  vertical-align: 0.15em;
+  content: "";
+  border-top: 0.3em solid white;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
 }
 
 .navbar .nav-link.dropdown-toggle::after {
@@ -13516,10 +13524,14 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-top: 0;
+  margin-top: 0.25rem;
   padding: 0.5rem 0;
   min-width: 200px;
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar .dropdown-item {
@@ -13529,6 +13541,7 @@ section {
   font-size: 1.155rem;
   font-weight: 500;
   text-align: center;
+  white-space: nowrap;
 }
 
 .navbar .dropdown-item:hover,

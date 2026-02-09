@@ -187,7 +187,7 @@
                             <div class="member-info">
                                 <h3 class="member-name">{{ member.name_en }}</h3>
                                 <div class="member-name-kr">{{ member.name_kr }}</div>
-                                <div class="member-position">{{ member.position }}</div>
+                                <div class="member-position">{{ member.position }} {{ member.start_date }}</div>
                                 {% if member.google_scholar and member.google_scholar != "" %}
                                 <div class="member-links">
                                     <a href="{{ member.google_scholar }}" target="_blank" class="scholar-link" title="Google Scholar">
