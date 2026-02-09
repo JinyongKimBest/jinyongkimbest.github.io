@@ -13491,6 +13491,50 @@ section {
   width: 80%;
 }
 
+/* Navbar Dropdown Styling */
+.navbar .dropdown-menu {
+  background: var(--real-navy);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  padding: 0.5rem 0;
+  min-width: 160px;
+}
+
+.navbar .dropdown-item {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.5rem 1.5rem;
+  transition: all var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.navbar .dropdown-item.active {
+  background: rgba(244, 208, 63, 0.2);
+  color: var(--real-accent);
+  font-weight: 500;
+}
+
+/* Dropdown hover behavior */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-toggle::after {
+  border-top-color: white;
+  transition: transform var(--transition-fast);
+}
+
+.navbar .dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
 /* Enhanced Hero Text Box */
 .hero-text-box {
   background: rgba(31, 39, 65, 0.85);
