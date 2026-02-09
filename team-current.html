@@ -5,19 +5,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=team-current.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Redirecting to Current Team Members...</title>
-    <script type="text/javascript">
-        window.location.href = "team-current.html";
-    </script>
-</head>
-
-<body>
-    <p>If you are not redirected automatically, please <a href="team-current.html">click here</a>.</p>
-</body>
-
-</html>
+    <meta name="description" content="REAL Lab Team Members - Graduate and Undergraduate Researchers at Hanyang University ERICA" />
+    <meta name="author" content="REAL Lab" />
+    <title>[한양대 신재생엔진분석 연구실] Current Team Members | REAL Lab @ HYU</title>
     <!-- Favicon-->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -51,7 +42,15 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="pi.html">Prof. Kim</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="team.html">Team Members</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Team Members
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                            <li><a class="dropdown-item active" href="team-current.html">Current</a></li>
+                            <li><a class="dropdown-item" href="team-alumni.html">Alumni</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="pubs.html">Publication</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -63,7 +62,7 @@
     <header class="bg-image-full"
         style="background-image: url('assets/img/golden bridge.jpg'); background-position: center; height: 320px;">
         <div class="container d-flex align-items-center justify-content-center h-100">
-            <h1 class="text-white fs-big-bar fw-bolder lato-bold mx-auto shadow-background">Team Members</h1>
+            <h1 class="text-white fs-big-bar fw-bolder lato-bold mx-auto shadow-background">Current Team Members</h1>
         </div>
     </header>
 
@@ -227,27 +226,6 @@
         </div>
     </section>
 
-    <!-- Image element - set the background image for the header in the line below-->
-    <!-- 
-    <footer class="py-3 bg-navy">
-        <div class="container">
-            <p class="m-0 text-center text-white roboto bigger">
-                <b>Address</b>
-            </p>
-
-            <div class="container">
-                <p class="m-0 text-center text-white">
-                    (15588) 경기도 안산시 상록구 한양대학로 55, 한양대학교 ERICA, 제5공학관
-                    502 호 (교수연구실), 427 호 (실험실)</p>
-
-                <div class="container">
-                    <p class="m-0 text-center text-white roboto ">
-                        (15588) Engineering Bldg. V, Hanyang University ERICA
-                        55 Hanyangdaehak-ro, Sangrok-gu, Ansan, Gyeonggi-do, South Korea
-                        Rm #502 (Prof. Office), Rm #427 (Laboratory)</p>
-                </div>
-    </footer> -->
-
     <footer class="py-4 bg-navy footer-enhanced">
         <div class="container">
             <div class="d-flex row align-items-center justify-content-center">
@@ -270,22 +248,10 @@
         </div>
     </footer>
     
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper 초기화 -->
-    <script>
-      const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        effect: 'fade',
-        speed: 1000,
-      });
-    </script>
-
+    
     <!-- Fade-in 효과 스크립트 -->
     <script>
       const faders = document.querySelectorAll('.fade-up-section');

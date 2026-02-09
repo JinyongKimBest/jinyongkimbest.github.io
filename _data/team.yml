@@ -60,38 +60,36 @@ phd_students:
       - "Thermal Runaway CFD"
       - "Battery Fire Simulation"
 
+  - name_en: "Minseo Kim"
+    name_kr: "김민서"
+    position: "MS/Ph.D Student"
+    start_date: "2025.3~"
+    email: "gomi1347@hanyang.ac.kr"
+    front_image: "assets/img/Minseo Kim2024.jpg"
+    back_image: "assets/img/sigma_sigma_bboy.jpg"
+    google_scholar: "https://scholar.google.com/citations?hl=ko&user=Odu9HZgAAAAJ"
+    research_interests:
+      - "Electrochemical Modeling"
+
 # MS Students (석사과정)
 ms_students:
-  - name_en: "Donghyun Kim"
-    name_kr: "김동현"
-    position: "MS Student"
-    start_date: "2024.3~"
-    email: "donghyun4212@hanyang.ac.kr"
-    front_image: "assets/img/Donghyun Kim2024.jpg"
-    back_image: "assets/img/monkey_donghyun.jpg"
-    google_scholar: "https://scholar.google.com/citations?view_op=list_works&hl=ko&user=siav4XIAAAAJ"
-    research_interests:
-      - "CFD"
-      - "Battery Safety Design"
-
   - name_en: "Donggeun Yu"
     name_kr: "유동근"
     position: "MS Student"
     start_date: "2024.9~"
     email: "piy06060@hanyang.ac.kr"
     front_image: "assets/img/Donggeun Yu2025.png"
-    back_image: ""  # No hover image
+    back_image: "" # No hover image
     google_scholar: ""
     affiliation: "KITECH"
     research_interests:
       - "Battery Fault Detection"
       - "Degradation Prediction"
 
-# Undergraduate Students (학부연구생)
-undergraduate_students:
   - name_en: "Seongmin Lim"
     name_kr: "임성민"
-    position: "Undergraduate Researcher"
+    position: "MS Student"
+    start_date: "2025.3~"
     email: "tjdals7244@hanyang.ac.kr"
     front_image: "assets/img/Seongmin Lim2024.jpg"
     back_image: "assets/img/2025_Seongmin.jpg"
@@ -102,7 +100,8 @@ undergraduate_students:
 
   - name_en: "Seungyeop Lee"
     name_kr: "이승엽"
-    position: "Undergraduate Researcher"
+    position: "MS Student"
+    start_date: "2025.3~"
     email: "story7123@hanyang.ac.kr"
     front_image: "assets/img/Seungyeop Lee2024.jpg"
     back_image: "assets/img/2025_Seungyeop.jpg"
@@ -111,36 +110,35 @@ undergraduate_students:
       - "Large Format Battery"
       - "MSMD"
 
-  - name_en: "Minseo Kim"
-    name_kr: "김민서"
-    position: "Undergraduate Researcher"
-    email: "gomi1347@hanyang.ac.kr"
-    front_image: "assets/img/Minseo Kim2024.jpg"
-    back_image: "assets/img/sigma_sigma_bboy.jpg"
-    google_scholar: "https://scholar.google.com/citations?hl=ko&user=Odu9HZgAAAAJ"
-    research_interests:
-      - "Electrochemical Modeling"
-
+# Undergraduate Students (학부연구생)
+undergraduate_students:
   - name_en: "Seungho Lee"
     name_kr: "이승호"
     position: "Undergraduate Researcher"
     email: "climbthesky@hanyang.ac.kr"
     front_image: "assets/img/2025_Seungho.JPG"
-    back_image: ""  # No hover image
+    back_image: "" # No hover image
     google_scholar: ""
     research_interests:
       - "Thermal Model"
 
 # Alumni (졸업생)
 alumni:
-  # Add alumni here when students graduate
-  # - name_en: "Graduate Name"
-  #   name_kr: "한글이름"
-  #   degree: "MS" or "PhD"
-  #   graduation_year: 2025
-  #   current_position: "Current Job Title"
-  #   company: "Company Name"
-  #   thesis_title: "Thesis Title"
+  - name_en: "Donghyun Kim"
+    name_kr: "김동현"
+    degree: "MS"
+    graduation_year: 2025
+    start_date: "2024.3~2025.2"
+    email: "donghyun4212@hanyang.ac.kr"
+    front_image: "assets/img/Donghyun Kim2024.jpg"
+    back_image: "assets/img/monkey_donghyun.jpg"
+    google_scholar: "https://scholar.google.com/citations?view_op=list_works&hl=ko&user=siav4XIAAAAJ"
+    research_interests:
+      - "CFD"
+      - "Battery Safety Design"
+    # current_position: ""
+    # company: ""
+    # thesis_title: ""
 
 # Opening Positions
 openings:
