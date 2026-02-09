@@ -13491,8 +13491,14 @@ section {
   width: 80%;
 }
 
-/* Dropdown 상태에서는 밑줄 제거 */
-.navbar .dropdown:hover .nav-link::after {
+/* Dropdown toggle은 밑줄 효과 제거 */
+.navbar .dropdown-toggle::after {
+  border-top-color: white;
+  transition: none;
+}
+
+.navbar .dropdown-toggle:hover::after,
+.navbar .dropdown-toggle.active::after {
   width: 0 !important;
 }
 
@@ -13502,16 +13508,21 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-top: 0;
+  margin-top: 0.5rem;
   padding: 0.5rem 0;
-  min-width: 180px;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
 }
 
 .navbar .dropdown-item {
   color: rgba(255, 255, 255, 0.85);
-  padding: 0.65rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   transition: all var(--transition-fast);
-  font-size: 1.05rem;
+  font-size: 1.155rem;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -13527,18 +13538,12 @@ section {
   font-weight: 500;
 }
 
-/* Dropdown hover behavior */
+/* Dropdown hover behavior - 모든 페이지에서 작동 */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
-}
-
-.navbar .dropdown-toggle::after {
-  border-top-color: white;
-  transition: none;
-}
-
-.navbar .dropdown:hover .dropdown-toggle::after {
-  transform: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* Enhanced Hero Text Box */

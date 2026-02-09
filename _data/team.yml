@@ -127,7 +127,7 @@ undergraduate_students:
 alumni:
   - name_en: "Donghyun Kim"
     name_kr: "김동현"
-    degree: "MS"
+    degree: "Master's degree"
     graduation_year: 2026
     start_date: "2024.03~2026.02"
     email: "donghyun4212@hanyang.ac.kr"
@@ -137,7 +137,7 @@ alumni:
     research_interests:
       - "CFD"
       - "Battery Safety Design"
-    current_position: "Engineer"
+    current_position: "Researcher"
     company: "TAE SUNG S&E Inc."
     # thesis_title: ""
 
