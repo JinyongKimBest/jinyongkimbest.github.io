@@ -13621,36 +13621,35 @@ section {
   
   /* 모바일에서 Team Members 링크 스타일 */
   .navbar-collapse .nav-link.dropdown-toggle {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+    display: block !important;
     width: 100% !important;
-    padding-right: 1rem !important;
   }
   
-  /* 모바일에서 드롭다운 토글 화살표를 오른쪽 화살표로 변경 */
+  /* 모바일에서 드롭다운 토글 화살표 - 기본적으로 숨김 */
   .navbar-collapse .nav-link.dropdown-toggle::after {
-    content: '' !important;
+    display: none !important;
+  }
+  
+  /* 드롭다운이 열렸을 때만 화살표 표시 - 오른쪽 끝에 배치 */
+  .navbar-collapse .dropdown.show .nav-link.dropdown-toggle::after {
     display: inline-block !important;
+    content: '' !important;
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) rotate(90deg) !important;
     width: 0 !important;
     height: 0 !important;
     border-top: 0.4em solid transparent !important;
     border-bottom: 0.4em solid transparent !important;
     border-left: 0.4em solid white !important;
     border-right: 0 !important;
-    vertical-align: 0.1em !important;
-    margin-left: auto !important;
-    transition: transform 0.3s ease !important;
+    margin: 0 !important;
   }
   
-  /* 드롭다운이 열렸을 때 화살표 아래로 회전 */
-  .navbar-collapse .dropdown.show .nav-link.dropdown-toggle::after {
-    transform: rotate(90deg) !important;
-  }
-  
-  /* 모바일에서 드롭다운 메뉴를 오른쪽에 absolute 배치 - 매우 구체적인 selector */
-  .navbar-collapse.show .nav-item.dropdown .dropdown-menu,
+  /* 모바일에서 드롭다운 메뉴 - 기본적으로 숨김 */
   .navbar-collapse .nav-item.dropdown .dropdown-menu {
+    display: none !important;
     position: absolute !important;
     left: 100% !important;
     right: auto !important;
@@ -13669,6 +13668,11 @@ section {
     transform: translate3d(0, 0, 0) !important;
     float: none !important;
     width: auto !important;
+  }
+  
+  /* 드롭다운이 열렸을 때만 메뉴 표시 */
+  .navbar-collapse .nav-item.dropdown.show > .dropdown-menu {
+    display: block !important;
   }
   
   /* 모바일에서 드롭다운 아이템 스타일 */
@@ -13704,7 +13708,6 @@ section {
   
   /* 작은 화면에서 위치 조정 - 오른쪽으로 넘어가면 왼쪽에 배치 */
   @media (max-width: 420px) {
-    .navbar-collapse.show .nav-item.dropdown .dropdown-menu,
     .navbar-collapse .nav-item.dropdown .dropdown-menu {
       left: auto !important;
       right: 0 !important;
