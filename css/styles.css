@@ -13604,10 +13604,7 @@ section {
 /* ===== 모바일 환경 (768px 이하) - 오른쪽 상자 드롭다운 ===== */
 @media (max-width: 768px) {
   /* 모바일에서는 hover 무시 */
-  .navbar .dropdown:hover .dropdown-menu {
-    display: none !important;
-  }
-  
+  .navbar .dropdown:hover .dropdown-menu,
   .navbar .dropdown:hover > .dropdown-menu {
     display: none !important;
   }
@@ -13628,17 +13625,18 @@ section {
     justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
+    padding-right: 1rem !important;
   }
   
   /* 모바일에서 드롭다운 토글 화살표를 오른쪽 화살표로 변경 */
   .navbar-collapse .dropdown-toggle::after {
-    border-top: 0.35em solid transparent !important;
-    border-bottom: 0.35em solid transparent !important;
-    border-left: 0.35em solid white !important;
+    border-top: 0.4em solid transparent !important;
+    border-bottom: 0.4em solid transparent !important;
+    border-left: 0.4em solid white !important;
     border-right: 0 !important;
     vertical-align: 0.1em !important;
     margin-left: auto !important;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease !important;
   }
   
   /* 드롭다운이 열렸을 때 화살표 아래로 회전 */
@@ -13646,67 +13644,60 @@ section {
     transform: rotate(90deg) !important;
   }
   
-  /* 모바일에서 드롭다운 메뉴 기본 숨김 */
+  /* 모바일에서 드롭다운 메뉴를 오른쪽에 absolute 배치 */
   .navbar-collapse .dropdown-menu {
-    display: none;
-    position: absolute !important;
-    left: 100% !important;
-    right: auto !important;
-    top: 0 !important;
-    min-width: 160px !important;
-    max-width: 200px !important;
-    margin-left: 0.75rem !important;
-    background-color: var(--real-navy) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 8px !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
-    padding: 0.5rem 0 !important;
-    transform: none !important;
-    z-index: 9999 !important;
-  }
-  
-  /* 드롭다운이 열렸을 때만 표시 - 더 강한 우선순위 */
-  .navbar-collapse .dropdown.show > .dropdown-menu,
-  .navbar-collapse .show > .dropdown-menu {
-    display: block !important;
+    position: absolute;
+    left: 100%;
+    right: auto;
+    top: 0;
+    min-width: 160px;
+    max-width: 200px;
+    margin-left: 0.75rem;
+    background-color: #1f2741;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 0;
+    z-index: 9999;
   }
   
   /* 모바일에서 드롭다운 아이템 스타일 */
   .navbar-collapse .dropdown-item {
-    color: white !important;
-    padding: 0.75rem 1rem !important;
-    text-align: center !important;
-    font-size: 1rem !important;
-    font-weight: 500 !important;
-    background: transparent !important;
-    border: none !important;
-    margin: 0 !important;
-    white-space: nowrap !important;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    margin: 0;
+    white-space: nowrap;
   }
   
   .navbar-collapse .dropdown-item:hover,
   .navbar-collapse .dropdown-item:focus {
-    background: rgba(255, 255, 255, 0.15) !important;
-    color: var(--real-accent) !important;
+    background: rgba(255, 255, 255, 0.15);
+    color: #F4D03F;
   }
   
   .navbar-collapse .dropdown-item.active {
-    background: rgba(244, 208, 63, 0.2) !important;
-    color: var(--real-accent) !important;
-    font-weight: 600 !important;
+    background: rgba(244, 208, 63, 0.2);
+    color: #F4D03F;
+    font-weight: 600;
   }
   
   /* 모바일에서 상단 삼각형 숨김 */
   .navbar-collapse .dropdown-menu::before {
-    display: none !important;
+    display: none;
   }
   
-  /* 작은 화면에서 위치 조정 */
+  /* 작은 화면에서 위치 조정 - 오른쪽으로 넘어가면 왼쪽에 배치 */
   @media (max-width: 420px) {
     .navbar-collapse .dropdown-menu {
-      left: auto !important;
-      right: 1rem !important;
-      margin-left: 0 !important;
+      left: auto;
+      right: 0;
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
   }
 }
