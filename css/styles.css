@@ -13621,14 +13621,16 @@ section {
     width: 100%;
   }
   
-  /* 모바일에서 드롭다운 상자를 오른쪽에 위치 */
+  /* 모바일에서 드롭다운 상자를 Team Members 오른쪽에 위치 */
   .navbar-collapse .dropdown-menu {
     position: absolute !important;
-    right: 0 !important;
-    left: auto !important;
+    left: 100% !important;
+    right: auto !important;
     top: 0 !important;
-    min-width: 180px;
-    margin-left: 1rem;
+    min-width: 160px;
+    max-width: 200px;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
     background-color: var(--real-navy) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 8px !important;
@@ -13636,6 +13638,15 @@ section {
     padding: 0.5rem 0 !important;
     display: none;
     transform: none !important;
+  }
+  
+  /* 화면 오른쪽 끝에서 잘리지 않도록 조정 */
+  @media (max-width: 576px) {
+    .navbar-collapse .dropdown-menu {
+      left: auto !important;
+      right: 1rem !important;
+      margin-left: 0;
+    }
   }
   
   /* 드롭다운이 열렸을 때 표시 */
@@ -13646,9 +13657,9 @@ section {
   /* 모바일에서 드롭다운 아이템 스타일 */
   .navbar-collapse .dropdown-item {
     color: white !important;
-    padding: 0.75rem 1.5rem !important;
+    padding: 0.75rem 1rem !important;
     text-align: center !important;
-    font-size: 1.05rem !important;
+    font-size: 1rem !important;
     font-weight: 500 !important;
     background: transparent !important;
     border: none !important;
