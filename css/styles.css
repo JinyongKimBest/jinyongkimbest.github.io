@@ -13609,110 +13609,93 @@ section {
     display: none !important;
   }
   
-  /* 모바일 navbar 전체 스타일 */
-  .navbar-collapse {
-    background-color: var(--real-navy);
-  }
-  
   /* 모바일에서 드롭다운 네비게이션 아이템 - position relative 필수 */
   .navbar-collapse .nav-item.dropdown {
     position: relative !important;
   }
   
-  /* 모바일에서 Team Members 링크 스타일 */
+  /* 모바일에서 Team Members 링크를 relative로 */
   .navbar-collapse .nav-link.dropdown-toggle {
-    display: block !important;
-    width: 100% !important;
+    position: relative !important;
   }
   
   /* 모바일에서 드롭다운 토글 화살표 - 기본적으로 숨김 */
   .navbar-collapse .nav-link.dropdown-toggle::after {
-    display: none !important;
+    display: none;
   }
   
-  /* 드롭다운이 열렸을 때만 화살표 표시 - 오른쪽 끝에 배치 */
+  /* 드롭다운이 열렸을 때만 화살표 표시 */
   .navbar-collapse .dropdown.show .nav-link.dropdown-toggle::after {
-    display: inline-block !important;
-    content: '' !important;
-    position: absolute !important;
-    right: 1rem !important;
-    top: 50% !important;
-    transform: translateY(-50%) rotate(90deg) !important;
-    width: 0 !important;
-    height: 0 !important;
-    border-top: 0.4em solid transparent !important;
-    border-bottom: 0.4em solid transparent !important;
-    border-left: 0.4em solid white !important;
-    border-right: 0 !important;
-    margin: 0 !important;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 0;
+    height: 0;
+    border-top: 0.4em solid transparent;
+    border-bottom: 0.4em solid transparent;
+    border-left: 0.4em solid white;
+    border-right: 0;
+    margin: 0;
   }
   
-  /* 모바일에서 드롭다운 메뉴 - 기본적으로 숨김 */
+  /* 모바일에서 드롭다운 메뉴 스타일 - Bootstrap 기본 동작 유지 */
   .navbar-collapse .nav-item.dropdown .dropdown-menu {
-    display: none !important;
-    position: absolute !important;
-    left: 100% !important;
-    right: auto !important;
-    top: 0 !important;
-    bottom: auto !important;
-    min-width: 160px !important;
-    max-width: 200px !important;
-    margin-left: 0.75rem !important;
-    margin-top: 0 !important;
-    background-color: #1f2741 !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 8px !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
-    padding: 0.5rem 0 !important;
-    z-index: 9999 !important;
-    transform: translate3d(0, 0, 0) !important;
-    float: none !important;
-    width: auto !important;
-  }
-  
-  /* 드롭다운이 열렸을 때만 메뉴 표시 */
-  .navbar-collapse .nav-item.dropdown.show > .dropdown-menu {
-    display: block !important;
+    position: absolute;
+    left: 100%;
+    right: auto;
+    top: 0;
+    min-width: 160px;
+    max-width: 200px;
+    margin-left: 0.75rem;
+    margin-top: 0;
+    background-color: #1f2741;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 0;
+    z-index: 9999;
+    transform: none;
+    float: none;
   }
   
   /* 모바일에서 드롭다운 아이템 스타일 */
   .navbar-collapse .dropdown-menu .dropdown-item {
-    color: white !important;
-    padding: 0.75rem 1rem !important;
-    text-align: center !important;
-    font-size: 1rem !important;
-    font-weight: 500 !important;
-    background: transparent !important;
-    border: none !important;
-    margin: 0 !important;
-    white-space: nowrap !important;
-    display: block !important;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    white-space: nowrap;
   }
   
   .navbar-collapse .dropdown-menu .dropdown-item:hover,
   .navbar-collapse .dropdown-menu .dropdown-item:focus {
-    background: rgba(255, 255, 255, 0.15) !important;
-    color: #F4D03F !important;
+    background: rgba(255, 255, 255, 0.15);
+    color: #F4D03F;
   }
   
   .navbar-collapse .dropdown-menu .dropdown-item.active {
-    background: rgba(244, 208, 63, 0.2) !important;
-    color: #F4D03F !important;
-    font-weight: 600 !important;
+    background: rgba(244, 208, 63, 0.2);
+    color: #F4D03F;
+    font-weight: 600;
   }
   
   /* 모바일에서 상단 삼각형 숨김 */
   .navbar-collapse .dropdown-menu::before {
-    display: none !important;
+    display: none;
   }
   
-  /* 작은 화면에서 위치 조정 - 오른쪽으로 넘어가면 왼쪽에 배치 */
+  /* 작은 화면에서 위치 조정 */
   @media (max-width: 420px) {
     .navbar-collapse .nav-item.dropdown .dropdown-menu {
-      left: auto !important;
-      right: 0 !important;
-      margin-left: 0 !important;
-      margin-right: 0.5rem !important;
+      left: auto;
+      right: 0;
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
   }
 }
