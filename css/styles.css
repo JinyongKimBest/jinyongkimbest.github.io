@@ -12818,28 +12818,25 @@ section {
 .normal {
   font-size: 3.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #7EC8E3 0%, #A8D8EA 50%, #C8E6F0 100%);
+  /*color: #78B7D0;*/
+  background: linear-gradient(135deg, #FFD700 0%, #F4D03F 50%, #E8B923 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 20px rgba(126, 200, 227, 0.4);
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
 }
 .normal_sub {
   font-size: 3.0rem;
   font-weight: 400;
-  color: #E8F4F8; /* 하늘색 계열 */
-  /* color: #FDFAD9; */ /* 기존 크림색 - 필요시 되돌리기 */
+  color: #FDFAD9;
 }
 .colored {
-  background: linear-gradient(135deg, #4A90E2 0%, #7EC8E3 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 900;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9))
-          drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))
-          drop-shadow(0 0 8px rgba(74, 144, 226, 0.6))
-          drop-shadow(0 0 12px rgba(126, 200, 227, 0.5));
+  text-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
 }
 
 
@@ -13599,20 +13596,6 @@ section {
 
 .navbar .dropdown:hover > .dropdown-menu {
   display: block !important;
-}
-
-/* ===== 모바일 환경 (768px 이하) - 단순한 드롭다운 ===== */
-@media (max-width: 768px) {
-  /* 모바일에서는 hover 무시하고 클릭으로만 작동 */
-  .navbar .dropdown:hover .dropdown-menu,
-  .navbar .dropdown:hover > .dropdown-menu {
-    display: none !important;
-  }
-  
-  /* 모바일에서 드롭다운 메뉴 숨김 (Bootstrap이 기본으로 관리) */
-  .navbar-collapse .dropdown-menu::before {
-    display: none;
-  }
 }
 
 /* Enhanced Hero Text Box */
