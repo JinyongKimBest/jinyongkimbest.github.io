@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-02-13T01:15:00.576Z",
+  "updated_at": "2026-02-14T01:09:36.591Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 582,
+  "total": 583,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -70,15 +70,15 @@
     },
     {
       "title": "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs",
-      "citations": 18,
+      "citations": 19,
       "_dois": [
         "10.1149/1945-7111/ac9ee4"
       ],
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
-          "openalex_count": 18,
-          "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 17,
+          "openalex_count": 19,
+          "openalex_updated": "2026-02-13T15:27:49.765798",
+          "crossref_count": 18,
           "opencitations_count": null
         }
       }
