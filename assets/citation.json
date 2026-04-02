@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-03T01:10:37.664Z",
+  "updated_at": "2026-04-02T01:15:44.499Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 587,
+  "total": 595,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -17,7 +17,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ae1ab5": {
           "openalex_count": 0,
-          "openalex_updated": "2026-02-24T19:35:01.260952",
+          "openalex_updated": "2026-03-07T16:01:11.037858",
           "crossref_count": 0,
           "opencitations_count": null
         }
@@ -77,7 +77,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
           "openalex_count": 19,
-          "openalex_updated": "2025-11-06T03:46:38.306776",
+          "openalex_updated": "2026-03-20T23:20:44.827607",
           "crossref_count": 18,
           "opencitations_count": null
         }
@@ -85,15 +85,15 @@
     },
     {
       "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
-      "citations": 182,
+      "citations": 186,
       "_dois": [
         "10.1016/j.jpowsour.2021.229496"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 182,
-          "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 168,
+          "openalex_count": 186,
+          "openalex_updated": "2026-03-27T05:58:40.876381",
+          "crossref_count": 172,
           "opencitations_count": null
         }
       }
@@ -107,7 +107,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ab995d": {
           "openalex_count": 38,
-          "openalex_updated": "2025-11-06T03:46:38.306776",
+          "openalex_updated": "2026-03-20T23:20:44.827607",
           "crossref_count": 35,
           "opencitations_count": null
         }
@@ -115,15 +115,15 @@
     },
     {
       "title": "Modeling Extreme Deformations in Lithium-ion Batteries",
-      "citations": 68,
+      "citations": 69,
       "_dois": [
         "10.1016/j.etran.2020.100065"
       ],
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
-          "openalex_count": 68,
-          "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 61,
+          "openalex_count": 69,
+          "openalex_updated": "2026-03-20T23:20:44.827607",
+          "crossref_count": 62,
           "opencitations_count": null
         }
       }
@@ -175,15 +175,15 @@
     },
     {
       "title": "Modeling two-phase flow in three-dimensional complex flow-fields of proton exchange membrane fuel cells",
-      "citations": 192,
+      "citations": 195,
       "_dois": [
         "10.1016/j.jpowsour.2017.09.003"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2017.09.003": {
-          "openalex_count": 192,
+          "openalex_count": 195,
           "openalex_updated": "2025-11-06T03:46:38.306776",
-          "crossref_count": 188,
+          "crossref_count": 191,
           "opencitations_count": null
         }
       }
