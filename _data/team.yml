@@ -122,6 +122,16 @@ undergraduate_students:
       google_scholar: ''
       research_interests:
           - 'Thermal Model'
+    
+    - name_en: 'Hamin Choi'
+      name_kr: '최하민'
+      position: 'Undergraduate Researcher'
+      start_date: '2026.03~'
+      email: 'chlgkals0221@hanyang.ac.kr'
+      front_image: 'assets/img/adoptnyang.png'
+      back_image: '' # No hover image
+      google_scholar: ''
+      research_interests:
 
 # Alumni (졸업생)
 alumni:
