@@ -118,7 +118,7 @@ undergraduate_students:
       start_date: '2025.09~'
       email: 'climbthesky@hanyang.ac.kr'
       front_image: 'assets/img/2025_Seungho.JPG'
-      back_image: '' # No hover image
+      back_image: 'assets/img/seungho lee hovering.jpg' # No hover image
       google_scholar: ''
       research_interests:
           - 'Thermal Model'
