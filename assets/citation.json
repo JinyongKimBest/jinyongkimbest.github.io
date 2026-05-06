@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-05T01:50:07.359Z",
+  "updated_at": "2026-05-06T01:49:34.960Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 605,
+  "total": 606,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -46,8 +46,8 @@
       ],
       "_debug_counts": {
         "10.1016/j.applthermaleng.2024.123518": {
-          "openalex_count": 3,
-          "openalex_updated": "2026-02-03T00:53:05.648605",
+          "openalex_count": 4,
+          "openalex_updated": "2026-05-05T08:41:31.759640",
           "crossref_count": 4,
           "opencitations_count": null
         }
@@ -93,7 +93,7 @@
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 192,
           "openalex_updated": "2026-03-27T05:58:40.876381",
-          "crossref_count": 178,
+          "crossref_count": 179,
           "opencitations_count": null
         }
       }
@@ -115,14 +115,14 @@
     },
     {
       "title": "Modeling Extreme Deformations in Lithium-ion Batteries",
-      "citations": 69,
+      "citations": 70,
       "_dois": [
         "10.1016/j.etran.2020.100065"
       ],
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
-          "openalex_count": 69,
-          "openalex_updated": "2025-11-06T03:46:38.306776",
+          "openalex_count": 70,
+          "openalex_updated": "2026-05-05T08:41:31.759640",
           "crossref_count": 63,
           "opencitations_count": null
         }
