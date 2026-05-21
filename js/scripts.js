@@ -15,15 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     backToTop.setAttribute('aria-label', 'Back to top');
     document.body.appendChild(backToTop);
 
-    // Show/hide button based on scroll position
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
-    });
-
     // Scroll to top on click
     backToTop.addEventListener('click', function() {
         window.scrollTo({
@@ -37,24 +28,39 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollProgress.className = 'scroll-progress';
     document.body.appendChild(scrollProgress);
 
-    window.addEventListener('scroll', function() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        scrollProgress.style.width = scrolled + '%';
-    });
-
     // Enhanced navbar scroll effect
     const navbar = document.querySelector('.navbar');
-    if (navbar) {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                navbar.style.boxShadow = '0 4px 20px rgba(31, 39, 65, 0.25)';
-            } else {
-                navbar.style.boxShadow = '0 2px 20px rgba(31, 39, 65, 0.15)';
-            }
-        });
-    }
+
+    // Single throttled scroll handler via requestAnimationFrame
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                const scrollY = window.scrollY;
+
+                // Back to top button
+                if (scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+
+                // Scroll progress bar
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                scrollProgress.style.width = (scrollY / height * 100) + '%';
+
+                // Navbar shadow
+                if (navbar) {
+                    navbar.style.boxShadow = scrollY > 50
+                        ? '0 4px 20px rgba(31, 39, 65, 0.25)'
+                        : '0 2px 20px rgba(31, 39, 65, 0.15)';
+                }
+
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
 
     // Fade-in on scroll for sections
     const fadeElements = document.querySelectorAll('.fade-up-section');
