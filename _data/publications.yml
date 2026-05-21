@@ -12,7 +12,7 @@ all_publications:
       journal: 'Journal of The Electrochemical Society'
       year: 2025
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/ae1ab5'
-      image: 'assets/img/article 12 figure.png'
+      image: 'assets/img/article 12 figure.webp'
       category: 'battery'
 
     - number: 11
@@ -21,7 +21,7 @@ all_publications:
       journal: 'Journal of The Electrochemical Society'
       year: 2025
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/adfd1a/meta'
-      image: 'assets/img/article 11 figure.png'
+      image: 'assets/img/article 11 figure.webp'
       category: 'battery'
 
     - number: 10
@@ -30,7 +30,7 @@ all_publications:
       journal: 'Applied Thermal Engineering'
       year: 2024
       link: 'https://www.sciencedirect.com/science/article/pii/S1359431124011864'
-      image: 'assets/img/article 10 figure.PNG'
+      image: 'assets/img/article 10 figure.webp'
       category: 'battery'
 
     - number: 9
@@ -39,7 +39,7 @@ all_publications:
       journal: 'Journal of Power Sources'
       year: 2023
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775322013908'
-      image: 'assets/img/article 9 figure.PNG'
+      image: 'assets/img/article 9 figure.webp'
       category: 'battery'
 
     - number: 8
@@ -48,7 +48,7 @@ all_publications:
       journal: 'Journal of the Electrochemical Society'
       year: 2022
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/ac9ee4'
-      image: 'assets/img/article 8 figure.PNG'
+      image: 'assets/img/article 8 figure.webp'
       category: 'battery'
 
     - number: 7
@@ -57,7 +57,7 @@ all_publications:
       journal: 'Journal of Power Sources'
       year: 2021
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775321000458'
-      image: 'assets/img/article 7 figure.PNG'
+      image: 'assets/img/article 7 figure.webp'
       category: 'battery'
 
     - number: 6
@@ -66,7 +66,7 @@ all_publications:
       journal: 'Journal of the Electrochemical Society'
       year: 2020
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/ab995d'
-      image: 'assets/img/article 6 figure.PNG'
+      image: 'assets/img/article 6 figure.webp'
       category: 'battery'
 
     - number: 5
@@ -75,7 +75,7 @@ all_publications:
       journal: 'eTransportation'
       year: 2020
       link: 'https://www.sciencedirect.com/science/article/pii/S2590116820300229'
-      image: 'assets/img/Void.png'
+      image: 'assets/img/Void.webp'
       category: 'battery'
 
     - number: 4
@@ -84,7 +84,7 @@ all_publications:
       journal: 'International Journal of Hydrogen Energy'
       year: 2019
       link: 'https://www.sciencedirect.com/science/article/pii/S0360319918341715'
-      image: 'assets/img/article 4 figure.PNG'
+      image: 'assets/img/article 4 figure.webp'
       category: 'fuelcell'
 
     - number: 3
@@ -93,7 +93,7 @@ all_publications:
       journal: 'Energy Conversion and Management'
       year: 2018
       link: 'https://www.sciencedirect.com/science/article/pii/S019689041831080X'
-      image: 'assets/img/Void.png'
+      image: 'assets/img/Void.webp'
       category: 'fuelcell'
 
     - number: 2
@@ -102,7 +102,7 @@ all_publications:
       journal: 'Journal of Power Sources'
       year: 2018
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775318308772'
-      image: 'assets/img/article 2 figure.PNG'
+      image: 'assets/img/article 2 figure.webp'
       category: 'fuelcell'
 
     - number: 1
@@ -111,7 +111,7 @@ all_publications:
       journal: 'Journal of Power Sources'
       year: 2017
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775317311606'
-      image: 'assets/img/article 1 figure.PNG'
+      image: 'assets/img/article 1 figure.webp'
       category: 'fuelcell'
 
 # Battery Publications (for research.html selected publications)
@@ -121,7 +121,7 @@ battery_publications:
       journal: 'Journal of The Electrochemical Society'
       year: 2025
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/adfd1a/meta'
-      image: 'assets/img/article 11 figure.png'
+      image: 'assets/img/article 11 figure.webp'
       sector: 'physics-based-modeling'
       highlight: true
 
@@ -130,7 +130,7 @@ battery_publications:
       journal: 'Applied Thermal Engineering'
       year: 2024
       link: 'https://www.sciencedirect.com/science/article/pii/S1359431124011864'
-      image: 'assets/img/article 10 figure.PNG'
+      image: 'assets/img/article 10 figure.webp'
       sector: 'thermal-runaway'
       highlight: true
 
@@ -139,7 +139,7 @@ battery_publications:
       journal: 'Journal of Power Sources'
       year: 2023
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775322013908'
-      image: 'assets/img/article 9 figure.PNG'
+      image: 'assets/img/article 9 figure.webp'
       sector: 'physics-based-modeling'
       highlight: true
 
@@ -148,7 +148,7 @@ battery_publications:
       journal: 'Journal of the Electrochemical Society'
       year: 2022
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/ac9ee4'
-      image: 'assets/img/article 8 figure.PNG'
+      image: 'assets/img/article 8 figure.webp'
       sector: 'thermal-management'
       highlight: true
 
@@ -157,7 +157,7 @@ battery_publications:
       journal: 'Journal of Power Sources'
       year: 2021
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775321000458'
-      image: 'assets/img/article 7 figure.PNG'
+      image: 'assets/img/article 7 figure.webp'
       sector: 'thermal-runaway'
       highlight: true
 
@@ -166,7 +166,7 @@ battery_publications:
       journal: 'Journal of the Electrochemical Society'
       year: 2020
       link: 'https://iopscience.iop.org/article/10.1149/1945-7111/ab995d'
-      image: 'assets/img/article 6 figure.PNG'
+      image: 'assets/img/article 6 figure.webp'
       sector: 'thermal-runaway'
       highlight: false
 
@@ -175,7 +175,7 @@ battery_publications:
       journal: 'eTransportation'
       year: 2020
       link: 'https://www.sciencedirect.com/science/article/pii/S2590116820300229'
-      image: 'assets/img/Void.png'
+      image: 'assets/img/Void.webp'
       sector: 'physics-based-modeling'
       highlight: false
 
@@ -186,7 +186,7 @@ fuelcell_publications:
       journal: 'International Journal of Hydrogen Energy'
       year: 2019
       link: 'https://www.sciencedirect.com/science/article/pii/S0360319918341715'
-      image: 'assets/img/article 4 figure.PNG'
+      image: 'assets/img/article 4 figure.webp'
       sector: 'pemfc-modeling'
       highlight: true
 
@@ -195,7 +195,7 @@ fuelcell_publications:
       journal: 'Energy Conversion and Management'
       year: 2018
       link: 'https://www.sciencedirect.com/science/article/pii/S019689041831080X'
-      image: 'assets/img/Void.png'
+      image: 'assets/img/Void.webp'
       sector: 'pemfc-modeling'
       highlight: false
 
@@ -204,7 +204,7 @@ fuelcell_publications:
       journal: 'Journal of Power Sources'
       year: 2018
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775318308772'
-      image: 'assets/img/article 2 figure.PNG'
+      image: 'assets/img/article 2 figure.webp'
       sector: 'pemfc-modeling'
       highlight: true
 
@@ -213,7 +213,7 @@ fuelcell_publications:
       journal: 'Journal of Power Sources'
       year: 2017
       link: 'https://www.sciencedirect.com/science/article/pii/S0378775317311606'
-      image: 'assets/img/article 1 figure.PNG'
+      image: 'assets/img/article 1 figure.webp'
       sector: 'pemfc-modeling'
       highlight: true
 

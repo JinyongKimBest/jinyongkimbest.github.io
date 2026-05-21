@@ -12,8 +12,8 @@ pi:
     department: 'Department of Mechanical Engineering'
     affiliation: 'Hanyang University ERICA'
     email: 'jinyongkim@hanyang.ac.kr'
-    front_image: 'assets/img/2025_Professor.jpg'
-    back_image: 'assets/img/Jinyong_Profile_Homepage.jpg'
+    front_image: 'assets/img/2025_Professor.webp'
+    back_image: 'assets/img/Jinyong_Profile_Homepage.webp'
     google_scholar: 'https://scholar.google.co.kr/citations?hl=ko&user=5B2BRooAAAAJ'
     linkedin: 'https://www.linkedin.com/in/jinyong-kim-44261a90/'
     research_interests:
@@ -29,8 +29,8 @@ phd_students:
       position: 'MS/Ph.D Student'
       start_date: '2024.03~'
       email: 'skawns1228@hanyang.ac.kr'
-      front_image: 'assets/img/Namjun Cho2024.jpg'
-      back_image: 'assets/img/2025_Namjun.png'
+      front_image: 'assets/img/Namjun Cho2024.webp'
+      back_image: 'assets/img/2025_Namjun.webp'
       google_scholar: ''
       research_interests:
           - 'Battery Property'
@@ -41,8 +41,8 @@ phd_students:
       position: 'MS/Ph.D Student'
       start_date: '2025.03~'
       email: 'qkqhsm1@hanyang.ac.kr'
-      front_image: 'assets/img/Soomin Choi2024.jpg'
-      back_image: 'assets/img/2025_Soomin.jpg'
+      front_image: 'assets/img/Soomin Choi2024.webp'
+      back_image: 'assets/img/2025_Soomin.webp'
       google_scholar: 'https://scholar.google.com/citations?user=0oGmKXcAAAAJ&hl=ko'
       research_interests:
           - 'Electrochemical Modeling'
@@ -53,8 +53,8 @@ phd_students:
       position: 'MS/Ph.D Student'
       start_date: '2025.03~'
       email: 'godjju0614@hanyang.ac.kr'
-      front_image: 'assets/img/Kyoungju Seo2024.jpg'
-      back_image: 'assets/img/sunglass_ju.jpg'
+      front_image: 'assets/img/Kyoungju Seo2024.webp'
+      back_image: 'assets/img/sunglass_ju.webp'
       google_scholar: 'https://scholar.google.co.kr/citations?user=HYIBTR4AAAAJ&hl=ko&oi=ao'
       research_interests:
           - 'Thermal Runaway CFD'
@@ -65,8 +65,8 @@ phd_students:
       position: 'MS/Ph.D Student'
       start_date: '2026.03~'
       email: 'gomi1347@hanyang.ac.kr'
-      front_image: 'assets/img/Minseo Kim2024.jpg'
-      back_image: 'assets/img/sigma_sigma_bboy.jpg'
+      front_image: 'assets/img/Minseo Kim2024.webp'
+      back_image: 'assets/img/sigma_sigma_bboy.webp'
       google_scholar: 'https://scholar.google.com/citations?hl=ko&user=Odu9HZgAAAAJ'
       research_interests:
           - 'Electrochemical Modeling'
@@ -78,7 +78,7 @@ ms_students:
       position: 'MS Student'
       start_date: '2024.09~'
       email: 'piy06060@hanyang.ac.kr'
-      front_image: 'assets/img/Donggeun Yu2025.png'
+      front_image: 'assets/img/Donggeun Yu2025.webp'
       back_image: '' # No hover image
       google_scholar: ''
       affiliation: 'KITECH'
@@ -91,8 +91,8 @@ ms_students:
       position: 'MS Student'
       start_date: '2026.03~'
       email: 'tjdals7244@hanyang.ac.kr'
-      front_image: 'assets/img/Seongmin Lim2024.jpg'
-      back_image: 'assets/img/2025_Seongmin.jpg'
+      front_image: 'assets/img/Seongmin Lim2024.webp'
+      back_image: 'assets/img/2025_Seongmin.webp'
       google_scholar: 'https://scholar.google.com/citations?user=vWrJovoAAAAJ&hl=ko'
       research_interests:
           - 'Thermal Model'
@@ -103,8 +103,8 @@ ms_students:
       position: 'MS Student'
       start_date: '2026.03~'
       email: 'story7123@hanyang.ac.kr'
-      front_image: 'assets/img/Seungyeop Lee2024.jpg'
-      back_image: 'assets/img/2025_Seungyeop.jpg'
+      front_image: 'assets/img/Seungyeop Lee2024.webp'
+      back_image: 'assets/img/2025_Seungyeop.webp'
       google_scholar: 'https://scholar.google.com/citations?user=5VO-NWYAAAAJ&hl=ko'
       research_interests:
           - 'Large Format Battery'
@@ -117,8 +117,8 @@ undergraduate_students:
       position: 'Undergraduate Researcher'
       start_date: '2025.09~'
       email: 'climbthesky@hanyang.ac.kr'
-      front_image: 'assets/img/2025_Seungho.JPG'
-      back_image: 'assets/img/seungho lee hovering.jpg' # No hover image
+      front_image: 'assets/img/2025_Seungho.webp'
+      back_image: 'assets/img/seungho lee hovering.webp' # No hover image
       google_scholar: ''
       research_interests:
           - 'Thermal Model'
@@ -128,7 +128,7 @@ undergraduate_students:
       position: 'Undergraduate Researcher'
       start_date: '2026.03~'
       email: 'chlgkals0221@hanyang.ac.kr'
-      front_image: 'assets/img/2026_Hamin.jpg'
+      front_image: 'assets/img/2026_Hamin.webp'
       back_image: '' # No hover image
       google_scholar: ''
       research_interests:
@@ -141,8 +141,8 @@ alumni:
       graduation_year: 2026.02
       start_date: '2024.03~2026.02'
       email: 'donghyun4212@hanyang.ac.kr'
-      front_image: 'assets/img/grad_dong.jpg'
-      back_image: 'assets/img/Donghyun Kim2024.jpg'
+      front_image: 'assets/img/grad_dong.webp'
+      back_image: 'assets/img/Donghyun Kim2024.webp'
       google_scholar: 'https://scholar.google.com/citations?view_op=list_works&hl=ko&user=siav4XIAAAAJ'
       research_interests:
           - 'CFD'
@@ -156,4 +156,4 @@ openings:
     - position: 'Undergraduate Researcher'
       year: 2026
       description: 'We are looking for motivated undergraduate students!'
-      image: 'assets/img/adoptnyang.png'
+      image: 'assets/img/adoptnyang.webp'
