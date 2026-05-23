@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-22T02:10:25.129Z",
+  "updated_at": "2026-05-23T01:57:52.264Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 609,
+  "total": 610,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -77,7 +77,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
           "openalex_count": 20,
-          "openalex_updated": "2026-05-21T09:19:25.381259",
+          "openalex_updated": "2026-05-22T09:01:20.584952",
           "crossref_count": 19,
           "opencitations_count": null
         }
@@ -100,14 +100,14 @@
     },
     {
       "title": "Transport Processes in a Li-ion Cell during an Internal Short-Circuit",
-      "citations": 38,
+      "citations": 39,
       "_dois": [
         "10.1149/1945-7111/ab995d"
       ],
       "_debug_counts": {
         "10.1149/1945-7111/ab995d": {
-          "openalex_count": 38,
-          "openalex_updated": "2026-05-21T09:19:25.381259",
+          "openalex_count": 39,
+          "openalex_updated": "2026-05-22T09:01:20.584952",
           "crossref_count": 36,
           "opencitations_count": null
         }
