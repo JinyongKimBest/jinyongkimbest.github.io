@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-23T01:57:52.264Z",
+  "updated_at": "2026-05-24T02:06:44.679Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 610,
+  "total": 611,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -17,7 +17,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ae1ab5": {
           "openalex_count": 0,
-          "openalex_updated": "2026-05-21T09:19:25.381259",
+          "openalex_updated": "2026-05-21T06:26:12.895304",
           "crossref_count": 0,
           "opencitations_count": null
         }
@@ -32,7 +32,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/adfd1a": {
           "openalex_count": 1,
-          "openalex_updated": "2026-05-21T09:19:25.381259",
+          "openalex_updated": "2026-05-21T06:26:12.895304",
           "crossref_count": 1,
           "opencitations_count": null
         }
@@ -77,7 +77,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
           "openalex_count": 20,
-          "openalex_updated": "2026-05-22T09:01:20.584952",
+          "openalex_updated": "2026-05-22T06:13:13.366637",
           "crossref_count": 19,
           "opencitations_count": null
         }
@@ -85,14 +85,14 @@
     },
     {
       "title": "Modeling cell venting and gas-phase reactions in 18650 lithium ion batteries during thermal runaway",
-      "citations": 194,
+      "citations": 195,
       "_dois": [
         "10.1016/j.jpowsour.2021.229496"
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 194,
-          "openalex_updated": "2026-05-21T09:19:25.381259",
+          "openalex_count": 195,
+          "openalex_updated": "2026-05-23T08:51:43.019350",
           "crossref_count": 180,
           "opencitations_count": null
         }
@@ -107,7 +107,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ab995d": {
           "openalex_count": 39,
-          "openalex_updated": "2026-05-22T09:01:20.584952",
+          "openalex_updated": "2026-05-21T06:26:12.895304",
           "crossref_count": 36,
           "opencitations_count": null
         }
