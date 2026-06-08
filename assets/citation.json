@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-07T02:30:46.928Z",
+  "updated_at": "2026-06-08T02:35:04.291Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 612,
+  "total": 614,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -70,14 +70,14 @@
     },
     {
       "title": "A Comprehensive Numerical and Experimental Study for the Passive Thermal Management in Battery Modules and Packs",
-      "citations": 20,
+      "citations": 21,
       "_dois": [
         "10.1149/1945-7111/ac9ee4"
       ],
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
-          "openalex_count": 20,
-          "openalex_updated": "2026-05-22T06:13:13.366637",
+          "openalex_count": 21,
+          "openalex_updated": "2026-06-07T08:38:57.713557",
           "crossref_count": 20,
           "opencitations_count": null
         }
@@ -115,15 +115,15 @@
     },
     {
       "title": "Modeling Extreme Deformations in Lithium-ion Batteries",
-      "citations": 70,
+      "citations": 71,
       "_dois": [
         "10.1016/j.etran.2020.100065"
       ],
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
-          "openalex_count": 70,
-          "openalex_updated": "2026-05-05T08:41:31.759640",
-          "crossref_count": 63,
+          "openalex_count": 71,
+          "openalex_updated": "2026-06-07T08:38:57.713557",
+          "crossref_count": 64,
           "opencitations_count": null
         }
       }
