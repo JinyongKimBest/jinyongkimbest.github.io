@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T00:52:44.639Z",
+  "updated_at": "2026-08-12T00:59:30.233Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -46,8 +46,8 @@
       ],
       "_debug_counts": {
         "10.1016/j.applthermaleng.2024.123518": {
-          "openalex_count": 5,
-          "openalex_updated": "2026-08-06T08:24:18.245995",
+          "openalex_count": 6,
+          "openalex_updated": "2026-08-11T07:18:39.950985",
           "crossref_count": 6,
           "opencitations_count": null
         }
