@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T01:01:20.731Z",
+  "updated_at": "2026-08-14T01:00:30.430Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -151,8 +151,8 @@
       ],
       "_debug_counts": {
         "10.1016/j.enconman.2018.09.077": {
-          "openalex_count": 39,
-          "openalex_updated": "2026-07-29T09:40:50.615796",
+          "openalex_count": 40,
+          "openalex_updated": "2026-08-12T21:12:35.861297",
           "crossref_count": 40,
           "opencitations_count": null
         }
