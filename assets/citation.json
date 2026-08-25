@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T00:37:01.493Z",
+  "updated_at": "2026-08-25T00:36:46.906Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -48,7 +48,7 @@
         "10.1016/j.applthermaleng.2024.123518": {
           "openalex_count": 6,
           "openalex_updated": "2026-08-21T09:56:20.448147",
-          "crossref_count": 6,
+          "crossref_count": 5,
           "opencitations_count": null
         }
       }
@@ -93,7 +93,7 @@
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 201,
           "openalex_updated": "2026-08-22T07:34:49.880490",
-          "crossref_count": 187,
+          "crossref_count": 186,
           "opencitations_count": null
         }
       }
