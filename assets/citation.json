@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T07:44:34.534Z",
+  "updated_at": "2026-08-29T04:40:57.467Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -47,7 +47,7 @@
       "_debug_counts": {
         "10.1016/j.applthermaleng.2024.123518": {
           "openalex_count": 6,
-          "openalex_updated": "2026-08-21T09:56:20.448147",
+          "openalex_updated": "2026-08-28T12:50:07.497085",
           "crossref_count": 5,
           "opencitations_count": null
         }
@@ -62,7 +62,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2022.232413": {
           "openalex_count": 15,
-          "openalex_updated": "2026-08-21T09:56:20.448147",
+          "openalex_updated": "2026-08-28T12:50:07.497085",
           "crossref_count": 15,
           "opencitations_count": null
         }
@@ -77,7 +77,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ac9ee4": {
           "openalex_count": 22,
-          "openalex_updated": "2026-08-21T09:56:20.448147",
+          "openalex_updated": "2026-08-28T12:50:07.497085",
           "crossref_count": 21,
           "opencitations_count": null
         }
@@ -92,7 +92,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 201,
-          "openalex_updated": "2026-08-22T07:34:49.880490",
+          "openalex_updated": "2026-08-28T12:50:07.497085",
           "crossref_count": 186,
           "opencitations_count": null
         }
@@ -122,7 +122,7 @@
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
           "openalex_count": 71,
-          "openalex_updated": "2026-08-21T09:56:20.448147",
+          "openalex_updated": "2026-08-28T12:50:07.497085",
           "crossref_count": 63,
           "opencitations_count": null
         }
@@ -137,7 +137,7 @@
       "_debug_counts": {
         "10.1016/j.ijhydene.2018.12.169": {
           "openalex_count": 2,
-          "openalex_updated": "2026-08-21T09:56:20.448147",
+          "openalex_updated": "2026-08-28T12:50:07.497085",
           "crossref_count": 2,
           "opencitations_count": null
         }
