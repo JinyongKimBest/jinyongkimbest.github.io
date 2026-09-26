@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T02:21:34.954Z",
+  "updated_at": "2026-09-26T02:25:58.886Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -62,7 +62,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2022.232413": {
           "openalex_count": 16,
-          "openalex_updated": "2026-09-24T07:57:37.273135",
+          "openalex_updated": "2026-09-25T08:18:29.962427",
           "crossref_count": 16,
           "opencitations_count": null
         }
@@ -183,7 +183,7 @@
         "10.1016/j.jpowsour.2017.09.003": {
           "openalex_count": 200,
           "openalex_updated": "2026-08-21T09:56:20.448147",
-          "crossref_count": 197,
+          "crossref_count": 198,
           "opencitations_count": null
         }
       }
