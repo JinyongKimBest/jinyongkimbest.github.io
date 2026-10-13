@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T03:08:05.434Z",
+  "updated_at": "2026-10-13T04:23:54.440Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -91,8 +91,8 @@
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
-          "openalex_count": 207,
-          "openalex_updated": "2026-10-09T09:14:12.587421",
+          "openalex_count": 205,
+          "openalex_updated": "2026-10-12T09:40:04.860316",
           "crossref_count": 197,
           "opencitations_count": null
         }
@@ -152,7 +152,7 @@
       "_debug_counts": {
         "10.1016/j.enconman.2018.09.077": {
           "openalex_count": 41,
-          "openalex_updated": "2026-09-27T08:07:27.782135",
+          "openalex_updated": "2026-10-12T09:40:04.860316",
           "crossref_count": 41,
           "opencitations_count": null
         }
@@ -181,8 +181,8 @@
       ],
       "_debug_counts": {
         "10.1016/j.jpowsour.2017.09.003": {
-          "openalex_count": 201,
-          "openalex_updated": "2026-10-08T09:06:37.294493",
+          "openalex_count": 200,
+          "openalex_updated": "2026-10-12T09:40:04.860316",
           "crossref_count": 199,
           "opencitations_count": null
         }
