@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T02:05:50.546Z",
+  "updated_at": "2026-10-17T01:59:58.091Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -47,7 +47,7 @@
       "_debug_counts": {
         "10.1016/j.applthermaleng.2024.123518": {
           "openalex_count": 6,
-          "openalex_updated": "2026-10-14T16:39:01.820549",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 5,
           "opencitations_count": null
         }
@@ -62,7 +62,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2022.232413": {
           "openalex_count": 16,
-          "openalex_updated": "2026-10-14T16:39:01.820549",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 16,
           "opencitations_count": null
         }
@@ -92,7 +92,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2021.229496": {
           "openalex_count": 205,
-          "openalex_updated": "2026-10-12T09:40:04.860316",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 197,
           "opencitations_count": null
         }
@@ -122,7 +122,7 @@
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
           "openalex_count": 72,
-          "openalex_updated": "2026-09-24T07:57:37.273135",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 64,
           "opencitations_count": null
         }
@@ -152,7 +152,7 @@
       "_debug_counts": {
         "10.1016/j.enconman.2018.09.077": {
           "openalex_count": 41,
-          "openalex_updated": "2026-10-12T09:40:04.860316",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 41,
           "opencitations_count": null
         }
@@ -167,7 +167,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2018.08.018": {
           "openalex_count": 30,
-          "openalex_updated": "2026-08-21T09:56:20.448147",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 29,
           "opencitations_count": null
         }
@@ -182,7 +182,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2017.09.003": {
           "openalex_count": 200,
-          "openalex_updated": "2026-10-12T09:40:04.860316",
+          "openalex_updated": "2026-10-16T09:59:22.235173",
           "crossref_count": 199,
           "opencitations_count": null
         }
