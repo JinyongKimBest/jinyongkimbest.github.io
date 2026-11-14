@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T03:58:28.841Z",
+  "updated_at": "2026-11-14T03:56:40.638Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
@@ -121,9 +121,9 @@
       ],
       "_debug_counts": {
         "10.1016/j.etran.2020.100065": {
-          "openalex_count": 72,
-          "openalex_updated": "2026-11-11T12:16:26.678958",
-          "crossref_count": 65,
+          "openalex_count": 73,
+          "openalex_updated": "2026-11-13T13:42:25.865203",
+          "crossref_count": 66,
           "opencitations_count": null
         }
       }
