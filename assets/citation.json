@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-19T04:55:25.190Z",
+  "updated_at": "2026-11-20T04:45:44.369Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 673,
+  "total": 674,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -145,14 +145,14 @@
     },
     {
       "title": "A multipoint voltage-monitoring method for fuel cell inconsistency analysis",
-      "citations": 41,
+      "citations": 42,
       "_dois": [
         "10.1016/j.enconman.2018.09.077"
       ],
       "_debug_counts": {
         "10.1016/j.enconman.2018.09.077": {
-          "openalex_count": 41,
-          "openalex_updated": "2026-11-17T12:49:18.490984",
+          "openalex_count": 42,
+          "openalex_updated": "2026-11-19T14:11:59.513116",
           "crossref_count": 41,
           "opencitations_count": null
         }
