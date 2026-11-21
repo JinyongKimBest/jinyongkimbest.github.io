@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-20T04:45:44.369Z",
+  "updated_at": "2026-11-21T04:41:04.947Z",
   "source_chain": [
     "openalex(doi)",
     "crossref(doi)",
     "opencitations(doi)",
     "policy=perDOI:max, perItem:sum, floor=prev"
   ],
-  "total": 674,
+  "total": 675,
   "items": [
     {
       "title": "Computational Safety Design of Thermal Management System of Li-Ion Battery Modules",
@@ -17,7 +17,7 @@
       "_debug_counts": {
         "10.1149/1945-7111/ae1ab5": {
           "openalex_count": 0,
-          "openalex_updated": "2026-11-17T12:49:18.490984",
+          "openalex_updated": "2026-11-20T13:11:24.684918",
           "crossref_count": 0,
           "opencitations_count": null
         }
@@ -25,15 +25,15 @@
     },
     {
       "title": "Effect of Curvature of the Electrodes on the Electrochemical Behavior of Li-Ion Batteries",
-      "citations": 2,
+      "citations": 3,
       "_dois": [
         "10.1149/1945-7111/adfd1a"
       ],
       "_debug_counts": {
         "10.1149/1945-7111/adfd1a": {
           "openalex_count": 2,
-          "openalex_updated": "2026-11-04T10:54:05.112534",
-          "crossref_count": 2,
+          "openalex_updated": "2026-11-20T13:11:24.684918",
+          "crossref_count": 3,
           "opencitations_count": null
         }
       }
@@ -152,7 +152,7 @@
       "_debug_counts": {
         "10.1016/j.enconman.2018.09.077": {
           "openalex_count": 42,
-          "openalex_updated": "2026-11-19T14:11:59.513116",
+          "openalex_updated": "2026-11-20T13:11:24.684918",
           "crossref_count": 41,
           "opencitations_count": null
         }
@@ -167,7 +167,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2018.08.018": {
           "openalex_count": 30,
-          "openalex_updated": "2026-11-16T12:05:36.265796",
+          "openalex_updated": "2026-11-20T13:11:24.684918",
           "crossref_count": 29,
           "opencitations_count": null
         }
@@ -182,7 +182,7 @@
       "_debug_counts": {
         "10.1016/j.jpowsour.2017.09.003": {
           "openalex_count": 202,
-          "openalex_updated": "2026-11-16T12:05:36.265796",
+          "openalex_updated": "2026-11-20T13:11:24.684918",
           "crossref_count": 199,
           "opencitations_count": null
         }
